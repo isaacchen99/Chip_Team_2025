@@ -27,7 +27,7 @@ module counter_tb();
 
     #2000
 
-    $finish
+    $finish;
   end
 
 endmodule

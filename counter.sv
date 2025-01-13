@@ -7,17 +7,17 @@ module counter (
 
 logic [9:0] count_reg;
 
-always_ff begin
+always_ff @(posedge clk or posedge rst) begin
   if (rst) begin
-    current_count <= 10'b0;
+    count_reg <= 10'b0;
   end
 
   else begin
-    if (current_count == 10'd999) begin
-      current_count <= 10'b0;
+    if (count_reg == 10'd999) begin
+      count_reg <= 10'b0;
     end 
-    else if (current_count < 10'd999) begin
-      current_count <= current_count + 1'b1;
+    else if (count_reg < 10'd999) begin
+      count_reg <= count_reg + 1'b1;
     end
   end
 
