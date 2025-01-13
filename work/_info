@@ -1,0 +1,70 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/icl5712/GitHub/Chip_Team_2025
+T_opt
+!s110 1736794602
+V9LezC095_FbWH]VRV?eb52
+04 10 4 work counter_tb fast 0
+=1-b49691574b56-678561e9-ddb72-2c1b9c
+o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.1;71
+vcounter
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1736794601
+!i10b 1
+!s100 8[:=i<LRmF_DOV<=3cA]D1
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Im<kl1OQ;@bN5z0L^4mF_92
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1736794596
+8counter.sv
+Fcounter.sv
+!i122 4
+L0 1 28
+Z6 OL;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1736794601.000000
+!s107 counter.sv|
+!s90 -reportprogress|300|-work|work|counter.sv|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vcounter_tb
+R2
+R3
+!i10b 1
+!s100 E]ZKQOhoE?@`FJChQheLm0
+R4
+I<1GN<CN>?hCG@5c:jBzB80
+R5
+S1
+R0
+w1736794389
+8counter_tb.sv
+Fcounter_tb.sv
+!i122 3
+L0 1 33
+R6
+r1
+!s85 0
+31
+R7
+!s107 counter_tb.sv|
+!s90 -reportprogress|300|-work|work|counter_tb.sv|
+!i113 0
+R8
+R1
