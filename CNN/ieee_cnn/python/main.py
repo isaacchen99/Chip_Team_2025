@@ -55,7 +55,16 @@ if __name__ == '__main__':
 
     # plt.show()
 
-    # Save Image Data to HEX Files
-    write_hex_file("image_data.hex", img.astype(np.uint8))
-    write_hex_file("sharpened_gold.hex", np.clip(sharpened_img, 0, 255).astype(np.uint8))
-    write_hex_file("edge_gold.hex", np.clip(edge_detect_img, 0, 255).astype(np.uint8))
+def write_hex_file(filename, data):
+    with open(filename, "w") as f:
+        for row in data:
+            # Write each pixel as a 2-digit hex value.
+            hex_line = " ".join(f"{int(np.clip(pixel, 0, 255)) & 0xFF:02X}" for pixel in row)
+            f.write(hex_line + "\n")
+
+# output hex files
+write_hex_file("image_data.hex", img)
+write_hex_file("sharpened_gold.hex", sharpened_img)
+write_hex_file("edge_gold.hex", edge_detect_img)
+
+# then can use $readmemh in verilog tesbench to load the hex arrays 
