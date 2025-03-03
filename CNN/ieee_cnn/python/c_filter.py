@@ -14,11 +14,11 @@ def convolve(image, kernel):
 
     # floor division for ints
     padding_height = kernel_height // 2
-    padding_weight = kernel_width // 2
+    padding_width = kernel_width // 2
 
 
     # Padding w/ zeroes
-    padded_img = np.pad(image, ((padding_height, padding_weight), (padding_weight, padding_height)), mode = 'constant', constant_values= 0)
+    padded_img = np.pad(image, ((padding_height, padding_width), (padding_width, padding_height)), mode = 'constant', constant_values= 0)
 
     # Convolution 
     filtered_img = np.zeros_like(image)
