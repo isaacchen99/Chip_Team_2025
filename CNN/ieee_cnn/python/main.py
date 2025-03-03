@@ -3,28 +3,36 @@ import numpy as np
 # import matplotlib.pyplot as plt
 from c_filter import convolve
 
+# Function to write data in HEX format for Verilog
+def write_hex_file(filename, data):
+    with open(filename, "w") as f:
+        for row in data:
+            hex_line = " ".join(f"{int(np.clip(pixel, 0, 255)) & 0xFF:02X}" for pixel in row)
+            f.write(hex_line + "\n")
+
 if __name__ == '__main__':
     image_path = 'peace_sign.jpg'
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
     if img is None:
-        print("Error, no image")
+        print("Error: Could not load image")
         exit()
 
-    # Laplacian kernel (edge-detect)
+    # Laplacian Kernel (Edge Detection)
     laplacian_kernel = np.array([
         [-1, -1, -1],
         [-1, 8, -1],
         [-1, -1, -1]
-    ], dtype = np.float32)
+    ], dtype=np.float32)
 
-    # Sharpen kernel
+    # Sharpening Kernel
     sharpen_kernel = np.array([
         [0, -1, 0],
         [-1, 5, -1],
         [0, -1, 0]
-    ], dtype = np.float32)
+    ], dtype=np.float32)
 
+    # Apply Convolution Filters
     sharpened_img = convolve(img, sharpen_kernel)
     edge_detect_img = convolve(sharpened_img, laplacian_kernel)
 
@@ -47,16 +55,7 @@ if __name__ == '__main__':
 
     # plt.show()
 
-def write_hex_file(filename, data):
-    with open(filename, "w") as f:
-        for row in data:
-            # Write each pixel as a 2-digit hex value.
-            hex_line = " ".join(f"{int(pixel) & 0xFF:02X}" for pixel in row)
-            f.write(hex_line + "\n")
-
-# output hex files
-write_hex_file("image_data.hex", img)
-write_hex_file("sharpened_gold.hex", sharpened_img)
-write_hex_file("edge_gold.hex", edge_detect_img)
-
-# then can use $readmemh in verilog tesbench to load the hex arrays 
+    # Save Image Data to HEX Files
+    write_hex_file("image_data.hex", img.astype(np.uint8))
+    write_hex_file("sharpened_gold.hex", np.clip(sharpened_img, 0, 255).astype(np.uint8))
+    write_hex_file("edge_gold.hex", np.clip(edge_detect_img, 0, 255).astype(np.uint8))
