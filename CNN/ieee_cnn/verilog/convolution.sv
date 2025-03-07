@@ -11,12 +11,21 @@ module convolution #(
 
     logic [WORD_SIZE-1:0] window[BUFFER_SIZE-1:0][BUFFER_SIZE-1:0];
 
-    sliding_window #(WORD_SIZE, BUFFER_SIZE, ROW_SIZE) my_window(.*, .window(window));
+    // sliding_window #(WORD_SIZE, BUFFER_SIZE, ROW_SIZE) my_window(.*, .window(window));
+    sliding_window #(
+        .WORD_SIZE(WORD_SIZE), 
+        .BUFFER_SIZE(BUFFER_SIZE), 
+        .ROW_SIZE(ROW_SIZE)
+    ) my_window (
+        .clk(clk), 
+        .rst(rst), 
+        .inputPixel(inputPixel), 
+        .window(window)
+    );
 
     logic signed [WORD_SIZE+4:0] product[BUFFER_SIZE-1:0][BUFFER_SIZE-1:0];
     logic signed [WORD_SIZE+4:0] sum;
 
-    // Pipelined to avoid delay and timing issues
     always_ff @(posedge clk) begin
         if (rst) begin
             for (int i = 0; i < BUFFER_SIZE; i++) begin
