@@ -30,7 +30,7 @@ module sliding_window #(
             end
 
             // restore from buffer
-            if (ptr > 0) begin
+            if (ptr > BUFFER_SIZE-1) begin
                 for (int j = 0; j < BUFFER_SIZE; j++) begin
                     window[0][j] <= buffer[ptr-1][j];
                 end
