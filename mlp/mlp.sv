@@ -46,6 +46,12 @@ module MLP_Module
     .data_ready(layer_calc_ready)
     );
 
+    compute_activation compute_cur_activation ( 
+    .input_values(layer_calculation),
+    .output_values(activation_calculation)
+    .data_ready(layer_activation_ready)
+    );
+
 
 
 
@@ -98,7 +104,7 @@ module MLP_Module
                 
             end
             ACTIVATION: begin
-                if 
+                if ()
             end
 
             COMPLETED: begin
@@ -156,6 +162,17 @@ module compute_layer(
 );
 
     // compute the results of the current layer
+    // output the results
+    // output the ready signal
+endmodule
+
+module compute_layer(
+    input logic [LAYERINPUTSIZE-1:0] input_values,
+    output logic [LAYEROUTPUTSIZE-1:0] output_values,
+    output logic data_ready
+);
+
+    // compute the results of using the activation function
     // output the results
     // output the ready signal
 endmodule
