@@ -136,4 +136,5 @@ module relu #(parameter WIDTH = 8) (
         else
             out = 0;
     end
+endmodule
 
