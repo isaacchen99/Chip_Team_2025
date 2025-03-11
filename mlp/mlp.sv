@@ -138,3 +138,24 @@ module relu #(parameter WIDTH = 8) (
     end
 endmodule
 
+module get_weights(
+    input logic [NUMLAYERBITS-1:0] layer_num,
+    output logic [WEIGHTSSIZE-1:0] output,
+    output logic data_ready
+);
+
+    // get weights from memory
+    // output the weights for the current layer
+    // output the ready signal
+endmodule
+
+module compute_layer(
+    input logic [LAYERINPUTSIZE-1:0] input_values,
+    output logic [LAYEROUTPUTSIZE-1:0] output_values,
+    output logic data_ready
+);
+
+    // compute the results of the current layer
+    // output the results
+    // output the ready signal
+endmodule
