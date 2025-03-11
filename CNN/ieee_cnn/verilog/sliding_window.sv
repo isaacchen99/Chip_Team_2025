@@ -1,7 +1,7 @@
 module sliding_window #(
     parameter WORD_SIZE = 8, 
     parameter BUFFER_SIZE = 3, 
-    parameter ROW_SIZE = 10 
+    parameter ROW_SIZE = 540 
 )
 (
     input logic clk, rst,
@@ -25,6 +25,7 @@ module sliding_window #(
             // shift downward
             for (int i = BUFFER_SIZE-1; i > 0; i--) begin
                 for (int j = 0; j < BUFFER_SIZE; j++) begin
+                    $display("window[%0d][%0d] = %h", i, j, window[i][j]);
                     window[i][j] <= window[i-1][j];
                 end
             end
