@@ -1,0 +1,96 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jdf7208/ieee_chip_design/Chip_Team_2025/CNN/ieee_cnn/verilog
+T_opt
+!s110 1741632415
+V?f[]P^R7hO6GP@eRM:2QY2
+04 14 4 work convolution_tb fast 0
+=1-b49691574b56-67cf339f-afaa4-e5ae7
+o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.1;71
+R0
+vconvolution
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1741654543
+!i10b 1
+!s100 N5a]nUY>FXNfOoXNGQT2U0
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IQKnA?VhJ_M`>TB5]m;Yo91
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1741632298
+8convolution.sv
+Fconvolution.sv
+!i122 38
+L0 1 66
+Z6 OL;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1741654543.000000
+!s107 convolution.sv|
+!s90 -reportprogress|300|-sv|-work|work|convolution.sv|
+!i113 0
+Z8 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vconvolution_tb
+R2
+R3
+!i10b 1
+!s100 UBCnJ1?kIkcM1lAha6QjE1
+R4
+I7]XLYi@U^o:jQNO;Gb6B@3
+R5
+S1
+R0
+w1741633379
+8convolution_tb.sv
+Fconvolution_tb.sv
+!i122 40
+L0 1 65
+R6
+r1
+!s85 0
+31
+R7
+!s107 convolution_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|convolution_tb.sv|
+!i113 0
+R8
+R1
+vsliding_window
+R2
+R3
+!i10b 1
+!s100 VBRJkFCa1N8Oh;n]:DMHT1
+R4
+IG4LY5FM;G>dAT]:>JZg7[0
+R5
+S1
+R0
+w1741632391
+8sliding_window.sv
+Fsliding_window.sv
+!i122 39
+L0 1 61
+R6
+r1
+!s85 0
+31
+R7
+!s107 sliding_window.sv|
+!s90 -reportprogress|300|-sv|-work|work|sliding_window.sv|
+!i113 0
+R8
+R1

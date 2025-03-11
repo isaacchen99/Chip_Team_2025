@@ -41,6 +41,8 @@ if __name__ == '__main__':
     sharpened_img = convolve(img, sharpen_kernel)
     edge_detect_img = convolve(sharpened_img, laplacian_kernel)
 
+    print(f"Height: {img.shape[0]} Width: {img.shape[1]}")
+
     if (output_image):
         plt.figure(figsize=(10, 5))
 
