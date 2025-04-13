@@ -10,35 +10,34 @@ z2
 cModel Technology
 Z0 d/home/jdf7208/ieee_chip_design/Chip_Team_2025/CNN/ieee_cnn/verilog
 T_opt
-!s110 1741632415
-V?f[]P^R7hO6GP@eRM:2QY2
+!s110 1744570673
+VH@7WW<>nSMJNnQORP=:=G0
 04 14 4 work convolution_tb fast 0
-=1-b49691574b56-67cf339f-afaa4-e5ae7
+=1-b49691574b56-67fc0930-dbc7d-8cb1a
 o-quiet -auto_acc_if_foreign -work work -L work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.1;71
-R0
 vconvolution
 Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1741654543
+Z3 !s110 1744570672
 !i10b 1
-!s100 N5a]nUY>FXNfOoXNGQT2U0
+!s100 WbVT>io_o7CnD=DKLMSme3
 Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IQKnA?VhJ_M`>TB5]m;Yo91
+Ii5OCI665S?hUFlcQPL4OQ2
 Z5 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1741632298
+w1744570395
 8convolution.sv
 Fconvolution.sv
-!i122 38
-L0 1 66
+!i122 48
+L0 1 80
 Z6 OL;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1741654543.000000
+Z7 !s108 1744570672.000000
 !s107 convolution.sv|
 !s90 -reportprogress|300|-sv|-work|work|convolution.sv|
 !i113 0
@@ -57,7 +56,7 @@ R0
 w1741633379
 8convolution_tb.sv
 Fconvolution_tb.sv
-!i122 40
+!i122 50
 L0 1 65
 R6
 r1
@@ -73,17 +72,17 @@ vsliding_window
 R2
 R3
 !i10b 1
-!s100 VBRJkFCa1N8Oh;n]:DMHT1
+!s100 KA0WThNZ[KoVh554TOn=c2
 R4
-IG4LY5FM;G>dAT]:>JZg7[0
+IdlQRN5`R_IG>ba6j6mOZ]0
 R5
 S1
 R0
-w1741632391
+w1744570659
 8sliding_window.sv
 Fsliding_window.sv
-!i122 39
-L0 1 61
+!i122 49
+L0 1 51
 R6
 r1
 !s85 0
