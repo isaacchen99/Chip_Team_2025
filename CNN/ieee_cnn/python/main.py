@@ -12,8 +12,9 @@ def write_hex_file(filename, data):
     with open(filename, "w") as f:
         for row in data:
             # Write each pixel as a 2-digit hex value.
-            hex_line = " ".join(f"{int(np.clip(pixel, 0, 255)) & 0xFF:02X}" for pixel in row)
-            f.write(hex_line + "\n")
+            for pixel in row:
+                hex_value = f"{int(np.clip(pixel, 0, 255)) & 0xFF:02X}"
+                f.write(hex_value + "\n")
 
 
 if __name__ == '__main__':

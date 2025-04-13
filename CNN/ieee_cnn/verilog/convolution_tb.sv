@@ -31,9 +31,6 @@ module convolution_tb();
 
         $readmemh("image_data.hex", input_image);
 
-        $display("Last few values:");
-    for (int i = IMAGE_WIDTH - 10; i < IMAGE_WIDTH; i = i + 1) $display("%h", input_image[IMAGE_HEIGHT-1][i]);
-
         #10 
         rst = 0;
 
