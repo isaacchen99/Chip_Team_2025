@@ -1,12 +1,20 @@
 module convolution #(
     parameter WORD_SIZE = 8, 
-    parameter ROW_SIZE = 540    
+    parameter ROW_SIZE = 540   
 )(
     input logic clk, rst,
     input logic [WORD_SIZE-1:0] inputPixel,
     output logic [WORD_SIZE-1:0] outputPixel
 );
+
+    // The kernel is a 3x3 matrix with signed values
+    // Laplacian kernel used for edge detection
     localparam KERNEL_DIM = 3;
+    localparam int KERNEL[KERNEL_DIM][KERNEL_DIM] = '{
+        '{-1, -1, -1},
+        '{-1, 8, -1}, 
+        '{-1, -1, -1}
+    };
 
     logic [WORD_SIZE-1:0] window[KERNEL_DIM-1:0][KERNEL_DIM-1:0];
 
@@ -25,17 +33,6 @@ module convolution #(
     // convolution: product of element-wise multiplication, then total sum of window
     logic signed [WORD_SIZE+4:0] product[KERNEL_DIM-1:0][KERNEL_DIM-1:0];
     logic signed [WORD_SIZE+4:0] sum;
-
-    logic signed [7:0] KERNEL [0:KERNEL_DIM-1][0:KERNEL_DIM-1];
-
-    // The kernel is a 3x3 matrix with signed values
-    // Laplacian kernel used for edge detection
-
-    initial begin
-        KERNEL[0][0] = -1; KERNEL[0][1] = -1; KERNEL[0][2] = -1;
-        KERNEL[1][0] = -1; KERNEL[1][1] =  8; KERNEL[1][2] = -1;
-        KERNEL[2][0] = -1; KERNEL[2][1] = -1; KERNEL[2][2] = -1;
-    end
 
     // Convolution operation
     always_ff @(posedge clk) begin
