@@ -53,7 +53,7 @@ module convolution #(
             end
         end 
         //case for when the count is less than the buffer size and needs to be filled
-        else if (count < ROW_SIZE*2+2) begin
+        if (count < ROW_SIZE*2+2) begin
             buffer[count] <= inputPixel;
             count <= count + 1;
         end
