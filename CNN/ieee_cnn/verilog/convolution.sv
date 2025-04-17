@@ -123,10 +123,10 @@ module convolution #(
     // The output pixel is clamped to the range [0, 255] to ensure that the output
     // pixel is a valid 8-bit value.
     always_ff @(posedge clk) begin
-        //if (rst) begin 
-        //    outputPixel <= 0;
-        //end
-        //else begin
+        if (rst) begin 
+            outputPixel <= 0;
+        end
+        else begin
             if (sum < 0) begin 
                 outputPixel <= 0;
             end
@@ -134,8 +134,8 @@ module convolution #(
                 outputPixel <= 255;
             end
             else begin 
-                outputPixel <= sum[WORD_SIZE-1:0];
+                outputPixel <= sum;
             end
-        //end
+        end
     end
 endmodule
