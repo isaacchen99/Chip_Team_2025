@@ -123,9 +123,15 @@ module convolution #(
             outputPixel <= 0;
         end
         else begin
-            if (sum < 0) outputPixel <= 0;
-            else if (sum > 255) outputPixel <= 255;
-            else outputPixel <= sum[WORD_SIZE-1:0];
+            if (sum < 0) begin 
+                outputPixel <= 0;
+            end
+            else if (sum > 255) begin 
+                outputPixel <= 255;
+            end
+            else begin 
+                outputPixel <= sum[WORD_SIZE-1:0];
+            end
         end
     end
 endmodule
