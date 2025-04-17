@@ -1,6 +1,6 @@
 module convolution #(
     parameter WORD_SIZE = 8, 
-    parameter ROW_SIZE = 540   
+    parameter ROW_SIZE = 540,   
     parameter KERNEL_DIM = 3
 )(
     input logic clk, rst,
