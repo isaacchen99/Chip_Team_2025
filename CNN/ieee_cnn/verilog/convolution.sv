@@ -57,7 +57,9 @@ module convolution #(
             buffer[count] <= inputPixel;
             count <= count + 1;
         end
-        //normal case when buffer is filled and the window is not at an edge
+        //normal case when buffer is filled and the window is not at an edge 
+        //we will need to add a case for when the window is at the theoretical edge and 
+        //extra buffer shift ins need to occur without being read
         else begin
             window[2][2] <= buffer[ROW_SIZE*2+2];
             window[2][1] <= buffer[ROW_SIZE*2+1];
@@ -77,6 +79,7 @@ module convolution #(
             buffer[ROW_SIZE*2+2] <= inputPixel;
         end
         end
+        outputPixel <= 0;
     end
 
 
