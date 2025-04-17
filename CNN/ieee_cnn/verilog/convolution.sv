@@ -106,10 +106,14 @@ module convolution #(
 
   
     always_ff @(posedge clk) begin
-        if (rst) sum <= 0;
-        else sum <= product[0][0] + product[0][1] + product[0][2] +
+        if (rst) begin 
+            sum <= 0;
+        end
+        else begin 
+            sum <= product[0][0] + product[0][1] + product[0][2] +
                     product[1][0] + product[1][1] + product[1][2] +
                     product[2][0] + product[2][1] + product[2][2];
+        end
     end
 
     
@@ -119,10 +123,10 @@ module convolution #(
     // The output pixel is clamped to the range [0, 255] to ensure that the output
     // pixel is a valid 8-bit value.
     always_ff @(posedge clk) begin
-        if (rst) begin 
-            outputPixel <= 0;
-        end
-        else begin
+        //if (rst) begin 
+        //    outputPixel <= 0;
+        //end
+        //else begin
             if (sum < 0) begin 
                 outputPixel <= 0;
             end
@@ -132,6 +136,6 @@ module convolution #(
             else begin 
                 outputPixel <= sum[WORD_SIZE-1:0];
             end
-        end
+        //end
     end
 endmodule
