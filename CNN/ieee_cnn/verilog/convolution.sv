@@ -96,6 +96,15 @@ module convolution #(
             end
         end
         else begin
+            if (count < ROW_SIZE*2+2) begin
+                for (int i = 0; i < KERNEL_DIM; i++) begin
+                    for (int j = 0; j < KERNEL_DIM; j++) begin
+                        product[i][j] <= 0;
+                    end
+                end
+            end
+            else begin
+                //convolution  occurs here
             for (int i = 0; i < KERNEL_DIM; i++) begin
                 for (int j = 0; j < KERNEL_DIM; j++) begin
                     product[i][j] <= window[i][j] * KERNEL[i][j];
