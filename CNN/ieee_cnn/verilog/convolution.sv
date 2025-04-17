@@ -134,7 +134,7 @@ module convolution #(
                 outputPixel <= 255;
             end
             else begin 
-                outputPixel <= sum;
+                outputPixel <= 99;
             end
         end
     end
