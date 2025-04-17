@@ -71,7 +71,7 @@ module convolution #(
             window[0][1] <= buffer[1];
             window[0][0] <= buffer[0];
 
-            //shift in one pixle into the buffer 
+            //shift in one pixle into the buffer (and one pixle out)
             for (int i = 0; i < ROW_SIZE*2+2; i++) begin
                 buffer[i] <= buffer[i+1];
             end
@@ -111,6 +111,7 @@ module convolution #(
                 end
             end
         end
+    end
     end
 
   
