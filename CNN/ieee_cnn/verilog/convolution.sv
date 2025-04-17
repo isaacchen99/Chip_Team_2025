@@ -110,9 +110,7 @@ module convolution #(
             sum <= 0;
         end
         else begin 
-            sum <= product[0][0] + product[0][1] + product[0][2] +
-                    product[1][0] + product[1][1] + product[1][2] +
-                    product[2][0] + product[2][1] + product[2][2];
+            sum <= product[0][0] + product[0][1] + product[0][2] + product[1][0] + product[1][1] + product[1][2] + product[2][0] + product[2][1] + product[2][2];
         end
     end
 
@@ -134,7 +132,7 @@ module convolution #(
                 outputPixel <= 255;
             end
             else begin 
-                outputPixel <= 99;
+                outputPixel <= sum;
             end
         end
     end
