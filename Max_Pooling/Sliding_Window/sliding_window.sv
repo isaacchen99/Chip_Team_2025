@@ -1,4 +1,4 @@
-module test #(
+module sliding_window #(
     parameter DATA_WIDTH = 8,
     parameter KERNEL_DIM = 3,
     parameter ROW_SIZE = 5
@@ -40,22 +40,23 @@ module test #(
             end
             // Shift new data into buffer
             buffer[0] <= inputPixel;
-            
+
             // Shift existing window left (col 1 -> col 0, col 2 -> col 1)
             for (int row = 0; row < KERNEL_DIM; row++) begin
                 for (int col = 0; col < KERNEL_DIM - 1; col++) begin
                     window[row][col] <= window[row][col+1];
                 end
             end
+          	window[KERNEL_DIM-1][KERNEL_DIM-1] <= inputPixel;
 
             // Insert rightmost column
-            for (int r = 0; r < KERNEL_DIM; r++) begin
-                window[r][KERNEL_DIM-1] <= buffer[(KERNEL_DIM - 1 - r) * ROW_SIZE];
+            for (int r = 0; r < KERNEL_DIM-1; r++) begin
+              window[r][KERNEL_DIM-1] <= buffer[((KERNEL_DIM - 1 - r) * ROW_SIZE)-1];
             end
 
             // Increment count for VALID
             pixel_count <= pixel_count + 1;
-            valid <= (pixel_count > VALID_START);
+            valid <= (pixel_count >= VALID_START);
         end
     end
 endmodule

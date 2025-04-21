@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module tb_test;
+module tb_sliding_window;
 
     parameter DATA_WIDTH = 8;
     parameter KERNEL_DIM = 3;
@@ -13,7 +13,7 @@ module tb_test;
     logic valid;
 
     // Instantiate DUT
-    test #(
+    sliding_window #(
         .DATA_WIDTH(DATA_WIDTH),
         .KERNEL_DIM(KERNEL_DIM),
         .ROW_SIZE(ROW_SIZE)
@@ -41,13 +41,24 @@ module tb_test;
     initial begin
         $display("Starting test...");
 
+        // Show full input matrix once
+        $display("Input Stream Matrix:");
+        for (int r = 0; r < ROW_SIZE; r++) begin
+            $write("  ");
+            for (int c = 0; c < ROW_SIZE; c++) begin
+                $write("%0d ", input_stream[r * ROW_SIZE + c]);
+            end
+            $write("\n");
+        end
+        $display("==============================");
+
         clk = 0;
         rst = 1;
         inputPixel = 0;
         #12;
         rst = 0;
 
-        // Feed in all pixels
+        // Feed in pixels
         for (int i = 0; i < TOTAL_PIXELS; i++) begin
             inputPixel = input_stream[i];
             #10;
@@ -64,19 +75,15 @@ module tb_test;
             end
 
             if (!valid)
-                $display("? Above window not yet valid.");
+                $display("!! Above window not yet valid.");
 
-            $display("Buffer content (uut.buffer):");
+            $display("Buffer content:");
             for (int j = 0; j < uut.BUFFER_SIZE; j++) begin
                 $write("%0d ", uut.buffer[j]);
             end
             $write("\n");
             $display("==============================");
         end
-
-        // One extra cycle to catch the last window update
-        #10;
-        $display("Cycle %0d: input = (no new input)", TOTAL_PIXELS);
 
         $display("Window (valid = %0b):", valid);
         for (int r = 0; r < KERNEL_DIM; r++) begin
