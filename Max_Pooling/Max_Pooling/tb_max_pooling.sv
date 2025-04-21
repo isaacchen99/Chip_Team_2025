@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module tb_test;
+module tb_max_pooling;
 
     parameter DATA_WIDTH = 8;
     parameter KERNEL_DIM = 3;
@@ -9,7 +9,7 @@ module tb_test;
     logic [DATA_WIDTH-1:0] inputPixel;
     logic [DATA_WIDTH-1:0] outputPixel;
 
-    test #(
+    max_pooling #(
         .DATA_WIDTH(DATA_WIDTH),
         .KERNEL_DIM(KERNEL_DIM)
     ) uut (
