@@ -1,4 +1,4 @@
-module test #(
+module max_pooling #(
     parameter DATA_WIDTH = 8, 
     parameter KERNEL_DIM = 3,
     parameter ROW_SIZE = 540    
