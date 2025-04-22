@@ -45,40 +45,49 @@ module convolution #(
 
     always_ff @(posedge clk) begin
         //if rst then reset both the count and the set the window to all 0
-        if (rst) begin
-            count <= 0;
-            for (int i = 0; i < KERNEL_DIM; i++) begin
-                for (int j = 0; j < KERNEL_DIM; j++) begin
-                window[i][j] <= 0;
+      if (rst) begin
+          count <= 0;
+          for (int i = 0; i < KERNEL_DIM; i++) begin
+            for (int j = 0; j < KERNEL_DIM; j++) begin
+            window[i][j] <= 0;
+          end
+
+          for (int i = 0; i < KERNEL_DIM; i++) begin
+            for (int j = 0; j < KERNEL_DIM; j++) begin
+              product[i][j] <= 0;
             end
-        end 
+          end
+
+        end
         //case for when the count is less than the buffer size and needs to be filled
+      end else begin
         if (count < ROW_SIZE*2+2) begin
-            buffer[count] <= inputPixel;
-            count <= count + 1;
+          buffer[count] <= inputPixel;
+          count <= count + 1;
+          $display("Here");
         end
         //normal case when buffer is filled and the window is not at an edge 
         //we will need to add a case for when the window is at the theoretical edge and 
         //extra buffer shift ins need to occur without being read
         else begin
-            window[2][2] <= buffer[ROW_SIZE*2+2];
-            window[2][1] <= buffer[ROW_SIZE*2+1];
-            window[2][0] <= buffer[ROW_SIZE*2];
-            window[1][2] <= buffer[ROW_SIZE+2];
-            window[1][1] <= buffer[ROW_SIZE+1];
-            window[1][0] <= buffer[ROW_SIZE];
-            window[0][2] <= buffer[2];
-            window[0][1] <= buffer[1];
-            window[0][0] <= buffer[0];
+          window[2][2] <= buffer[ROW_SIZE*2+2];
+          window[2][1] <= buffer[ROW_SIZE*2+1];
+          window[2][0] <= buffer[ROW_SIZE*2];
+          window[1][2] <= buffer[ROW_SIZE+2];
+          window[1][1] <= buffer[ROW_SIZE+1];
+          window[1][0] <= buffer[ROW_SIZE];
+          window[0][2] <= buffer[2];
+          window[0][1] <= buffer[1];
+          window[0][0] <= buffer[0];
 
-            //shift in one pixle into the buffer (and one pixle out)
-            for (int i = 0; i < ROW_SIZE*2+2; i++) begin
-                buffer[i] <= buffer[i+1];
-            end
-            //set the last buffer to the input pixel
-            buffer[ROW_SIZE*2+2] <= inputPixel;
-        end
-        end
+          //shift in one pixle into the buffer (and one pixle out)
+          for (int i = 0; i < ROW_SIZE*2+2; i++) begin
+            buffer[i] <= buffer[i+1];
+          end
+          //set the last buffer to the input pixel
+          buffer[ROW_SIZE*2+2] <= inputPixel;
+        end 
+      end
     end
 
 
@@ -89,39 +98,38 @@ module convolution #(
     // Convolution operation
     always_ff @(posedge clk) begin
         if (rst) begin
-            for (int i = 0; i < KERNEL_DIM; i++) begin
-                for (int j = 0; j < KERNEL_DIM; j++) begin
-                    product[i][j] <= 0;
-                end
+          for (int i = 0; i < KERNEL_DIM; i++) begin
+            for (int j = 0; j < KERNEL_DIM; j++) begin
+              product[i][j] <= 0;
             end
+          end
         end
         else begin
-            if (count < ROW_SIZE*2+2) begin
-                for (int i = 0; i < KERNEL_DIM; i++) begin
-                    for (int j = 0; j < KERNEL_DIM; j++) begin
-                        product[i][j] <= 0;
-                    end
-                end
-            end
-            else begin
-                //convolution  occurs here
+          if (count < ROW_SIZE*2+2) begin
             for (int i = 0; i < KERNEL_DIM; i++) begin
-                for (int j = 0; j < KERNEL_DIM; j++) begin
-                    product[i][j] <= window[i][j] * KERNEL[i][j];
-                end
+              for (int j = 0; j < KERNEL_DIM; j++) begin
+                product[i][j] <= 0;
+              end
             end
-        end
+          end else begin
+            //convolution  occurs here
+            for (int i = 0; i < KERNEL_DIM; i++) begin
+              for (int j = 0; j < KERNEL_DIM; j++) begin
+                product[i][j] <= window[i][j] * KERNEL[i][j];
+              end
+            end
+      end
     end
-    end
+  end
 
   
     always_ff @(posedge clk) begin
-        if (rst) begin 
-            sum <= 0;
-        end
-        else begin 
-            sum <= product[0][0] + product[0][1] + product[0][2] + product[1][0] + product[1][1] + product[1][2] + product[2][0] + product[2][1] + product[2][2];
-        end
+      if (rst) begin 
+        sum <= 0;
+      end
+      else begin 
+        sum <= product[0][0] + product[0][1] + product[0][2] + product[1][0] + product[1][1] + product[1][2] + product[2][0] + product[2][1] + product[2][2];
+      end
     end
 
     
@@ -136,13 +144,13 @@ module convolution #(
         end
         else begin
             if (sum < 0) begin 
-                outputPixel <= 0;
+              outputPixel <= 0;
             end
             else if (sum > 255) begin 
-                outputPixel <= 255;
+              outputPixel <= 255;
             end
             else begin 
-                outputPixel <= sum;
+              outputPixel <= sum;
             end
         end
     end
