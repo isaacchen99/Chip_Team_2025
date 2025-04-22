@@ -61,8 +61,9 @@ module convolution #(
         end
         //case for when the count is less than the buffer size and needs to be filled
       end else begin
+        buffer <= {inputPixel, buffer[ROW_SIZE*2+2:1]};
         if (count < ROW_SIZE*2+2) begin
-          buffer[count] <= inputPixel;
+         // buffer[count] <= inputPixel;
           count <= count + 1;
           $display("Here");
         end
@@ -80,12 +81,14 @@ module convolution #(
           window[0][1] <= buffer[1];
           window[0][0] <= buffer[0];
 
+          //buffer <= {inputPixel, buffer[ROW_SIZE*2+2:1]};
           //shift in one pixle into the buffer (and one pixle out)
-          for (int i = 0; i < ROW_SIZE*2+2; i++) begin
-            buffer[i] <= buffer[i+1];
-          end
+          //for (int i = 0; i < ROW_SIZE*2+2; i++) begin
+          //  buffer[i] <= buffer[i+1];
+          //end
+         // buffer <= {inputPixel, buffer[ROW_SIZE*2+2:1]};
           //set the last buffer to the input pixel
-          buffer[ROW_SIZE*2+2] <= inputPixel;
+          //buffer[ROW_SIZE*2+2] <= inputPixel;
         end 
       end
     end
