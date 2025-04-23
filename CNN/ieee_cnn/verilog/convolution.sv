@@ -16,6 +16,7 @@ module convolution #(
         '{-1, 8, -1}, 
         '{-1, -1, -1}
     };
+    
 
    
     //sliding_window #(WORD_SIZE, KERNEL_DIM, ROW_SIZE) my_window(.*, .window(window));
@@ -40,7 +41,9 @@ module convolution #(
     // ROW_SIZE - ROW_SIZE*2-1 --> middle row of buffer
     // ROW_SIZE*2 - ROW_SIZE*2+2 --> top row of buffer (this is just 3px of data)
     logic [WORD_SIZE-1:0] buffer[ROW_SIZE*2+2:0];
-    
+    logic signed [WORD_SIZE+4:0] product[KERNEL_DIM-1:0][KERNEL_DIM-1:0];
+    logic signed [WORD_SIZE+4:0] sum;
+
     logic [$clog2(ROW_SIZE*2+2):0] count;   
 
     always_ff @(posedge clk) begin
@@ -95,8 +98,6 @@ module convolution #(
 
 
     // convolution: product of element-wise multiplication, then total sum of window
-    logic signed [WORD_SIZE+4:0] product[KERNEL_DIM-1:0][KERNEL_DIM-1:0];
-    logic signed [WORD_SIZE+4:0] sum;
 
     // Convolution operation
     always_ff @(posedge clk) begin
