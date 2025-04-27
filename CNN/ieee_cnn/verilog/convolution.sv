@@ -81,7 +81,7 @@ module convolution #(
         end
         else if (countRunning > ROW_SIZE-3) begin
           //this is the edge case where we need to advance, but not actually convolve
-          count <= countRunning + 1;
+          countRunning <= countRunning + 1;
           valid <= 0; 
         end
         else begin
@@ -124,7 +124,7 @@ module convolution #(
             end
           end
         end else begin
-          if (count < ROW_SIZE*2+2) begin
+          if (valid == 0) begin
             for (int i = 0; i < KERNEL_DIM; i++) begin
               for (int j = 0; j < KERNEL_DIM; j++) begin
                 product[i][j] <= 0;
