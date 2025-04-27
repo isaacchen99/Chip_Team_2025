@@ -43,13 +43,16 @@ module convolution #(
     logic [WORD_SIZE-1:0] buffer[ROW_SIZE*2+2:0];
     logic signed [WORD_SIZE+4:0] product[KERNEL_DIM-1:0][KERNEL_DIM-1:0];
     logic signed [WORD_SIZE+4:0] sum;
-
-    logic [$clog2(ROW_SIZE*2+2):0] count;   
+    logic [1:0] valid;
+    logic [$clog2(ROW_SIZE*2+2):0] countInit;    //size of the buffer
+    logic [$clog2(ROW_SIZE-1):0] countRunning;   //size of ONE row of the buffer
 
     always_ff @(posedge clk) begin
         //if rst then reset both the count and the set the window to all 0
       if (rst) begin
-          count <= 0;
+          valid <= 0;
+          countInit <= 0;
+          countRunning <= 0;
           for (int i = 0; i < KERNEL_DIM; i++) begin
             for (int j = 0; j < KERNEL_DIM; j++) begin
             window[i][j] <= 0;
@@ -65,15 +68,28 @@ module convolution #(
         //case for when the count is less than the buffer size and needs to be filled
       end else begin
         buffer <= {inputPixel, buffer[ROW_SIZE*2+2:1]};
-        if (count < ROW_SIZE*2+2) begin
+        if (countInit < ROW_SIZE*2+2) begin
          // buffer[count] <= inputPixel;
-          count <= count + 1;
-          $display("Here");
+          countInit <= countInit + 1;
+          valid <= 0; 
+          //$display("Here");
         end
+        else if (countRunning == ROW_SIZE-1) begin
+          //Restart the countRunning as we have moved to a new "line"
+          countRunning <= 0;
+          valid <= 1; 
+        end
+        else if (countRunning > ROW_SIZE-3) begin
+          //this is the edge case where we need to advance, but not actually convolve
+          count <= countRunning + 1;
+          valid <= 0; 
+        end
+        else begin
         //normal case when buffer is filled and the window is not at an edge 
         //we will need to add a case for when the window is at the theoretical edge and 
         //extra buffer shift ins need to occur without being read
-        else begin
+          valid <= 1;
+          countRunning <= countRunning + 1; // indicate that we have moved one pixel forward in running count
           window[2][2] <= buffer[ROW_SIZE*2+2];
           window[2][1] <= buffer[ROW_SIZE*2+1];
           window[2][0] <= buffer[ROW_SIZE*2];
@@ -107,8 +123,7 @@ module convolution #(
               product[i][j] <= 0;
             end
           end
-        end
-        else begin
+        end else begin
           if (count < ROW_SIZE*2+2) begin
             for (int i = 0; i < KERNEL_DIM; i++) begin
               for (int j = 0; j < KERNEL_DIM; j++) begin
