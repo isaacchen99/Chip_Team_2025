@@ -40,6 +40,7 @@ if __name__ == '__main__':
     ], dtype = np.float32)
 
     sharpened_img = convolve(img, sharpen_kernel)
+    convolved_img = convolve(img, laplacian_kernel)
     edge_detect_img = convolve(sharpened_img, laplacian_kernel)
 
     print(f"Height: {img.shape[0]} Width: {img.shape[1]}")
@@ -69,5 +70,6 @@ if (output_hex):
     write_hex_file("image_data.hex", img)
     write_hex_file("sharpened_gold.hex", sharpened_img)
     write_hex_file("edge_gold.hex", edge_detect_img)
+    write_hex_file("convolution_py.hex", convolved_img)
 
 # then can use $readmemh in verilog tesbench to load the hex arrays 
