@@ -33,8 +33,18 @@ module convolution_tb();
 
         #10 
         rst = 0;
+        // This would assume a top left to bottom right scan of the image
+        //for (i = 0; i < IMAGE_HEIGHT; i = i + 1) begin
+        //    for (j = 0; j < IMAGE_WIDTH; j = j + 1) begin
+        //        @(posedge clk); 
+        //        inputPixel = input_image[i][j];
+        //        $display("Sent to DUT: Row %d, Col %d, Pixel: %h", i, j, inputPixel);
+        //        @(posedge clk);     // add this delay to ensure pixel is stable
+        //    end
+        //end
 
-        for (i = 0; i < IMAGE_HEIGHT; i = i + 1) begin
+        //scan written from bottom left to top right
+        for (i = IMAGE_HEIGHT-1; i >= 0; i = i - 1) begin
             for (j = 0; j < IMAGE_WIDTH; j = j + 1) begin
                 @(posedge clk); 
                 inputPixel = input_image[i][j];
@@ -47,7 +57,14 @@ module convolution_tb();
         repeat(50) @(posedge clk);  
 
         file = $fopen("output_verilog.hex", "w");
-        for (i = 0; i < IMAGE_HEIGHT; i = i + 1) begin
+        //for (i = 0; i < IMAGE_HEIGHT; i = i + 1) begin
+        //    for (j = 0; j < IMAGE_WIDTH; j = j + 1) begin
+        //        @(posedge clk);
+        //        output_image[i][j] = outputPixel;
+        //        $fdisplay(file, "%h", output_image[i][j]);
+        //    end
+        //end
+        for (i = IMAGE_HEIGHT - 1; i >= 0; i = i - 1) begin
             for (j = 0; j < IMAGE_WIDTH; j = j + 1) begin
                 @(posedge clk);
                 output_image[i][j] = outputPixel;
