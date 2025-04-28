@@ -11,7 +11,7 @@ module convolution #(
     // The kernel is a 3x3 matrix with signed values
     // Laplacian kernel used for edge detection
     //localparam KERNEL_DIM = 3; *made global
-    localparam signed int KERNEL[KERNEL_DIM][KERNEL_DIM] = '{
+    localparam int signed KERNEL[KERNEL_DIM][KERNEL_DIM] = '{
         '{-1, -1, -1},
         '{-1, 8, -1}, 
         '{-1, -1, -1}
