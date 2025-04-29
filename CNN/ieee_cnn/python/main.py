@@ -18,7 +18,8 @@ def write_hex_file(filename, data):
 
 
 if __name__ == '__main__':
-    image_path = 'peace_sign.jpg'
+    #image_path = 'peace_sign.jpg'
+    image_path = 'me-at-lake-tahoe.jpg'
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
     if img is None:

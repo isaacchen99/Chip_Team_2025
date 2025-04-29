@@ -31,7 +31,7 @@ module convolution_tb();
         clk = 0;
         rst = 1;
 
-        $readmemh("image_data.hex", input_image);
+        $readmemh("image_data_2.hex", input_image);
 
         #10 
         rst = 0;
