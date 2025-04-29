@@ -7,6 +7,7 @@ module convolution_tb();
     logic clk, rst;
     logic [WORD_SIZE-1:0] inputPixel;
     logic [WORD_SIZE-1:0] outputPixel;
+    logic [1:0] valid;
     
     logic [WORD_SIZE-1:0] input_image [0:IMAGE_HEIGHT-1][0:IMAGE_WIDTH-1];
     logic [WORD_SIZE-1:0] output_image [0:IMAGE_HEIGHT-1][0:IMAGE_WIDTH-1];
