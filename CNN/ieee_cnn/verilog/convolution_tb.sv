@@ -67,8 +67,7 @@ module convolution_tb();
         for (i = IMAGE_HEIGHT - 1; i >= 0; i = i - 1) begin
             for (j = 0; j < IMAGE_WIDTH; j = j + 1) begin
                 @(posedge clk);
-                output_image[i][j] = outputPixel;
-                $fwrite(file, "%h", output_image[i][j]);
+                $fwrite(file, "%h", outputPixel);
             end
             $fdisplay(file, "");
         end
