@@ -53,7 +53,7 @@ module convolution_tb();
                 $display("Sent to DUT: Row %d, Col %d, Pixel: %h", i, j, inputPixel);
                 //@(posedge clk);     // add this delay to ensure pixel is stable
                 if (valid == 1) begin
-                display("Input: %h, Output: %h", inputPixel, outputPixel);
+                $fdisplay("Input: %h, Output: %h", inputPixel, outputPixel);
                 $fwrite(file, "%h", outputPixel);
                 end
             end
