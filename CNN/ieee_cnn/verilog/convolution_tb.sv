@@ -17,7 +17,8 @@ module convolution_tb();
         .clk(clk),
         .rst(rst),
         .inputPixel(inputPixel),
-        .outputPixel(outputPixel)
+        .outputPixel(outputPixel),
+        .valid(valid)
     );
 
     always #5 clk = ~clk;
@@ -49,8 +50,13 @@ module convolution_tb();
                 @(posedge clk); 
                 inputPixel = input_image[i][j];
                 $display("Sent to DUT: Row %d, Col %d, Pixel: %h", i, j, inputPixel);
-                @(posedge clk);     // add this delay to ensure pixel is stable
+                //@(posedge clk);     // add this delay to ensure pixel is stable
+                if (valid == 1) begin
+                display("Input: %h, Output: %h", inputPixel, outputPixel);
+                $fwrite(file, "%h", outputPixel);
+                end
             end
+            $fdisplay(file, "");
         end
 
         // delay
@@ -64,14 +70,14 @@ module convolution_tb();
         //        $fdisplay(file, "%h", output_image[i][j]);
         //    end
         //end
-        for (i = IMAGE_HEIGHT - 1; i >= 0; i = i - 1) begin
-            for (j = 0; j < IMAGE_WIDTH; j = j + 1) begin
-                @(posedge clk);
-                $display("Input: %h, Output: %h", inputPixel, outputPixel);
-                $fwrite(file, "%h", outputPixel);
-            end
-            $fdisplay(file, "");
-        end
+        //for (i = IMAGE_HEIGHT - 1; i >= 0; i = i - 1) begin
+        //    for (j = 0; j < IMAGE_WIDTH; j = j + 1) begin
+        //        @(posedge clk);
+        //        $display("Input: %h, Output: %h", inputPixel, outputPixel);
+        //        $fwrite(file, "%h", outputPixel);
+        //    end
+        //    $fdisplay(file, "");
+        //end
         $fclose(file);
 
         $finish;

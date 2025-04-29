@@ -5,7 +5,8 @@ module convolution #(
 )(
     input logic clk, rst,
     input logic [WORD_SIZE-1:0] inputPixel,
-    output logic [WORD_SIZE-1:0] outputPixel
+    output logic [WORD_SIZE-1:0] outputPixel,
+    output logic [1:0] valid
 );
 
     // The kernel is a 3x3 matrix with signed values
@@ -43,7 +44,7 @@ module convolution #(
     logic [WORD_SIZE-1:0] buffer[ROW_SIZE*2+2:0];
     logic signed [WORD_SIZE+4:0] product[KERNEL_DIM-1:0][KERNEL_DIM-1:0];
     logic signed [WORD_SIZE+4:0] sum;
-    logic [1:0] valid;
+    //logic [1:0] valid;
     logic [$clog2(ROW_SIZE*2+2):0] countInit;    //size of the buffer
     logic [$clog2(ROW_SIZE-1):0] countRunning;   //size of ONE row of the buffer
 
