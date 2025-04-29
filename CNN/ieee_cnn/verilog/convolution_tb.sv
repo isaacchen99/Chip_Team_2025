@@ -22,7 +22,7 @@ module convolution_tb();
 
     always #5 clk = ~clk;
     always @(posedge clk) begin
-        $display("Input: %h, Output: %h", inputPixel, outputPixel);
+    //  $display("Input: %h, Output: %h", inputPixel, outputPixel);
     end
 
     initial begin
@@ -67,6 +67,7 @@ module convolution_tb();
         for (i = IMAGE_HEIGHT - 1; i >= 0; i = i - 1) begin
             for (j = 0; j < IMAGE_WIDTH; j = j + 1) begin
                 @(posedge clk);
+                $display("Input: %h, Output: %h", inputPixel, outputPixel);
                 $fwrite(file, "%h", outputPixel);
             end
             $fdisplay(file, "");
