@@ -46,6 +46,8 @@ module convolution_tb();
         //end
 
         //scan written from bottom left to top right
+
+        file = $fopen("output_verilog.hex", "w");
         for (i = IMAGE_HEIGHT-1; i >= 0; i = i - 1) begin
             for (j = 0; j < IMAGE_WIDTH; j = j + 1) begin
                 @(posedge clk); 
@@ -63,7 +65,6 @@ module convolution_tb();
         // delay
         repeat(50) @(posedge clk);  
 
-        file = $fopen("output_verilog.hex", "w");
         //for (i = 0; i < IMAGE_HEIGHT; i = i + 1) begin
         //    for (j = 0; j < IMAGE_WIDTH; j = j + 1) begin
         //        @(posedge clk);
