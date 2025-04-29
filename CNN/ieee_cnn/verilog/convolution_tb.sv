@@ -56,10 +56,10 @@ module convolution_tb();
                 //@(posedge clk);     // add this delay to ensure pixel is stable
                 if (valid == 1) begin
                 $display("Input: %h, Output: %h", inputPixel, outputPixel);
-                $fwrite(file, "%h", outputPixel);
+                $fdisplay(file, "%h", outputPixel);
                 end
             end
-            $fdisplay(file, "");
+            //$fdisplay(file, "");
         end
 
         // delay
