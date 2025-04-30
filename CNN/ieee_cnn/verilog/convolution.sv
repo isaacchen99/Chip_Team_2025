@@ -37,6 +37,9 @@ module convolution #(
 
     //Sliding Window is set to be the size of the kernel
     logic [WORD_SIZE-1:0] window[KERNEL_DIM-1:0][KERNEL_DIM-1:0];
+    logic [1:0] validInternal;
+    logic [1:0] validInternal1;
+    logic [1:0] validInternal2;
     //Buffer is a 1D array indexted with the following scheme
     // 0 - ROW_SIZE-1 --> bottom row of buffer
     // ROW_SIZE - ROW_SIZE*2-1 --> middle row of buffer
@@ -51,7 +54,7 @@ module convolution #(
     always_ff @(posedge clk) begin
         //if rst then reset both the count and the set the window to all 0
       if (rst) begin
-          valid <= 0;
+          validInternal <= 0;
           countInit <= 0;
           countRunning <= 0;
         //  for (int i = 0; i < KERNEL_DIM; i++) begin
@@ -72,24 +75,24 @@ module convolution #(
         if (countInit < ROW_SIZE*2+3) begin
          // buffer[count] <= inputPixel;
           countInit <= countInit + 1;
-          valid <= 0; 
+          validInternal <= 0; 
           //$display("Here");
         end
         else if (countRunning == ROW_SIZE-1) begin
           //Restart the countRunning as we have moved to a new "line"
           countRunning <= 0;
-          valid <= 0; // I changed this to a zero from a 1. Might still be a one 
+          validInternal <= 0; // I changed this to a zero from a 1. Might still be a one 
         end
-       // else if (countRunning > ROW_SIZE-3) begin
-       //   //this is the edge case where we need to advance, but not actually convolve
-       //   countRunning <= countRunning + 1;
-       //   valid <= 0; 
-      //  end
+        else if (countRunning > ROW_SIZE-3) begin
+          //this is the edge case where we need to advance, but not actually convolve
+          countRunning <= countRunning + 1;
+          validInternal <= 0; 
+        end
         else begin
         //normal case when buffer is filled and the window is not at an edge 
         //we will need to add a case for when the window is at the theoretical edge and 
         //extra buffer shift ins need to occur without being read
-          valid <= 1;
+          validInternal <= 1;
           countRunning <= countRunning + 1; // indicate that we have moved one pixel forward in running count
           //buffer <= {inputPixel, buffer[ROW_SIZE*2+2:1]};
           //shift in one pixle into the buffer (and one pixle out)
@@ -123,6 +126,7 @@ module convolution #(
         if (rst) begin
           for (int i = 0; i < KERNEL_DIM; i++) begin
             for (int j = 0; j < KERNEL_DIM; j++) begin
+              validInternal1 <= validInternal
               product[i][j] <= 0;
             end
           end
@@ -130,6 +134,7 @@ module convolution #(
           if (valid == 0) begin
             for (int i = 0; i < KERNEL_DIM; i++) begin
               for (int j = 0; j < KERNEL_DIM; j++) begin
+                validInternal1 <= validInternal;
                 product[i][j] <= 0;
               end
             end
@@ -137,6 +142,7 @@ module convolution #(
             //convolution  occurs here
             for (int i = 0; i < KERNEL_DIM; i++) begin
               for (int j = 0; j < KERNEL_DIM; j++) begin
+                validInternal1 <= validInternal
                 product[i][j] <= window[i][j] * KERNEL[i][j];
               end
             end
@@ -147,9 +153,11 @@ module convolution #(
   
     always_ff @(posedge clk) begin
       if (rst) begin 
+        validInternal2 <= validInternal1;
         sum <= 0;
       end
       else begin 
+        validInternal2 <= validInternal1;
         sum <= product[0][0] + product[0][1] + product[0][2] + product[1][0] + product[1][1] + product[1][2] + product[2][0] + product[2][1] + product[2][2];
       end
     end
@@ -162,16 +170,20 @@ module convolution #(
     // pixel is a valid 8-bit value.
     always_ff @(posedge clk) begin
         if (rst) begin 
+            valid <= validInternal2;
             outputPixel <= 0;
         end
         else begin
             if (sum < 0) begin 
+              valid <= validInternal2;
               outputPixel <= 0;
             end
             else if (sum > 255) begin 
+              valid <= validInternal2;
               outputPixel <= 255;
             end
-            else begin 
+            else begin
+              valid <= validInternal2;
               outputPixel <= sum;
             end
         end
