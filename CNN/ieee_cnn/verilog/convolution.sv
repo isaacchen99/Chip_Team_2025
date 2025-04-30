@@ -126,7 +126,7 @@ module convolution #(
         if (rst) begin
           for (int i = 0; i < KERNEL_DIM; i++) begin
             for (int j = 0; j < KERNEL_DIM; j++) begin
-              validInternal1 <= validInternal
+              validInternal1 <= validInternal;
               product[i][j] <= 0;
             end
           end
@@ -142,7 +142,7 @@ module convolution #(
             //convolution  occurs here
             for (int i = 0; i < KERNEL_DIM; i++) begin
               for (int j = 0; j < KERNEL_DIM; j++) begin
-                validInternal1 <= validInternal
+                validInternal1 <= validInternal;
                 product[i][j] <= window[i][j] * KERNEL[i][j];
               end
             end
