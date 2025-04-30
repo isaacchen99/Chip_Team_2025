@@ -69,7 +69,7 @@ module convolution #(
         //case for when the count is less than the buffer size and needs to be filled
       end else begin
         buffer <= {inputPixel, buffer[ROW_SIZE*2+2:1]};
-        if (countInit < ROW_SIZE*2+2) begin
+        if (countInit < ROW_SIZE*2+3) begin
          // buffer[count] <= inputPixel;
           countInit <= countInit + 1;
           valid <= 0; 
@@ -91,16 +91,6 @@ module convolution #(
         //extra buffer shift ins need to occur without being read
           valid <= 1;
           countRunning <= countRunning + 1; // indicate that we have moved one pixel forward in running count
-          window[2][2] <= buffer[ROW_SIZE*2+2];
-          window[2][1] <= buffer[ROW_SIZE*2+1];
-          window[2][0] <= buffer[ROW_SIZE*2];
-          window[1][2] <= buffer[ROW_SIZE+2];
-          window[1][1] <= buffer[ROW_SIZE+1];
-          window[1][0] <= buffer[ROW_SIZE];
-          window[0][2] <= buffer[2];
-          window[0][1] <= buffer[1];
-          window[0][0] <= buffer[0];
-
           //buffer <= {inputPixel, buffer[ROW_SIZE*2+2:1]};
           //shift in one pixle into the buffer (and one pixle out)
           //for (int i = 0; i < ROW_SIZE*2+2; i++) begin
@@ -111,6 +101,18 @@ module convolution #(
           //buffer[ROW_SIZE*2+2] <= inputPixel;
         end 
       end
+    end
+
+    always_comb begin
+          window[2][2] = buffer[ROW_SIZE*2+2];
+          window[2][1] = buffer[ROW_SIZE*2+1];
+          window[2][0] = buffer[ROW_SIZE*2];
+          window[1][2] = buffer[ROW_SIZE+2];
+          window[1][1] = buffer[ROW_SIZE+1];
+          window[1][0] = buffer[ROW_SIZE];
+          window[0][2] = buffer[2];
+          window[0][1] = buffer[1];
+          window[0][0] = buffer[0];
     end
 
 
