@@ -78,7 +78,7 @@ module convolution #(
           validInternal <= 0; 
           //$display("Here");
         end
-        else if (countRunning == ROW_SIZE-1) begin
+        else if (countRunning == ROW_SIZE) begin
           //Restart the countRunning as we have moved to a new "line"
           countRunning <= 0;
           validInternal <= 0; // I changed this to a zero from a 1. Might still be a one 
