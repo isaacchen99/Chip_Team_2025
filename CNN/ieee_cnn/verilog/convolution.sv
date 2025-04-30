@@ -75,17 +75,16 @@ module convolution #(
           valid <= 0; 
           //$display("Here");
         end
-        else if (countRunning > ROW_SIZE-1) begin
+        else if (countRunning == ROW_SIZE-1) begin
           //Restart the countRunning as we have moved to a new "line"
-          countRunning <= countRunning + 1;
+          countRunning <= 0;
           valid <= 0; // I changed this to a zero from a 1. Might still be a one 
         end
-        else if (countRunning == ROW_SIZE-3) begin
-          //this is the edge case where we need to advance, but not actually convolve
-          //countRunning <= countRunning + 1;
-          countRunning <= 0;
-          valid <= 0; 
-        end
+       // else if (countRunning > ROW_SIZE-3) begin
+       //   //this is the edge case where we need to advance, but not actually convolve
+       //   countRunning <= countRunning + 1;
+       //   valid <= 0; 
+      //  end
         else begin
         //normal case when buffer is filled and the window is not at an edge 
         //we will need to add a case for when the window is at the theoretical edge and 
