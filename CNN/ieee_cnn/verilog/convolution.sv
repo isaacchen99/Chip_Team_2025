@@ -54,18 +54,18 @@ module convolution #(
           valid <= 0;
           countInit <= 0;
           countRunning <= 0;
-          for (int i = 0; i < KERNEL_DIM; i++) begin
-            for (int j = 0; j < KERNEL_DIM; j++) begin
-            window[i][j] <= 0;
-          end
+        //  for (int i = 0; i < KERNEL_DIM; i++) begin
+       //     for (int j = 0; j < KERNEL_DIM; j++) begin
+       //     window[i][j] <= 0;
+     //     end
 
-          for (int i = 0; i < KERNEL_DIM; i++) begin
-            for (int j = 0; j < KERNEL_DIM; j++) begin
-              product[i][j] <= 0;
-            end
-          end
+      //    for (int i = 0; i < KERNEL_DIM; i++) begin
+      //      for (int j = 0; j < KERNEL_DIM; j++) begin
+      //        product[i][j] <= 0;
+      //      end
+      //    end
 
-        end
+       // end
         //case for when the count is less than the buffer size and needs to be filled
       end else begin
         buffer <= {inputPixel, buffer[ROW_SIZE*2+2:1]};
