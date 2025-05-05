@@ -18,8 +18,8 @@ def write_hex_file(filename, data):
 
 
 if __name__ == '__main__':
-    image_path = 'peace_sign.jpg'
-    #image_path = 'me-at-lake-tahoe.jpg'
+    #image_path = 'peace_sign.jpg'
+    image_path = 'input_image.png'
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
     if img is None:
@@ -60,7 +60,7 @@ if __name__ == '__main__':
         plt.axis("off")
 
         plt.subplot(1, 3 ,3)
-        plt.imshow(edge_detect_img, cmap='gray')
+        plt.imshow(convolved_img, cmap='gray')
         plt.title("Edge-Detect Image")
         plt.axis("off")
 

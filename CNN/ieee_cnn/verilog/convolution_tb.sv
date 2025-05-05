@@ -61,6 +61,15 @@ module convolution_tb();
             end
             //$fdisplay(file, "");
         end
+        for (i = 0; i < 6; i = i + 1) begin
+            @(posedge clk);
+            if (valid == 1) begin
+                $display("Output: %h", outputPixel);
+                $fdisplay(file, "%h", outputPixel);
+            end else begin
+                $display("NOVALID");
+            end
+        end
 
         // delay
         repeat(50) @(posedge clk);  
