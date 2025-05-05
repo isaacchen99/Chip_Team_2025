@@ -55,6 +55,9 @@ module convolution #(
         //if rst then reset both the count and the set the window to all 0
       if (rst) begin
           validInternal <= 0;
+          validInternal1 <= 0;
+          validInternal2 <= 0;
+          valid <= 0;
           countInit <= 0;
           countRunning <= 0;
         //  for (int i = 0; i < KERNEL_DIM; i++) begin
@@ -71,7 +74,6 @@ module convolution #(
        // end
         //case for when the count is less than the buffer size and needs to be filled
       end else begin
-        buffer <= {inputPixel, buffer[ROW_SIZE*2+2:1]};
         if (countInit < ROW_SIZE*2+3) begin
          // buffer[count] <= inputPixel;
           countInit <= countInit + 1;
@@ -81,12 +83,11 @@ module convolution #(
         else if (countRunning == ROW_SIZE) begin
           //Restart the countRunning as we have moved to a new "line"
           countRunning <= 0;
-          validInternal <= 1; // I changed this to a zero from a 1. Might still be a one 
+          validInternal <= 0; // I changed this to a zero from a 1. Might still be a one 
         end
-        else if (countRunning > ROW_SIZE-3) begin
-          //this is the edge case where we need to advance, but not actually convolve
+        else if (countRunning == 0) begin 
           countRunning <= countRunning + 1;
-          validInternal <= 0; 
+          validInternal <= 0;           
         end
         else begin
         //normal case when buffer is filled and the window is not at an edge 
@@ -104,6 +105,7 @@ module convolution #(
           //buffer[ROW_SIZE*2+2] <= inputPixel;
         end 
       end
+    buffer <= {inputPixel, buffer[ROW_SIZE*2+2:1]};
     end
 
     always_comb begin
@@ -131,7 +133,7 @@ module convolution #(
             end
           end
         end else begin
-          if (valid == 0) begin
+          if (validInternal == 0) begin
             for (int i = 0; i < KERNEL_DIM; i++) begin
               for (int j = 0; j < KERNEL_DIM; j++) begin
                 validInternal1 <= validInternal;
