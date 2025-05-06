@@ -171,7 +171,7 @@ end
 
 	  GET_DATA: begin
 	      //if (bram_data_ready) begin
-		  $display("BRAM DATA READY");
+		  //$display("BRAM DATA READY");
 		  
 		  mlp_state_next = COMPUTE_LAYER;
 		  layer_result = input_data; // new
@@ -205,7 +205,7 @@ end
 
 		  intermediate_result_next  = layer_output;
 		   mlp_state_next = FINISH_LAYER;
-		   // layer_result is next layer_input- in this case next layer input should be columns of the layer_input that are not done yet
+		   
 		   //layer_result = layer_input[rows:total_rows-1]; // need to use a loop to do this
 		   for (int i = 0; i < MAX_COL_ROWS; i++) begin
 		      if (i < total_rows-rows) begin
@@ -257,8 +257,8 @@ end
 	     //rows = MAX_WEIGHTS_SIZE / all_cols_sizes[cur_layer]; // should be integer
 	     rows_left = all_rows_sizes[cur_layer] - (MAX_WEIGHTS_SIZE / all_cols_sizes[cur_layer]);
 	     total_rows = all_rows_sizes[cur_layer];
-	     rows = rows_left; //all_rows_sizes[cur_layer] - (MAX_WEIGHTS_SIZE / all_cols_sizes[cur_layer]); // remaining rows
-	     //layer_result = {intermediate_result[0:total_rows-rows_left-1], layer_output[0:rows_left-1]}; // formatting of this could be wrong
+	     rows = rows_left; // remaining rows
+	     //layer_result = {intermediate_result[0:total_rows-rows_left-1], layer_output[0:rows_left-1]}; 
 
 	      for (int i = 0; i < MAX_COL_ROWS; i++) begin
 		      if (i < all_rows_sizes[cur_layer]) begin
@@ -279,11 +279,8 @@ end
 	    // $display("layer_result in FINISH_LAYER state: %p, ",layer_result);
 	     
 	     
-
-	     // determine what layer_output should be, also need to set mlp_output_next if last layer
-		    //setting rd_addr_next etc
 	      if (cur_layer < NUM_LAYERS-1) begin
-                //mlp_state_next = COMPUTE_LAYER;
+
                 read_en_next = 1;
                 rd_addr_next = rd_addr + 1;
 
