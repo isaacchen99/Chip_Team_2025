@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module tb_max_pooling;
+module max_pooling_tb;
 
     parameter ADDR_WIDTH = 4;
     parameter DATA_WIDTH = 8;
