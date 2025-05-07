@@ -2,8 +2,8 @@ module RAM_param #(
     parameter int ADDR_WIDTH = 4,           // address width
     parameter int DATA_WIDTH = 8            // data width
 ) (
-    input  logic            clk,
-    input  logic            rst,
+    input  logic                     clk,
+    input  logic                     rst,
 
     // Write port
     input  logic                     wr_en,
