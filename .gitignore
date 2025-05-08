@@ -1,2 +1,3 @@
 .DS_Store
-
+CNN_Model/Python Model/asl_model_quantized_float16.tflite
+CNN_Model/Python_Model/data/model_dump.json
