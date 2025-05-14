@@ -1,0 +1,1 @@
+-distcompmode -link    -encrypt       -top work.edge_detect_top -osyn /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/synwork/sobel_comp.srs /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/synwork//distcomp/distcomp0/distcomp0.srs    

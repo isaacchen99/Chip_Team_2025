@@ -1,0 +1,920 @@
+# Wed Feb  5 22:44:03 2025
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R) Premier
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: batman.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 126625
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+Synopsys Intel FPGA Technology Mapper, Version maprc, Build 4745R, Built Nov 27 2018 21:14:52
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@N: MF236 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/gray_scale.sv":18:49:19:74|Generating a type div divider 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+Encoding state machine out_ff_state[1:0] (in view: work.manage_fifo_8s_1s_1s(verilog))
+original code -> new code
+   01 -> 0
+   10 -> 1
+@N: MO225 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/manage_fifo.sv":63:2:63:10|There are no possible illegal states for state machine out_ff_state[1:0] (in view: work.manage_fifo_8s_1s_1s(verilog)); safe FSM implementation is not required.
+@N: MO231 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Found counter in view:work.sobel_8s_720s_540s_3s(verilog) instance shift_reg_1_addr_cntr_reg[9:0] 
+@N: MO231 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Found counter in view:work.sobel_8s_720s_540s_3s(verilog) instance shift_reg_addr_cntr_reg[9:0] 
+Encoding state machine sobel_state[3:0] (in view: work.sobel_8s_720s_540s_3s(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   011 -> 10
+   100 -> 11
+@N: MO225 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|There are no possible illegal states for state machine sobel_state[3:0] (in view: work.sobel_8s_720s_540s_3s(verilog)); safe FSM implementation is not required.
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 118MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 119MB)
+
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[0] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[1] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[2] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[3] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[4] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[5] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[6] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[7] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[8] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[9] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[10] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[11] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[12] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[13] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[14] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[15] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[16] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[17] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[18] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[19] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[20] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[21] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[22] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance in_to_gray_fifo.dout[23] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[0] (in view: work.fifo_8s_4s_3s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[1] (in view: work.fifo_8s_4s_3s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[2] (in view: work.fifo_8s_4s_3s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[3] (in view: work.fifo_8s_4s_3s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[4] (in view: work.fifo_8s_4s_3s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[5] (in view: work.fifo_8s_4s_3s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[6] (in view: work.fifo_8s_4s_3s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[7] (in view: work.fifo_8s_4s_3s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg[0] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg[1] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg[2] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg[3] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg[4] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg[5] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg[6] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg[7] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg_1[0] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg_1[1] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg_1[2] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg_1[3] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg_1[4] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg_1[5] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg_1[6] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg_1[7] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg[0] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg[1] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg[2] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg[3] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg[4] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg[5] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg[6] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg[7] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg_1[0] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg_1[1] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg_1[2] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg_1[3] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg_1[4] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg_1[5] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg_1[6] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg_1[7] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[0] (in view: work.fifo_8s_4s_3s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Boundary register dout[0] (in view: work.fifo_8s_4s_3s_0(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[1] (in view: work.fifo_8s_4s_3s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Boundary register dout[1] (in view: work.fifo_8s_4s_3s_0(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[2] (in view: work.fifo_8s_4s_3s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Boundary register dout[2] (in view: work.fifo_8s_4s_3s_0(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[3] (in view: work.fifo_8s_4s_3s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Boundary register dout[3] (in view: work.fifo_8s_4s_3s_0(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[4] (in view: work.fifo_8s_4s_3s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Boundary register dout[4] (in view: work.fifo_8s_4s_3s_0(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[5] (in view: work.fifo_8s_4s_3s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Boundary register dout[5] (in view: work.fifo_8s_4s_3s_0(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[6] (in view: work.fifo_8s_4s_3s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Boundary register dout[6] (in view: work.fifo_8s_4s_3s_0(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[7] (in view: work.fifo_8s_4s_3s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Boundary register dout[7] (in view: work.fifo_8s_4s_3s_0(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@W: FX107 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|RAM shift_reg_0[7:0] (in view: work.sobel_8s_720s_540s_3s(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|RAM shift_reg_2[7:0] (in view: work.sobel_8s_720s_540s_3s(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_1_reg[7:0] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance shift_reg_reg[7:0] (in view: work.sobel_8s_720s_540s_3s(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 119MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 119MB)
+
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance sobel_unit.vertical_product_ff\[2\][8:0] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance sobel_unit.vertical_product_ff\[0\][8:0] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance sobel_unit.horizontal_product_ff\[2\][8:0] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance sobel_unit.horizontal_product_ff\[0\][8:0] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@W: BN132 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance sobel_unit.horizontal_product_ff[1][9] because it is equivalent to instance sobel_unit.horizontal_product_ff[1][10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance sobel_unit.vertical_product_ff[1][9] because it is equivalent to instance sobel_unit.vertical_product_ff[1][10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance sobel_unit.vertical_product_ff[1][0] because it is equivalent to instance sobel_unit.horizontal_product_ff[1][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance sobel_unit.vertical_product_ff\[1\][9:0] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Removing sequential instance sobel_unit.horizontal_product_ff\[1\][9:0] (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":50:4:50:12|Boundary register sobel_out_fifo.dout_0[0] (in view: work.edge_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: MF135 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":35:4:35:12|RAM sobel_out_fifo.fifo_buf[7:0] (in view: work.edge_detect_top(verilog)) is 4 words by 8 bits.
+@W: FA365 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":35:4:35:12|Ram sobel_out_fifo.fifo_buf[7:0] will be mapped into logic and will consume around 32 register resources.
+@N: MF135 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":35:4:35:12|RAM gray_in_fifo.fifo_buf[7:0] (in view: work.edge_detect_top(verilog)) is 4 words by 8 bits.
+@W: FA365 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":35:4:35:12|Ram gray_in_fifo.fifo_buf[7:0] will be mapped into logic and will consume around 32 register resources.
+@N: MF135 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":35:4:35:12|RAM in_to_gray_fifo.fifo_buf[23:0] (in view: work.edge_detect_top(verilog)) is 4 words by 24 bits.
+@W: FA365 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":35:4:35:12|Ram in_to_gray_fifo.fifo_buf[23:0] will be mapped into logic and will consume around 96 register resources.
+@W: FA197 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Failed to provide a timing model for LPM altsyncram {Warning code: can't read "indata_reg_b": no such variable} 
+@W: FA197 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Failed to provide a timing model for LPM altsyncram {Warning code: can't read "indata_reg_b": no such variable} 
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 124MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 124MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 124MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 124MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 124MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 124MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 124MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 124MB)
+
+@N: MF794 |RAM fifo_buf[7:0] required 160 registers during mapping 
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 124MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 137MB peak: 141MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 141MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 143MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 406 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+============================== Non-Gated/Non-Generated Clocks ==============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance     
+--------------------------------------------------------------------------------------------
+@K:CKID0001       clk_in              cycloneive_io_ibuf     406        sobel_out_fifo.empty
+============================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 127MB peak: 143MB)
+
+Writing Analyst data base /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/synwork/sobel_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 137MB peak: 143MB)
+
+Writing Verilog Netlist and constraint files
+Writing .vqm output for Quartus
+
+Writing scf file... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 139MB peak: 143MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+Writing FDC file /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/sobel_synplify.fdc
+
+Finished Writing Verilog Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 137MB peak: 143MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 138MB peak: 143MB)
+
+@W: MT246 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Blackbox synplicity_altsyncram_RAM_RW_0 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Blackbox synplicity_altsyncram_RAM_RW is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock edge_detect_top|clk with period 8.97ns. Please declare a user-defined clock on port clk.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Feb  5 22:44:06 2025
+#
+
+
+Top view:               edge_detect_top
+Requested Frequency:    111.4 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -2.155
+
+                        Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock          Frequency     Frequency     Period        Period        Slack      Type         Group                
+-----------------------------------------------------------------------------------------------------------------------------
+edge_detect_top|clk     111.4 MHz     89.8 MHz      8.975         11.130        -2.155     inferred     Autoconstr_clkgroup_0
+System                  1.0 MHz       1.0 MHz       1000.000      992.572       7.428      system       system_clkgroup      
+=============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                    |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------
+Starting             Ending               |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------
+System               edge_detect_top|clk  |  8.975       7.428   |  No paths    -      |  No paths    -      |  No paths    -    
+edge_detect_top|clk  System               |  8.975       4.123   |  No paths    -      |  No paths    -      |  No paths    -    
+edge_detect_top|clk  edge_detect_top|clk  |  8.975       -2.155  |  No paths    -      |  No paths    -      |  No paths    -    
+=================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: edge_detect_top|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                               Starting                                                                       Arrival           
+Instance                                       Reference               Type       Pin     Net                                 Time        Slack 
+                                               Clock                                                                                            
+------------------------------------------------------------------------------------------------------------------------------------------------
+sobel_unit.vertical_product_ff\[2\]_0[0]       edge_detect_top|clk     dffeas     q       vertical_product_ff\[2\]_0[0]       0.845       -2.155
+sobel_unit.horizontal_product_ff\[2\]_0[0]     edge_detect_top|clk     dffeas     q       horizontal_product_ff\[2\]_0[0]     0.845       -2.144
+sobel_unit.vertical_product_ff\[1\]_0[0]       edge_detect_top|clk     dffeas     q       vertical_product_ff\[1\]_0[0]       0.845       -2.144
+sobel_unit.horizontal_product_ff\[1\]_0[0]     edge_detect_top|clk     dffeas     q       horizontal_product_ff\[1\]_0[0]     0.845       -2.133
+sobel_unit.vertical_product_ff\[2\]_0[1]       edge_detect_top|clk     dffeas     q       vertical_product_ff\[2\]_0[1]       0.845       -2.089
+sobel_unit.horizontal_product_ff\[2\]_0[1]     edge_detect_top|clk     dffeas     q       horizontal_product_ff\[2\]_0[1]     0.845       -2.078
+sobel_unit.vertical_product_ff\[1\]_0[1]       edge_detect_top|clk     dffeas     q       vertical_product_ff\[1\]_0[1]       0.845       -2.078
+sobel_unit.horizontal_product_ff\[1\]_0[1]     edge_detect_top|clk     dffeas     q       horizontal_product_ff\[1\]_0[1]     0.845       -2.067
+sobel_unit.vertical_product_ff\[2\]_0[2]       edge_detect_top|clk     dffeas     q       vertical_product_ff\[2\]_0[2]       0.845       -2.023
+sobel_unit.vertical_product_ff\[1\]_0[2]       edge_detect_top|clk     dffeas     q       vertical_product_ff\[1\]_0[2]       0.845       -2.017
+================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                             Starting                                                                Required           
+Instance                                                     Reference               Type       Pin     Net                          Time         Slack 
+                                                             Clock                                                                                      
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0]     edge_detect_top|clk     dffeas     d       muxe0__0_0__g4_combout       9.502        -2.155
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[1]     edge_detect_top|clk     dffeas     d       muxe0__0_1__g4_combout       9.502        -2.155
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[2]     edge_detect_top|clk     dffeas     d       muxe0__0_2__g4_combout       9.502        -2.155
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[3]     edge_detect_top|clk     dffeas     d       muxe0__0_3__g4_combout       9.502        -2.155
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram1_[0]     edge_detect_top|clk     dffeas     d       muxe0__0_0__g4_0_combout     9.502        -2.155
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram1_[1]     edge_detect_top|clk     dffeas     d       muxe0__0_1__g4_0_combout     9.502        -2.155
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram1_[2]     edge_detect_top|clk     dffeas     d       muxe0__0_2__g4_0_combout     9.502        -2.155
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram1_[3]     edge_detect_top|clk     dffeas     d       muxe0__0_3__g4_0_combout     9.502        -2.155
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram2_[0]     edge_detect_top|clk     dffeas     d       muxe0__0_0__g4_1_combout     9.502        -2.155
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram2_[1]     edge_detect_top|clk     dffeas     d       muxe0__0_1__g4_1_combout     9.502        -2.155
+========================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      8.975
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.502
+
+    - Propagation time:                      11.044
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.155
+
+    Number of logic level(s):                16
+    Starting point:                          sobel_unit.vertical_product_ff\[2\]_0[0] / q
+    Ending point:                            sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0] / d
+    The start point is clocked by            edge_detect_top|clk [rising] on pin clk
+    The end   point is clocked by            edge_detect_top|clk [rising] on pin clk
+
+Instance / Net                                                                                        Pin           Pin               Arrival     No. of    
+Name                                                         Type                                     Name          Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+sobel_unit.vertical_product_ff\[2\]_0[0]                     dffeas                                   q             Out     0.232     0.845       -         
+vertical_product_ff\[2\]_0[0]                                Net                                      -             -       0.326     -           1         
+sobel_unit.vertical_sum_0_add0                               cycloneive_lcell_comb                    datab         In      -         1.171       -         
+sobel_unit.vertical_sum_0_add0                               cycloneive_lcell_comb                    cout          Out     0.509     1.680       -         
+vertical_sum_0_carry_0                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add1                               cycloneive_lcell_comb                    cin           In      -         1.680       -         
+sobel_unit.vertical_sum_0_add1                               cycloneive_lcell_comb                    cout          Out     0.066     1.746       -         
+vertical_sum_0_carry_1                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add2                               cycloneive_lcell_comb                    cin           In      -         1.746       -         
+sobel_unit.vertical_sum_0_add2                               cycloneive_lcell_comb                    cout          Out     0.066     1.812       -         
+vertical_sum_0_carry_2                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add3                               cycloneive_lcell_comb                    cin           In      -         1.812       -         
+sobel_unit.vertical_sum_0_add3                               cycloneive_lcell_comb                    cout          Out     0.066     1.878       -         
+vertical_sum_0_carry_3                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add4                               cycloneive_lcell_comb                    cin           In      -         1.878       -         
+sobel_unit.vertical_sum_0_add4                               cycloneive_lcell_comb                    cout          Out     0.066     1.944       -         
+vertical_sum_0_carry_4                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add5                               cycloneive_lcell_comb                    cin           In      -         1.944       -         
+sobel_unit.vertical_sum_0_add5                               cycloneive_lcell_comb                    cout          Out     0.066     2.010       -         
+vertical_sum_0_carry_5                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add6                               cycloneive_lcell_comb                    cin           In      -         2.010       -         
+sobel_unit.vertical_sum_0_add6                               cycloneive_lcell_comb                    cout          Out     0.066     2.076       -         
+vertical_sum_0_carry_6                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add7                               cycloneive_lcell_comb                    cin           In      -         2.076       -         
+sobel_unit.vertical_sum_0_add7                               cycloneive_lcell_comb                    cout          Out     0.066     2.142       -         
+vertical_sum_0_carry_7                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add8                               cycloneive_lcell_comb                    cin           In      -         2.142       -         
+sobel_unit.vertical_sum_0_add8                               cycloneive_lcell_comb                    cout          Out     0.066     2.208       -         
+vertical_sum_0_carry_8                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add9                               cycloneive_lcell_comb                    cin           In      -         2.208       -         
+sobel_unit.vertical_sum_0_add9                               cycloneive_lcell_comb                    combout       Out     0.000     2.208       -         
+vertical_sum_0_add9                                          Net                                      -             -       0.652     -           1         
+sobel_unit.vertical_sum_add8                                 cycloneive_lcell_comb                    dataa         In      -         2.859       -         
+sobel_unit.vertical_sum_add8                                 cycloneive_lcell_comb                    combout       Out     0.437     3.296       -         
+vertical_sum_add8                                            Net                                      -             -       0.432     -           2         
+sobel_unit.abs_vertical_sum[9:0]                             edge_detect_top_SYN_UMULT_10_10_20_2     dataa[9]      In      -         3.728       -         
+sobel_unit.abs_vertical_sum[9:0]                             edge_detect_top_SYN_UMULT_10_10_20_2     result[9]     Out     4.302     8.030       -         
+abs_vertical_sum[9]                                          Net                                      -             -       0.935     -           1         
+sobel_unit.abs_vertical_sum_1[9]                             cycloneive_lcell_comb                    datac         In      -         8.965       -         
+sobel_unit.abs_vertical_sum_1[9]                             cycloneive_lcell_comb                    combout       Out     0.429     9.394       -         
+abs_vertical_sum_1[9]                                        Net                                      -             -       0.326     -           1         
+sobel_unit.total_avg_add9                                    cycloneive_lcell_comb                    datab         In      -         9.720       -         
+sobel_unit.total_avg_add9                                    cycloneive_lcell_comb                    cout          Out     0.509     10.229      -         
+total_avg_add9_cout                                          Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add9_term                               cycloneive_lcell_comb                    cin           In      -         10.229      -         
+sobel_unit.total_avg_add9_term                               cycloneive_lcell_comb                    combout       Out     0.000     10.229      -         
+total_avg_0                                                  Net                                      -             -       0.985     -           32        
+retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4                 cycloneive_lcell_comb                    datab         In      -         11.214      -         
+retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4                 cycloneive_lcell_comb                    combout       Out     0.443     11.657      -         
+muxe0__0_0__g4_combout                                       Net                                      -             -       0.000     -           1         
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0]     dffeas                                   d             In      -         11.657      -         
+============================================================================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 11.130 is 7.475(67.2%) logic and 3.655(32.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 2: 
+      Requested Period:                      8.975
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.502
+
+    - Propagation time:                      11.044
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.155
+
+    Number of logic level(s):                16
+    Starting point:                          sobel_unit.vertical_product_ff\[2\]_0[0] / q
+    Ending point:                            sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0] / d
+    The start point is clocked by            edge_detect_top|clk [rising] on pin clk
+    The end   point is clocked by            edge_detect_top|clk [rising] on pin clk
+
+Instance / Net                                                                                        Pin           Pin               Arrival     No. of    
+Name                                                         Type                                     Name          Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+sobel_unit.vertical_product_ff\[2\]_0[0]                     dffeas                                   q             Out     0.232     0.845       -         
+vertical_product_ff\[2\]_0[0]                                Net                                      -             -       0.326     -           1         
+sobel_unit.vertical_sum_0_add0                               cycloneive_lcell_comb                    datab         In      -         1.171       -         
+sobel_unit.vertical_sum_0_add0                               cycloneive_lcell_comb                    cout          Out     0.509     1.680       -         
+vertical_sum_0_carry_0                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add1                               cycloneive_lcell_comb                    cin           In      -         1.680       -         
+sobel_unit.vertical_sum_0_add1                               cycloneive_lcell_comb                    cout          Out     0.066     1.746       -         
+vertical_sum_0_carry_1                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add2                               cycloneive_lcell_comb                    cin           In      -         1.746       -         
+sobel_unit.vertical_sum_0_add2                               cycloneive_lcell_comb                    combout       Out     0.000     1.746       -         
+vertical_sum_0_add2                                          Net                                      -             -       0.652     -           1         
+sobel_unit.vertical_sum_add1                                 cycloneive_lcell_comb                    dataa         In      -         2.397       -         
+sobel_unit.vertical_sum_add1                                 cycloneive_lcell_comb                    combout       Out     0.437     2.834       -         
+vertical_sum_add1                                            Net                                      -             -       0.432     -           2         
+sobel_unit.abs_vertical_sum[9:0]                             edge_detect_top_SYN_UMULT_10_10_20_2     dataa[2]      In      -         3.266       -         
+sobel_unit.abs_vertical_sum[9:0]                             edge_detect_top_SYN_UMULT_10_10_20_2     result[2]     Out     4.302     7.568       -         
+abs_vertical_sum[2]                                          Net                                      -             -       0.935     -           1         
+sobel_unit.abs_vertical_sum_1[2]                             cycloneive_lcell_comb                    datac         In      -         8.503       -         
+sobel_unit.abs_vertical_sum_1[2]                             cycloneive_lcell_comb                    combout       Out     0.429     8.932       -         
+abs_vertical_sum_1[2]                                        Net                                      -             -       0.326     -           1         
+sobel_unit.total_avg_add2                                    cycloneive_lcell_comb                    datab         In      -         9.258       -         
+sobel_unit.total_avg_add2                                    cycloneive_lcell_comb                    cout          Out     0.509     9.767       -         
+total_avg_carry_2                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add3                                    cycloneive_lcell_comb                    cin           In      -         9.767       -         
+sobel_unit.total_avg_add3                                    cycloneive_lcell_comb                    cout          Out     0.066     9.833       -         
+total_avg_carry_3                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add4                                    cycloneive_lcell_comb                    cin           In      -         9.833       -         
+sobel_unit.total_avg_add4                                    cycloneive_lcell_comb                    cout          Out     0.066     9.899       -         
+total_avg_carry_4                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add5                                    cycloneive_lcell_comb                    cin           In      -         9.899       -         
+sobel_unit.total_avg_add5                                    cycloneive_lcell_comb                    cout          Out     0.066     9.965       -         
+total_avg_carry_5                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add6                                    cycloneive_lcell_comb                    cin           In      -         9.965       -         
+sobel_unit.total_avg_add6                                    cycloneive_lcell_comb                    cout          Out     0.066     10.031      -         
+total_avg_carry_6                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add7                                    cycloneive_lcell_comb                    cin           In      -         10.031      -         
+sobel_unit.total_avg_add7                                    cycloneive_lcell_comb                    cout          Out     0.066     10.097      -         
+total_avg_carry_7                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add8                                    cycloneive_lcell_comb                    cin           In      -         10.097      -         
+sobel_unit.total_avg_add8                                    cycloneive_lcell_comb                    cout          Out     0.066     10.163      -         
+total_avg_carry_8                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add9                                    cycloneive_lcell_comb                    cin           In      -         10.163      -         
+sobel_unit.total_avg_add9                                    cycloneive_lcell_comb                    cout          Out     0.066     10.229      -         
+total_avg_add9_cout                                          Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add9_term                               cycloneive_lcell_comb                    cin           In      -         10.229      -         
+sobel_unit.total_avg_add9_term                               cycloneive_lcell_comb                    combout       Out     0.000     10.229      -         
+total_avg_0                                                  Net                                      -             -       0.985     -           32        
+retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4                 cycloneive_lcell_comb                    datab         In      -         11.214      -         
+retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4                 cycloneive_lcell_comb                    combout       Out     0.443     11.657      -         
+muxe0__0_0__g4_combout                                       Net                                      -             -       0.000     -           1         
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0]     dffeas                                   d             In      -         11.657      -         
+============================================================================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 11.130 is 7.475(67.2%) logic and 3.655(32.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 3: 
+      Requested Period:                      8.975
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.502
+
+    - Propagation time:                      11.044
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.155
+
+    Number of logic level(s):                16
+    Starting point:                          sobel_unit.vertical_product_ff\[2\]_0[0] / q
+    Ending point:                            sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0] / d
+    The start point is clocked by            edge_detect_top|clk [rising] on pin clk
+    The end   point is clocked by            edge_detect_top|clk [rising] on pin clk
+
+Instance / Net                                                                                        Pin           Pin               Arrival     No. of    
+Name                                                         Type                                     Name          Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+sobel_unit.vertical_product_ff\[2\]_0[0]                     dffeas                                   q             Out     0.232     0.845       -         
+vertical_product_ff\[2\]_0[0]                                Net                                      -             -       0.326     -           1         
+sobel_unit.vertical_sum_0_add0                               cycloneive_lcell_comb                    datab         In      -         1.171       -         
+sobel_unit.vertical_sum_0_add0                               cycloneive_lcell_comb                    cout          Out     0.509     1.680       -         
+vertical_sum_0_carry_0                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add1                               cycloneive_lcell_comb                    cin           In      -         1.680       -         
+sobel_unit.vertical_sum_0_add1                               cycloneive_lcell_comb                    cout          Out     0.066     1.746       -         
+vertical_sum_0_carry_1                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add2                               cycloneive_lcell_comb                    cin           In      -         1.746       -         
+sobel_unit.vertical_sum_0_add2                               cycloneive_lcell_comb                    cout          Out     0.066     1.812       -         
+vertical_sum_0_carry_2                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add3                               cycloneive_lcell_comb                    cin           In      -         1.812       -         
+sobel_unit.vertical_sum_0_add3                               cycloneive_lcell_comb                    combout       Out     0.000     1.812       -         
+vertical_sum_0_add3                                          Net                                      -             -       0.652     -           1         
+sobel_unit.vertical_sum_add2                                 cycloneive_lcell_comb                    dataa         In      -         2.463       -         
+sobel_unit.vertical_sum_add2                                 cycloneive_lcell_comb                    combout       Out     0.437     2.900       -         
+vertical_sum_add2                                            Net                                      -             -       0.432     -           2         
+sobel_unit.abs_vertical_sum[9:0]                             edge_detect_top_SYN_UMULT_10_10_20_2     dataa[3]      In      -         3.332       -         
+sobel_unit.abs_vertical_sum[9:0]                             edge_detect_top_SYN_UMULT_10_10_20_2     result[3]     Out     4.302     7.634       -         
+abs_vertical_sum[3]                                          Net                                      -             -       0.935     -           1         
+sobel_unit.abs_vertical_sum_1[3]                             cycloneive_lcell_comb                    datac         In      -         8.569       -         
+sobel_unit.abs_vertical_sum_1[3]                             cycloneive_lcell_comb                    combout       Out     0.429     8.998       -         
+abs_vertical_sum_1[3]                                        Net                                      -             -       0.326     -           1         
+sobel_unit.total_avg_add3                                    cycloneive_lcell_comb                    datab         In      -         9.324       -         
+sobel_unit.total_avg_add3                                    cycloneive_lcell_comb                    cout          Out     0.509     9.833       -         
+total_avg_carry_3                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add4                                    cycloneive_lcell_comb                    cin           In      -         9.833       -         
+sobel_unit.total_avg_add4                                    cycloneive_lcell_comb                    cout          Out     0.066     9.899       -         
+total_avg_carry_4                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add5                                    cycloneive_lcell_comb                    cin           In      -         9.899       -         
+sobel_unit.total_avg_add5                                    cycloneive_lcell_comb                    cout          Out     0.066     9.965       -         
+total_avg_carry_5                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add6                                    cycloneive_lcell_comb                    cin           In      -         9.965       -         
+sobel_unit.total_avg_add6                                    cycloneive_lcell_comb                    cout          Out     0.066     10.031      -         
+total_avg_carry_6                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add7                                    cycloneive_lcell_comb                    cin           In      -         10.031      -         
+sobel_unit.total_avg_add7                                    cycloneive_lcell_comb                    cout          Out     0.066     10.097      -         
+total_avg_carry_7                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add8                                    cycloneive_lcell_comb                    cin           In      -         10.097      -         
+sobel_unit.total_avg_add8                                    cycloneive_lcell_comb                    cout          Out     0.066     10.163      -         
+total_avg_carry_8                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add9                                    cycloneive_lcell_comb                    cin           In      -         10.163      -         
+sobel_unit.total_avg_add9                                    cycloneive_lcell_comb                    cout          Out     0.066     10.229      -         
+total_avg_add9_cout                                          Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add9_term                               cycloneive_lcell_comb                    cin           In      -         10.229      -         
+sobel_unit.total_avg_add9_term                               cycloneive_lcell_comb                    combout       Out     0.000     10.229      -         
+total_avg_0                                                  Net                                      -             -       0.985     -           32        
+retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4                 cycloneive_lcell_comb                    datab         In      -         11.214      -         
+retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4                 cycloneive_lcell_comb                    combout       Out     0.443     11.657      -         
+muxe0__0_0__g4_combout                                       Net                                      -             -       0.000     -           1         
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0]     dffeas                                   d             In      -         11.657      -         
+============================================================================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 11.130 is 7.475(67.2%) logic and 3.655(32.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 4: 
+      Requested Period:                      8.975
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.502
+
+    - Propagation time:                      11.044
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.155
+
+    Number of logic level(s):                16
+    Starting point:                          sobel_unit.vertical_product_ff\[2\]_0[0] / q
+    Ending point:                            sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0] / d
+    The start point is clocked by            edge_detect_top|clk [rising] on pin clk
+    The end   point is clocked by            edge_detect_top|clk [rising] on pin clk
+
+Instance / Net                                                                                        Pin           Pin               Arrival     No. of    
+Name                                                         Type                                     Name          Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+sobel_unit.vertical_product_ff\[2\]_0[0]                     dffeas                                   q             Out     0.232     0.845       -         
+vertical_product_ff\[2\]_0[0]                                Net                                      -             -       0.326     -           1         
+sobel_unit.vertical_sum_0_add0                               cycloneive_lcell_comb                    datab         In      -         1.171       -         
+sobel_unit.vertical_sum_0_add0                               cycloneive_lcell_comb                    cout          Out     0.509     1.680       -         
+vertical_sum_0_carry_0                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add1                               cycloneive_lcell_comb                    cin           In      -         1.680       -         
+sobel_unit.vertical_sum_0_add1                               cycloneive_lcell_comb                    cout          Out     0.066     1.746       -         
+vertical_sum_0_carry_1                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add2                               cycloneive_lcell_comb                    cin           In      -         1.746       -         
+sobel_unit.vertical_sum_0_add2                               cycloneive_lcell_comb                    cout          Out     0.066     1.812       -         
+vertical_sum_0_carry_2                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add3                               cycloneive_lcell_comb                    cin           In      -         1.812       -         
+sobel_unit.vertical_sum_0_add3                               cycloneive_lcell_comb                    cout          Out     0.066     1.878       -         
+vertical_sum_0_carry_3                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add4                               cycloneive_lcell_comb                    cin           In      -         1.878       -         
+sobel_unit.vertical_sum_0_add4                               cycloneive_lcell_comb                    combout       Out     0.000     1.878       -         
+vertical_sum_0_add4                                          Net                                      -             -       0.652     -           1         
+sobel_unit.vertical_sum_add3                                 cycloneive_lcell_comb                    dataa         In      -         2.529       -         
+sobel_unit.vertical_sum_add3                                 cycloneive_lcell_comb                    combout       Out     0.437     2.966       -         
+vertical_sum_add3                                            Net                                      -             -       0.432     -           2         
+sobel_unit.abs_vertical_sum[9:0]                             edge_detect_top_SYN_UMULT_10_10_20_2     dataa[4]      In      -         3.398       -         
+sobel_unit.abs_vertical_sum[9:0]                             edge_detect_top_SYN_UMULT_10_10_20_2     result[4]     Out     4.302     7.700       -         
+abs_vertical_sum[4]                                          Net                                      -             -       0.935     -           1         
+sobel_unit.abs_vertical_sum_1[4]                             cycloneive_lcell_comb                    datac         In      -         8.635       -         
+sobel_unit.abs_vertical_sum_1[4]                             cycloneive_lcell_comb                    combout       Out     0.429     9.064       -         
+abs_vertical_sum_1[4]                                        Net                                      -             -       0.326     -           1         
+sobel_unit.total_avg_add4                                    cycloneive_lcell_comb                    datab         In      -         9.390       -         
+sobel_unit.total_avg_add4                                    cycloneive_lcell_comb                    cout          Out     0.509     9.899       -         
+total_avg_carry_4                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add5                                    cycloneive_lcell_comb                    cin           In      -         9.899       -         
+sobel_unit.total_avg_add5                                    cycloneive_lcell_comb                    cout          Out     0.066     9.965       -         
+total_avg_carry_5                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add6                                    cycloneive_lcell_comb                    cin           In      -         9.965       -         
+sobel_unit.total_avg_add6                                    cycloneive_lcell_comb                    cout          Out     0.066     10.031      -         
+total_avg_carry_6                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add7                                    cycloneive_lcell_comb                    cin           In      -         10.031      -         
+sobel_unit.total_avg_add7                                    cycloneive_lcell_comb                    cout          Out     0.066     10.097      -         
+total_avg_carry_7                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add8                                    cycloneive_lcell_comb                    cin           In      -         10.097      -         
+sobel_unit.total_avg_add8                                    cycloneive_lcell_comb                    cout          Out     0.066     10.163      -         
+total_avg_carry_8                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add9                                    cycloneive_lcell_comb                    cin           In      -         10.163      -         
+sobel_unit.total_avg_add9                                    cycloneive_lcell_comb                    cout          Out     0.066     10.229      -         
+total_avg_add9_cout                                          Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add9_term                               cycloneive_lcell_comb                    cin           In      -         10.229      -         
+sobel_unit.total_avg_add9_term                               cycloneive_lcell_comb                    combout       Out     0.000     10.229      -         
+total_avg_0                                                  Net                                      -             -       0.985     -           32        
+retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4                 cycloneive_lcell_comb                    datab         In      -         11.214      -         
+retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4                 cycloneive_lcell_comb                    combout       Out     0.443     11.657      -         
+muxe0__0_0__g4_combout                                       Net                                      -             -       0.000     -           1         
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0]     dffeas                                   d             In      -         11.657      -         
+============================================================================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 11.130 is 7.475(67.2%) logic and 3.655(32.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 5: 
+      Requested Period:                      8.975
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.502
+
+    - Propagation time:                      11.044
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.155
+
+    Number of logic level(s):                16
+    Starting point:                          sobel_unit.vertical_product_ff\[2\]_0[0] / q
+    Ending point:                            sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0] / d
+    The start point is clocked by            edge_detect_top|clk [rising] on pin clk
+    The end   point is clocked by            edge_detect_top|clk [rising] on pin clk
+
+Instance / Net                                                                                        Pin           Pin               Arrival     No. of    
+Name                                                         Type                                     Name          Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+sobel_unit.vertical_product_ff\[2\]_0[0]                     dffeas                                   q             Out     0.232     0.845       -         
+vertical_product_ff\[2\]_0[0]                                Net                                      -             -       0.326     -           1         
+sobel_unit.vertical_sum_0_add0                               cycloneive_lcell_comb                    datab         In      -         1.171       -         
+sobel_unit.vertical_sum_0_add0                               cycloneive_lcell_comb                    cout          Out     0.509     1.680       -         
+vertical_sum_0_carry_0                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add1                               cycloneive_lcell_comb                    cin           In      -         1.680       -         
+sobel_unit.vertical_sum_0_add1                               cycloneive_lcell_comb                    cout          Out     0.066     1.746       -         
+vertical_sum_0_carry_1                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add2                               cycloneive_lcell_comb                    cin           In      -         1.746       -         
+sobel_unit.vertical_sum_0_add2                               cycloneive_lcell_comb                    cout          Out     0.066     1.812       -         
+vertical_sum_0_carry_2                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add3                               cycloneive_lcell_comb                    cin           In      -         1.812       -         
+sobel_unit.vertical_sum_0_add3                               cycloneive_lcell_comb                    cout          Out     0.066     1.878       -         
+vertical_sum_0_carry_3                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add4                               cycloneive_lcell_comb                    cin           In      -         1.878       -         
+sobel_unit.vertical_sum_0_add4                               cycloneive_lcell_comb                    cout          Out     0.066     1.944       -         
+vertical_sum_0_carry_4                                       Net                                      -             -       0.000     -           1         
+sobel_unit.vertical_sum_0_add5                               cycloneive_lcell_comb                    cin           In      -         1.944       -         
+sobel_unit.vertical_sum_0_add5                               cycloneive_lcell_comb                    combout       Out     0.000     1.944       -         
+vertical_sum_0_add5                                          Net                                      -             -       0.652     -           1         
+sobel_unit.vertical_sum_add4                                 cycloneive_lcell_comb                    dataa         In      -         2.595       -         
+sobel_unit.vertical_sum_add4                                 cycloneive_lcell_comb                    combout       Out     0.437     3.032       -         
+vertical_sum_add4                                            Net                                      -             -       0.432     -           2         
+sobel_unit.abs_vertical_sum[9:0]                             edge_detect_top_SYN_UMULT_10_10_20_2     dataa[5]      In      -         3.464       -         
+sobel_unit.abs_vertical_sum[9:0]                             edge_detect_top_SYN_UMULT_10_10_20_2     result[5]     Out     4.302     7.766       -         
+abs_vertical_sum[5]                                          Net                                      -             -       0.935     -           1         
+sobel_unit.abs_vertical_sum_1[5]                             cycloneive_lcell_comb                    datac         In      -         8.701       -         
+sobel_unit.abs_vertical_sum_1[5]                             cycloneive_lcell_comb                    combout       Out     0.429     9.130       -         
+abs_vertical_sum_1[5]                                        Net                                      -             -       0.326     -           1         
+sobel_unit.total_avg_add5                                    cycloneive_lcell_comb                    datab         In      -         9.456       -         
+sobel_unit.total_avg_add5                                    cycloneive_lcell_comb                    cout          Out     0.509     9.965       -         
+total_avg_carry_5                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add6                                    cycloneive_lcell_comb                    cin           In      -         9.965       -         
+sobel_unit.total_avg_add6                                    cycloneive_lcell_comb                    cout          Out     0.066     10.031      -         
+total_avg_carry_6                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add7                                    cycloneive_lcell_comb                    cin           In      -         10.031      -         
+sobel_unit.total_avg_add7                                    cycloneive_lcell_comb                    cout          Out     0.066     10.097      -         
+total_avg_carry_7                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add8                                    cycloneive_lcell_comb                    cin           In      -         10.097      -         
+sobel_unit.total_avg_add8                                    cycloneive_lcell_comb                    cout          Out     0.066     10.163      -         
+total_avg_carry_8                                            Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add9                                    cycloneive_lcell_comb                    cin           In      -         10.163      -         
+sobel_unit.total_avg_add9                                    cycloneive_lcell_comb                    cout          Out     0.066     10.229      -         
+total_avg_add9_cout                                          Net                                      -             -       0.000     -           1         
+sobel_unit.total_avg_add9_term                               cycloneive_lcell_comb                    cin           In      -         10.229      -         
+sobel_unit.total_avg_add9_term                               cycloneive_lcell_comb                    combout       Out     0.000     10.229      -         
+total_avg_0                                                  Net                                      -             -       0.985     -           32        
+retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4                 cycloneive_lcell_comb                    datab         In      -         11.214      -         
+retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4                 cycloneive_lcell_comb                    combout       Out     0.443     11.657      -         
+muxe0__0_0__g4_combout                                       Net                                      -             -       0.000     -           1         
+sobel_out_fifo.fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0]     dffeas                                   d             In      -         11.657      -         
+============================================================================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 11.130 is 7.475(67.2%) logic and 3.655(32.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                           Starting                                                                       Arrival          
+Instance                   Reference     Type                               Pin        Net                Time        Slack
+                           Clock                                                                                           
+---------------------------------------------------------------------------------------------------------------------------
+sobel_unit.shift_reg_0     System        synplicity_altsyncram_RAM_RW       q_a[0]     shift_reg_1[0]     0.000       7.428
+sobel_unit.shift_reg_0     System        synplicity_altsyncram_RAM_RW       q_a[0]     shift_reg_1[0]     0.000       7.428
+sobel_unit.shift_reg_2     System        synplicity_altsyncram_RAM_RW_0     q_a[0]     shift_reg[0]       0.000       7.446
+sobel_unit.shift_reg_2     System        synplicity_altsyncram_RAM_RW_0     q_a[0]     shift_reg[0]       0.000       7.446
+sobel_unit.shift_reg_0     System        synplicity_altsyncram_RAM_RW       q_a[1]     shift_reg_1[1]     0.000       7.494
+sobel_unit.shift_reg_0     System        synplicity_altsyncram_RAM_RW       q_a[1]     shift_reg_1[1]     0.000       7.494
+sobel_unit.shift_reg_2     System        synplicity_altsyncram_RAM_RW_0     q_a[1]     shift_reg[1]       0.000       7.512
+sobel_unit.shift_reg_2     System        synplicity_altsyncram_RAM_RW_0     q_a[1]     shift_reg[1]       0.000       7.512
+sobel_unit.shift_reg_0     System        synplicity_altsyncram_RAM_RW       q_a[2]     shift_reg_1[2]     0.000       7.560
+sobel_unit.shift_reg_0     System        synplicity_altsyncram_RAM_RW       q_a[2]     shift_reg_1[2]     0.000       7.560
+===========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                               Starting                                                             Required          
+Instance                                       Reference     Type       Pin     Net                                 Time         Slack
+                                               Clock                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------------
+sobel_unit.vertical_product_ff\[0\]_0[8]       System        dffeas     d       un6_vertical_product_carry_7        9.502        7.428
+sobel_unit.horizontal_product_ff\[2\]_0[8]     System        dffeas     d       un22_horizontal_product_carry_7     9.502        7.439
+sobel_unit.horizontal_product_ff\[1\]_0[9]     System        dffeas     d       un15_horizontal_product_carry_7     9.502        7.446
+sobel_unit.vertical_product_ff\[1\]_0[7]       System        dffeas     d       un6_vertical_product_add7           9.502        7.494
+sobel_unit.horizontal_product_ff\[2\]_0[7]     System        dffeas     d       un22_horizontal_product_add7        9.502        7.505
+sobel_unit.horizontal_product_ff\[1\]_0[8]     System        dffeas     d       un15_horizontal_product_add7        9.502        7.512
+sobel_unit.vertical_product_ff\[1\]_0[6]       System        dffeas     d       un6_vertical_product_add6           9.502        7.560
+sobel_unit.horizontal_product_ff\[2\]_0[6]     System        dffeas     d       un22_horizontal_product_add6        9.502        7.571
+sobel_unit.horizontal_product_ff\[0\]_0[7]     System        dffeas     d       un15_horizontal_product_add6        9.502        7.578
+sobel_unit.vertical_product_ff\[1\]_0[5]       System        dffeas     d       un6_vertical_product_add5           9.502        7.626
+======================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      8.975
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.502
+
+    - Propagation time:                      2.074
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 7.428
+
+    Number of logic level(s):                10
+    Starting point:                          sobel_unit.shift_reg_0 / q_a[0]
+    Ending point:                            sobel_unit.vertical_product_ff\[0\]_0[8] / d
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            edge_detect_top|clk [rising] on pin clk
+
+Instance / Net                                                                 Pin         Pin               Arrival     No. of    
+Name                                          Type                             Name        Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------
+sobel_unit.shift_reg_0                        synplicity_altsyncram_RAM_RW     q_a[0]      Out     0.000     0.000       -         
+shift_reg_1[0]                                Net                              -           -       0.333     -           2         
+sobel_unit.un22_horizontal_product_m[0]       cycloneive_lcell_comb            dataa       In      -         0.333       -         
+sobel_unit.un22_horizontal_product_m[0]       cycloneive_lcell_comb            combout     Out     0.437     0.770       -         
+un22_horizontal_product_m[0]                  Net                              -           -       0.333     -           2         
+sobel_unit.un6_vertical_product_add0          cycloneive_lcell_comb            datab       In      -         1.103       -         
+sobel_unit.un6_vertical_product_add0          cycloneive_lcell_comb            cout        Out     0.509     1.612       -         
+un6_vertical_product_carry_0                  Net                              -           -       0.000     -           1         
+sobel_unit.un6_vertical_product_add1          cycloneive_lcell_comb            cin         In      -         1.612       -         
+sobel_unit.un6_vertical_product_add1          cycloneive_lcell_comb            cout        Out     0.066     1.678       -         
+un6_vertical_product_carry_1                  Net                              -           -       0.000     -           1         
+sobel_unit.un6_vertical_product_add2          cycloneive_lcell_comb            cin         In      -         1.678       -         
+sobel_unit.un6_vertical_product_add2          cycloneive_lcell_comb            cout        Out     0.066     1.744       -         
+un6_vertical_product_carry_2                  Net                              -           -       0.000     -           1         
+sobel_unit.un6_vertical_product_add3          cycloneive_lcell_comb            cin         In      -         1.744       -         
+sobel_unit.un6_vertical_product_add3          cycloneive_lcell_comb            cout        Out     0.066     1.810       -         
+un6_vertical_product_carry_3                  Net                              -           -       0.000     -           1         
+sobel_unit.un6_vertical_product_add4          cycloneive_lcell_comb            cin         In      -         1.810       -         
+sobel_unit.un6_vertical_product_add4          cycloneive_lcell_comb            cout        Out     0.066     1.876       -         
+un6_vertical_product_carry_4                  Net                              -           -       0.000     -           1         
+sobel_unit.un6_vertical_product_add5          cycloneive_lcell_comb            cin         In      -         1.876       -         
+sobel_unit.un6_vertical_product_add5          cycloneive_lcell_comb            cout        Out     0.066     1.942       -         
+un6_vertical_product_carry_5                  Net                              -           -       0.000     -           1         
+sobel_unit.un6_vertical_product_add6          cycloneive_lcell_comb            cin         In      -         1.942       -         
+sobel_unit.un6_vertical_product_add6          cycloneive_lcell_comb            cout        Out     0.066     2.008       -         
+un6_vertical_product_carry_6                  Net                              -           -       0.000     -           1         
+sobel_unit.un6_vertical_product_add7          cycloneive_lcell_comb            cin         In      -         2.008       -         
+sobel_unit.un6_vertical_product_add7          cycloneive_lcell_comb            cout        Out     0.066     2.074       -         
+un6_vertical_product_add7_cout                Net                              -           -       0.000     -           1         
+sobel_unit.un6_vertical_product_add7_term     cycloneive_lcell_comb            cin         In      -         2.074       -         
+sobel_unit.un6_vertical_product_add7_term     cycloneive_lcell_comb            combout     Out     0.000     2.074       -         
+un6_vertical_product_carry_7                  Net                              -           -       0.000     -           1         
+sobel_unit.vertical_product_ff\[0\]_0[8]      dffeas                           d           In      -         2.074       -         
+===================================================================================================================================
+Total path delay (propagation time + setup - ICD at endpoint) of 1.547 is 0.881(56.9%) logic and 0.666(43.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 138MB peak: 143MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 138MB peak: 143MB)
+
+##### START OF AREA REPORT #####[
+Design view:work.edge_detect_top(verilog)
+Selecting part EP4CE115F29I7
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage.
+
+Total combinational functions 518 of 114480 ( 0%)
+Logic element usage by number of inputs
+		  4 input functions 	 80
+		  3 input functions 	 217
+		  <=2 input functions 	 221
+Logic elements by mode
+		  normal mode            329
+		  arithmetic mode        189
+Total registers 404 of 114480 ( 0%)
+I/O pins 38 of 529 ( 7%), total I/O based on largest package of this part.
+
+Number of I/O registers
+			Input DDRs    :0
+			Output DDRs   :0
+
+DSP.Simple_Multipliers_18_bit: 2
+DSP Blocks:     2  (4 nine-bit DSP elements).
+DSP Utilization: 0.75% of available 266 blocks (532 nine-bit).
+ShiftTap:       0  (0 registers)
+Ena:             272
+Sload:           40
+Sclr:            54
+Total ESB:      11440 bits 
+
+##### END OF AREA REPORT #####]
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 143MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+# Wed Feb  5 22:44:06 2025
+
+###########################################################]

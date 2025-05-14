@@ -1,0 +1,240 @@
+# //  Questa Sim
+# //  Version 2019.3_2 linux Sep 24 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do edge_detect_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:53 on Feb 05,2025
+# vlog -reportprogress 300 -sv -work work ../sv/manage_fifo.sv 
+# -- Compiling module manage_fifo
+# 
+# Top level modules:
+# 	manage_fifo
+# End time: 22:22:53 on Feb 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:53 on Feb 05,2025
+# vlog -reportprogress 300 -sv -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 22:22:53 on Feb 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:54 on Feb 05,2025
+# vlog -reportprogress 300 -sv -work work ../sv/gray_scale.sv 
+# -- Compiling module gray_scale
+# 
+# Top level modules:
+# 	gray_scale
+# End time: 22:22:54 on Feb 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:54 on Feb 05,2025
+# vlog -reportprogress 300 -sv -work work ../sv/sobel.sv 
+# -- Compiling module sobel
+# 
+# Top level modules:
+# 	sobel
+# End time: 22:22:54 on Feb 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:54 on Feb 05,2025
+# vlog -reportprogress 300 -sv -work work ../sv/edge_detect_top.sv 
+# -- Compiling module edge_detect_top
+# 
+# Top level modules:
+# 	edge_detect_top
+# End time: 22:22:54 on Feb 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:54 on Feb 05,2025
+# vlog -reportprogress 300 -sv -work work ../sv/edge_detect_tb.sv 
+# -- Compiling module edge_detect_tb
+# ** Warning: ../sv/edge_detect_tb.sv(166): (vlog-2643) Unterminated string literal continues onto next line.
+# ** Warning: ../sv/edge_detect_tb.sv(115): (vlog-2240) Treating stand-alone use of function 'read_bmp' as an implicit VOID cast.
+# ** Warning: ../sv/edge_detect_tb.sv(119): (vlog-2240) Treating stand-alone use of function 'read_bmp' as an implicit VOID cast.
+# ** Warning: ../sv/edge_detect_tb.sv(121): (vlog-2240) Treating stand-alone use of function 'read_bmp' as an implicit VOID cast.
+# 
+# Top level modules:
+# 	edge_detect_tb
+# End time: 22:22:54 on Feb 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:54 on Feb 05,2025
+# vlog -reportprogress 300 -work work "+incdir+/vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src" /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src/uvm.sv 
+# -- Compiling package uvm_pkg (uvm-1.2 Built-in)
+# 
+# Top level modules:
+# 	--none--
+# End time: 22:22:55 on Feb 05,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:55 on Feb 05,2025
+# vlog -reportprogress 300 -work work "+incdir+/vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src" /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src/uvm_macros.svh 
+# End time: 22:22:55 on Feb 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:55 on Feb 05,2025
+# vlog -reportprogress 300 -work work "+incdir+/vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src" /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv 
+# -- Compiling package questa_uvm_pkg
+# -- Importing package uvm_pkg (uvm-1.2 Built-in)
+# 
+# Top level modules:
+# 	--none--
+# End time: 22:22:55 on Feb 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:55 on Feb 05,2025
+# vlog -reportprogress 300 -work work "+incdir+/vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src" ../uvm/my_uvm_pkg.sv 
+# -- Compiling package my_uvm_package
+# -- Importing package uvm_pkg (uvm-1.2 Built-in)
+# 
+# Top level modules:
+# 	--none--
+# End time: 22:22:56 on Feb 05,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:22:56 on Feb 05,2025
+# vlog -reportprogress 300 -work work "+incdir+/vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src" ../uvm/my_uvm_tb.sv 
+# -- Compiling package my_uvm_tb_sv_unit
+# -- Importing package uvm_pkg (uvm-1.2 Built-in)
+# -- Importing package my_uvm_package
+# -- Compiling interface my_uvm_if
+# -- Compiling module my_uvm_tb
+# 
+# Top level modules:
+# 	my_uvm_tb
+# End time: 22:22:57 on Feb 05,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.my_uvm_tb -wlf my_uvm_tb.wlf -sv_lib lib/uvm_dpi -dpicpppath /usr/bin/gcc "+incdir+/vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/questa_uvm_pkg-1.2/src/" 
+# Start time: 22:22:57 on Feb 05,2025
+# Loading /tmp/dcc3637@moore.wot.eecs.northwestern.edu_dpi_3212905/linux_gcc-8/export_tramp.so
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.my_uvm_if(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.my_uvm_package(fast)
+# Loading work.my_uvm_tb_sv_unit(fast)
+# Loading work.questa_uvm_pkg(fast)
+# Loading work.my_uvm_tb(fast)
+# Loading work.my_uvm_if(fast)
+# Loading work.edge_detect_top(fast)
+# Loading work.fifo(fast)
+# Loading work.gray_scale(fast)
+# Loading work.manage_fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.sobel(fast)
+# Compiling /tmp/dcc3637@moore.wot.eecs.northwestern.edu_dpi_3212905/linux_gcc-8/exportwrapper.c
+# Loading /tmp/dcc3637@moore.wot.eecs.northwestern.edu_dpi_3212905/linux_gcc-8/vsim_auto_compile.so
+# Loading ./lib/uvm_dpi.so
+# UVM_INFO /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test my_uvm_test...
+# UVM_INFO /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               my_uvm_test                 -     @360 
+#   env                      my_uvm_env                  -     @372 
+#     agent                  my_uvm_agent                -     @380 
+#       agent_ap_compare     uvm_analysis_port           -     @414 
+#       agent_ap_output      uvm_analysis_port           -     @405 
+#       drvr                 my_uvm_driver               -     @546 
+#         rsp_port           uvm_analysis_port           -     @563 
+#         seq_item_port      uvm_seq_item_pull_port      -     @554 
+#       mon_cmp              my_uvm_monitor_compare      -     @580 
+#         mon_ap_compare     uvm_analysis_port           -     @590 
+#       mon_out              my_uvm_monitor_output       -     @572 
+#         mon_ap_output      uvm_analysis_port           -     @604 
+#       seqr                 uvm_sequencer               -     @423 
+#         rsp_export         uvm_analysis_export         -     @431 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @537 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     sb                     my_uvm_scoreboard           -     @388 
+#       compare_fifo         uvm_tlm_analysis_fifo #(T)  -     @689 
+#         analysis_export    uvm_analysis_imp            -     @733 
+#         get_ap             uvm_analysis_port           -     @724 
+#         get_peek_export    uvm_get_peek_imp            -     @706 
+#         put_ap             uvm_analysis_port           -     @715 
+#         put_export         uvm_put_imp                 -     @697 
+#       output_fifo          uvm_tlm_analysis_fifo #(T)  -     @636 
+#         analysis_export    uvm_analysis_imp            -     @680 
+#         get_ap             uvm_analysis_port           -     @671 
+#         get_peek_export    uvm_get_peek_imp            -     @653 
+#         put_ap             uvm_analysis_port           -     @662 
+#         put_export         uvm_put_imp                 -     @644 
+#       sb_export_compare    uvm_analysis_export         -     @627 
+#       sb_export_output     uvm_analysis_export         -     @618 
+# ------------------------------------------------------------------
+# 
+# UVM_INFO ../uvm/my_uvm_sequence.sv(30) @ 0: uvm_test_top.env.agent.seqr@@seq [SEQ_RUN] Loading file image.bmp...
+# UVM_INFO ../uvm/my_uvm_sequence.sv(53) @ 3888005: uvm_test_top.env.agent.seqr@@seq [SEQ_RUN] Closing file image.bmp...
+# UVM_INFO /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 3902715: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvm/my_uvm_monitor.sv(141) @ 3902715: uvm_test_top.env.agent.mon_cmp [MON_CMP_FINAL] Closing file sobel.bmp...
+# UVM_INFO ../uvm/my_uvm_monitor.sv(69) @ 3902715: uvm_test_top.env.agent.mon_out [MON_OUT_FINAL] Closing file output.bmp...
+# UVM_INFO /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 3902715: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   10
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MON_CMP_FINAL]     1
+# [MON_OUT_FINAL]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [SEQ_RUN]     2
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 3902715 ns  Iteration: 70  Instance: /my_uvm_tb
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /vol/mentor/questa_sim-2019.3_2/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh line 517
+# End time: 22:27:07 on Feb 05,2025, Elapsed time: 0:04:10
+# Errors: 7, Warnings: 0

@@ -1,0 +1,1 @@
+set tmp [q_correlate_db_qii -paths_per 1 -qor 1 -sdc_verif -impl_name /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/proj_1.prj|rev_1 -impl_result /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/sobel.vqm -load_sta -no_gui]

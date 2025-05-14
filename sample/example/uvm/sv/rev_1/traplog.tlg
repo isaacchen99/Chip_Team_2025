@@ -1,0 +1,25 @@
+@N: CD630 :"./gentmp16377J8bdr":4:7:4:9|Synthesizing work.top.gen.
+@N: CD630 :"syng0FAq4IC":275:7:275:9|Synthesizing work.div.cell_level.
+@W: CD326 :"syng0FAq4IC":318:2:318:6|Port divide_by_0 of entity work.dw_div is unconnected. If a port needs to remain unconnected, use the keyword open.
+@N: CD630 :"syng0FAq4IC":26:7:26:12|Synthesizing work.dw_div.rtl.
+@W: CD603 :"syng0FAq4IC":165:16:165:22|Variable temp2_0 read before being assigned? This may cause a simulation mismatch 
+@W: CG296 :"syng0FAq4IC":158:0:158:6|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"syng0FAq4IC":165:16:165:22|Referenced variable temp2_0 is not in sensitivity list.
+@W: CD603 :"syng0FAq4IC":232:16:232:22|Variable temp2_0 read before being assigned? This may cause a simulation mismatch 
+@W: CD603 :"syng0FAq4IC":233:16:233:22|Variable temp3_1 read before being assigned? This may cause a simulation mismatch 
+@W: CD603 :"syng0FAq4IC":260:15:260:19|Variable temp4 read before being assigned? This may cause a simulation mismatch 
+@W: CD434 :"syng0FAq4IC":223:10:223:10|Signal a in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"syng0FAq4IC":223:17:223:20|Signal temp in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CG296 :"syng0FAq4IC":223:0:223:6|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"syng0FAq4IC":260:15:260:19|Referenced variable temp4 is not in sensitivity list.
+@W: CG290 :"syng0FAq4IC":233:16:233:22|Referenced variable temp3_1 is not in sensitivity list.
+@W: CG290 :"syng0FAq4IC":232:16:232:22|Referenced variable temp2_0 is not in sensitivity list.
+Post processing for work.dw_div.rtl
+Running optimization stage 1 on DW_div .......
+Post processing for work.div.cell_level
+Running optimization stage 1 on DIV .......
+Post processing for work.top.gen
+Running optimization stage 1 on top .......
+Running optimization stage 2 on DW_div .......
+Running optimization stage 2 on DIV .......
+Running optimization stage 2 on top .......

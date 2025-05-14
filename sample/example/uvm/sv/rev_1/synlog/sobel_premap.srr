@@ -1,0 +1,108 @@
+# Wed Feb  5 22:44:02 2025
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R) Premier
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: batman.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 126625
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+Synopsys Intel FPGA Technology Pre-mapping, Version maprc, Build 4745R, Built Nov 27 2018 21:14:52
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/sobel_scck.rpt 
+Printing clock  summary report in "/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/sobel_scck.rpt" file 
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+@W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
+@N: MF284 |Setting synthesis effort to medium for the design
+
+Finished Clear Box Flow. (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 126MB)
+
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 126MB)
+
+
+
+Clock Summary
+******************
+
+          Start                   Requested     Requested     Clock        Clock                     Clock
+Level     Clock                   Frequency     Period        Type         Group                     Load 
+----------------------------------------------------------------------------------------------------------
+0 -       System                  1.0 MHz       1000.000      system       system_clkgroup           0    
+                                                                                                          
+0 -       edge_detect_top|clk     180.5 MHz     5.540         inferred     Autoconstr_clkgroup_0     279  
+==========================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                        Clock     Source        Clock Pin                            Non-clock Pin     Non-clock Pin
+Clock                   Load      Pin           Seq Example                          Seq Example       Comb Example 
+--------------------------------------------------------------------------------------------------------------------
+System                  0         -             -                                    -                 -            
+                                                                                                                    
+edge_detect_top|clk     279       clk(port)     sobel_out_fifo.fifo_buf[7:0].CLK     -                 -            
+====================================================================================================================
+
+@W: MT529 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":63:4:63:12|Found inferred clock edge_detect_top|clk which controls 279 sequential elements including in_to_gray_fifo.empty. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/sobel.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 126MB)
+
+Encoding state machine out_ff_state[1:0] (in view: work.manage_fifo_8s_1s_1s(verilog))
+original code -> new code
+   01 -> 0
+   10 -> 1
+@N: MO225 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/manage_fifo.sv":63:2:63:10|There are no possible illegal states for state machine out_ff_state[1:0] (in view: work.manage_fifo_8s_1s_1s(verilog)); safe FSM implementation is not required.
+Encoding state machine sobel_state[3:0] (in view: work.sobel_8s_720s_540s_3s(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   011 -> 10
+   100 -> 11
+@N: MO225 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|There are no possible illegal states for state machine sobel_state[3:0] (in view: work.sobel_8s_720s_540s_3s(verilog)); safe FSM implementation is not required.
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 155MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 155MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 49MB peak: 155MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Feb  5 22:44:03 2025
+
+###########################################################]

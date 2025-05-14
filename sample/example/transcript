@@ -1,0 +1,93 @@
+# //  Questa Sim
+# //  Version 2019.3_2 linux Sep 24 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do edge_detect_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:59:40 on Feb 04,2025
+# vlog -reportprogress 300 -sv -work work manage_fifo.sv 
+# -- Compiling module manage_fifo
+# 
+# Top level modules:
+# 	manage_fifo
+# End time: 22:59:40 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:59:40 on Feb 04,2025
+# vlog -reportprogress 300 -sv -work work fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 22:59:40 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:59:40 on Feb 04,2025
+# vlog -reportprogress 300 -sv -work work gray_scale.sv 
+# -- Compiling module gray_scale
+# 
+# Top level modules:
+# 	gray_scale
+# End time: 22:59:40 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:59:40 on Feb 04,2025
+# vlog -reportprogress 300 -sv -work work sobel.sv 
+# -- Compiling module sobel
+# 
+# Top level modules:
+# 	sobel
+# End time: 22:59:40 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:59:40 on Feb 04,2025
+# vlog -reportprogress 300 -sv -work work edge_detect_top.sv 
+# -- Compiling module edge_detect_top
+# 
+# Top level modules:
+# 	edge_detect_top
+# End time: 22:59:40 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 22:59:40 on Feb 04,2025
+# vlog -reportprogress 300 -sv -work work edge_detect_tb.sv 
+# -- Compiling module edge_detect_tb
+# ** Warning: edge_detect_tb.sv(166): (vlog-2643) Unterminated string literal continues onto next line.
+# ** Warning: edge_detect_tb.sv(115): (vlog-2240) Treating stand-alone use of function 'read_bmp' as an implicit VOID cast.
+# ** Warning: edge_detect_tb.sv(119): (vlog-2240) Treating stand-alone use of function 'read_bmp' as an implicit VOID cast.
+# ** Warning: edge_detect_tb.sv(121): (vlog-2240) Treating stand-alone use of function 'read_bmp' as an implicit VOID cast.
+# 
+# Top level modules:
+# 	edge_detect_tb
+# End time: 22:59:40 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.edge_detect_tb -wlf edge_detect_tb.wlf 
+# Start time: 22:59:41 on Feb 04,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.edge_detect_tb(fast)
+# Loading work.edge_detect_top(fast)
+# Loading work.fifo(fast)
+# Loading work.gray_scale(fast)
+# Loading work.manage_fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.sobel(fast)
+# File written successfully.
+# ** Note: $stop    : edge_detect_tb.sv(218)
+#    Time: 3888120 ns  Iteration: 0  Instance: /edge_detect_tb
+# Break in Module edge_detect_tb at edge_detect_tb.sv line 218

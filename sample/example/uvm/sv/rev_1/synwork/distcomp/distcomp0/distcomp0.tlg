@@ -1,0 +1,75 @@
+@N:: Applying property .distcompmodetop with value 1 on module edge_detect_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module edge_detect_top in library work
+@N:: Applying property .noprune with value 1 on module edge_detect_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module fifo in library work
+@N:: Applying property .noprune with value 1 on module fifo in library work
+@N:: Applying property .distcompnoprune with value 1 on module sobel in library work
+@N:: Applying property .noprune with value 1 on module sobel in library work
+@N:: Applying property .distcompnoprune with value 1 on module gray_scale in library work
+@N:: Applying property .noprune with value 1 on module gray_scale in library work
+@N:: Applying property .distcompnoprune with value 1 on module manage_fifo in library work
+@N:: Applying property .noprune with value 1 on module manage_fifo in library work
+Selecting top level module edge_detect_top
+@N: CG364 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":2:7:2:10|Synthesizing module fifo in library work.
+
+	FIFO_DATA_WIDTH=32'b00000000000000000000000000011000
+	FIFO_BUFFER_SIZE=32'b00000000000000000000000000000100
+	FIFO_ADDR_WIDTH=32'b00000000000000000000000000000011
+   Generated name = fifo_24s_4s_3s
+Running optimization stage 1 on fifo_24s_4s_3s .......
+@N: CL134 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":35:4:35:12|Found RAM fifo_buf, depth=4, width=24
+@N: CG364 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/manage_fifo.sv":1:7:1:17|Synthesizing module manage_fifo in library work.
+
+	DATA_WIDTH=32'b00000000000000000000000000001000
+	NUM_INPUTS=32'b00000000000000000000000000000001
+	NUM_OUTPUTS=32'b00000000000000000000000000000001
+   Generated name = manage_fifo_8s_1s_1s
+Running optimization stage 1 on manage_fifo_8s_1s_1s .......
+@N: CG364 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/gray_scale.sv":1:7:1:16|Synthesizing module gray_scale in library work.
+
+	DATA_WIDTH=32'b00000000000000000000000000001000
+   Generated name = gray_scale_8s
+Running optimization stage 1 on gray_scale_8s .......
+@N: CG364 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":2:7:2:10|Synthesizing module fifo in library work.
+
+	FIFO_DATA_WIDTH=32'b00000000000000000000000000001000
+	FIFO_BUFFER_SIZE=32'b00000000000000000000000000000100
+	FIFO_ADDR_WIDTH=32'b00000000000000000000000000000011
+   Generated name = fifo_8s_4s_3s
+Running optimization stage 1 on fifo_8s_4s_3s .......
+@N: CL134 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":35:4:35:12|Found RAM fifo_buf, depth=4, width=8
+@N: CG364 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":2:7:2:11|Synthesizing module sobel in library work.
+
+	DATA_WIDTH=32'b00000000000000000000000000001000
+	IMAGE_WIDTH=32'b00000000000000000000001011010000
+	IMAGE_HEIGHT=32'b00000000000000000000001000011100
+	KERNEL_LEN=32'b00000000000000000000000000000011
+   Generated name = sobel_8s_720s_540s_3s
+Running optimization stage 1 on sobel_8s_720s_540s_3s .......
+@N: CG364 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/edge_detect_top.sv":1:7:1:21|Synthesizing module edge_detect_top in library work.
+Running optimization stage 1 on edge_detect_top .......
+Running optimization stage 2 on edge_detect_top .......
+Running optimization stage 2 on sobel_8s_720s_540s_3s .......
+@N: CL135 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Found sequential shift shift_reg with address depth of 717 words and data bit width of 8.
+@N: CL135 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Found sequential shift shift_reg with address depth of 717 words and data bit width of 8.
+@N: CL201 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Trying to extract state machine for register sobel_state.
+Extracted state machine for register sobel_state
+State machine has 4 reachable states with original encodings of:
+   001
+   010
+   011
+   100
+Running optimization stage 2 on fifo_8s_4s_3s .......
+Running optimization stage 2 on gray_scale_8s .......
+Running optimization stage 2 on manage_fifo_8s_1s_1s .......
+@N: CL201 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/manage_fifo.sv":63:2:63:10|Trying to extract state machine for register out_ff_state.
+Extracted state machine for register out_ff_state
+State machine has 2 reachable states with original encodings of:
+   01
+   10
+Running optimization stage 2 on fifo_24s_4s_3s .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/synwork//distcomp/distcomp0/distcomp0.rt.csv
+

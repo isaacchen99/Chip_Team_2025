@@ -1,0 +1,196 @@
+m255
+K4
+z2
+!s11f vlog 2019.3_2 2019.09, Sep 24 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/dcc3637/Courses/CE_387/assignment4
+T_opt
+!s110 1738731421
+VQX7f4[]lUj0HBXCcTY:k;0
+04 14 4 work edge_detect_tb fast 0
+=1-000ae431a4f1-67a2ef9d-bcaf2-2f8053
+o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OE;O;2019.3_2;69
+R0
+vedge_detect_tb
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1738731580
+!i10b 1
+!s100 Fe5XCP42XU9RCNMX97B5f2
+!s11b JMC`MTz9VOB1Gk<V=PW?m2
+IEj0c=5eLVNMbEbeIz2VDj3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1738731387
+Z5 8edge_detect_tb.sv
+Z6 Fedge_detect_tb.sv
+!i122 -1
+L0 3
+Z7 OE;L;2019.3_2;69
+r1
+!s85 0
+31
+Z8 !s108 1738731580.000000
+Z9 !s107 edge_detect_tb.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|edge_detect_tb.sv|
+!i113 0
+Z11 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vedge_detect_top
+R2
+R3
+!i10b 1
+!s100 F5=XLEejJ2?nQGoY`Re@h0
+!s11b I23kbV:=S?PST54G[SW0I1
+IPb:U1>B>cNFRdX0j3Z^VY1
+R4
+S1
+R0
+w1738635826
+8edge_detect_top.sv
+Fedge_detect_top.sv
+!i122 -1
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 edge_detect_top.sv|
+!s90 -reportprogress|300|-sv|-work|work|edge_detect_top.sv|
+!i113 0
+R11
+R1
+vfifo
+R2
+R3
+!i10b 1
+!s100 JJ9WTn?^46FJn6Sib6ECo1
+!s11b _kP]^9cFJ5[i@4IC9XR9i2
+Idhch:?dQJ9;;Qh7_Jc[@C2
+R4
+S1
+R0
+w1738632658
+8fifo.sv
+Ffifo.sv
+!i122 -1
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+!s107 fifo.sv|
+!s90 -reportprogress|300|-sv|-work|work|fifo.sv|
+!i113 0
+R11
+R1
+vgray_scale
+R2
+R3
+!i10b 1
+!s100 5N45oPjA[zD=lNRnWbm[H3
+!s11b mdY_mPU^EJ2Rb0fBV1cz`0
+I1hc=CzDcFRYhBlb^ZJ7f;1
+R4
+S1
+R0
+w1738724896
+8gray_scale.sv
+Fgray_scale.sv
+!i122 -1
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 gray_scale.sv|
+!s90 -reportprogress|300|-sv|-work|work|gray_scale.sv|
+!i113 0
+R11
+R1
+vmanage_fifo
+R2
+R3
+!i10b 1
+!s100 Q<L`QKD6WHc93QiVX03QA2
+!s11b FSgb:QY5S8HD`EA`F14ga3
+IH_fGMC`g=46>=_GD=Va]?1
+R4
+S1
+R0
+w1738724909
+8manage_fifo.sv
+Fmanage_fifo.sv
+!i122 -1
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 manage_fifo.sv|
+!s90 -reportprogress|300|-sv|-work|work|manage_fifo.sv|
+!i113 0
+R11
+R1
+vmotion_detect_tb
+R2
+!s110 1738632952
+!i10b 1
+!s100 A?7JY7n3Fkm??Td9GQ7cX3
+!s11b ^kkhlDaB8hzN1SnR@1O[D2
+I^Xa=OkXjMnZGT=VLGaDLD3
+R4
+S1
+R0
+w1738632950
+R5
+R6
+!i122 -1
+L0 4
+R7
+r1
+!s85 0
+31
+!s108 1738632952.000000
+R9
+R10
+!i113 0
+R11
+R1
+vsobel
+R2
+R3
+!i10b 1
+!s100 ADbOF]fMk9R1OQb:C>[jS1
+!s11b Tn350@G9ni[V;]P7KTCLI3
+InfNMU[]FknW`kAe@2:h:I3
+R4
+S1
+R0
+w1738731277
+8sobel.sv
+Fsobel.sv
+!i122 -1
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+!s107 sobel.sv|
+!s90 -reportprogress|300|-sv|-work|work|sobel.sv|
+!i113 0
+R11
+R1

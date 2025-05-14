@@ -1,0 +1,212 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R) Premier
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: batman.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 126625
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+
+#### START OF AREA REPORT #####[
+
+Part:			EP4CE115FI29-7 (Altera)
+
+-------------------------------------------------------------------------------
+########   Utilization report for  Top level view:   edge_detect_top   ########
+===============================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     404                100 %                
+======================================================
+Total SEQUENTIAL ATOMS in the block edge_detect_top:	404 (41.78 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     329                100 %                
+==================================================
+Total COMBINATIONAL ATOMS in the block edge_detect_top:	329 (34.02 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     2                  11440              100 %                
+=========================================================================
+Total RAMS in the block edge_detect_top:	2 (0.21 % Utilization)
+
+
+DSPs
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+MACs     4                  100 %                
+=================================================
+Total DSPs in the block edge_detect_top:	4 (0.41 % Utilization)
+
+
+Black Boxes
+Name            Total elements     Utilization     Notes
+--------------------------------------------------------
+BLACK BOXES     2                  100 %                
+========================================================
+Total Black Boxes in the block edge_detect_top:	2 (0.21 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_24s_4s_3s   ########
+Instance path:   edge_detect_top.fifo_24s_4s_3s                     
+====================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     127                31.4 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block edge_detect_top.fifo_24s_4s_3s:	127 (13.13 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     65                 19.8 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block edge_detect_top.fifo_24s_4s_3s:	65 (6.72 % Utilization)
+
+---------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_8s_4s_3s_1   ########
+Instance path:   edge_detect_top.fifo_8s_4s_3s_1                     
+=====================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     47                 11.6 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block edge_detect_top.fifo_8s_4s_3s_1:	47 (4.86 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     33                 10 %                 
+==================================================
+Total COMBINATIONAL ATOMS in the block edge_detect_top.fifo_8s_4s_3s_1:	33 (3.41 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_8s_4s_3s_1_0   ########
+Instance path:   edge_detect_top.fifo_8s_4s_3s_1_0                     
+=======================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     47                 11.6 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block edge_detect_top.fifo_8s_4s_3s_1_0:	47 (4.86 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     31                 9.42 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block edge_detect_top.fifo_8s_4s_3s_1_0:	31 (3.21 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   gray_scale_8s   ########
+Instance path:   edge_detect_top.gray_scale_8s                     
+===================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     9                  2.23 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block edge_detect_top.gray_scale_8s:	9 (0.93 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     14                 4.26 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block edge_detect_top.gray_scale_8s:	14 (1.45 % Utilization)
+
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   manage_fifo_8s_1s_1s   ########
+Instance path:   gray_scale_8s.manage_fifo_8s_1s_1s                       
+==========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     9                  2.23 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block gray_scale_8s.manage_fifo_8s_1s_1s:	9 (0.93 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     7                  2.13 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block gray_scale_8s.manage_fifo_8s_1s_1s:	7 (0.72 % Utilization)
+
+---------------------------------------------------------------------------
+########   Utilization report for  cell:   sobel_8s_720s_540s_3s   ########
+Instance path:   edge_detect_top.sobel_8s_720s_540s_3s                     
+===========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     174                43.1 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block edge_detect_top.sobel_8s_720s_540s_3s:	174 (17.99 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     149                45.3 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block edge_detect_top.sobel_8s_720s_540s_3s:	149 (15.41 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     2                  11440              100 %                
+=========================================================================
+Total RAMS in the block edge_detect_top.sobel_8s_720s_540s_3s:	2 (0.21 % Utilization)
+
+
+DSPs
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+MACs     4                  100 %                
+=================================================
+Total DSPs in the block edge_detect_top.sobel_8s_720s_540s_3s:	4 (0.41 % Utilization)
+
+
+Black Boxes
+Name            Total elements     Utilization     Notes
+--------------------------------------------------------
+BLACK BOXES     2                  100 %                
+========================================================
+Total Black Boxes in the block edge_detect_top.sobel_8s_720s_540s_3s:	2 (0.21 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+
