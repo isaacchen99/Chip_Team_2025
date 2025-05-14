@@ -1,0 +1,2 @@
+@W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
+@W: MT529 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/fifo.sv":63:4:63:12|Found inferred clock edge_detect_top|clk which controls 279 sequential elements including in_to_gray_fifo.empty. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

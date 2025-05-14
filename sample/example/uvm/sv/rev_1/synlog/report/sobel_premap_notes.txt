@@ -1,0 +1,10 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN225 |Writing default property annotation file /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/sobel.sap.
+@N: MO225 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/manage_fifo.sv":63:2:63:10|There are no possible illegal states for state machine out_ff_state[1:0] (in view: work.manage_fifo_8s_1s_1s(verilog)); safe FSM implementation is not required.
+@N: MO225 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|There are no possible illegal states for state machine sobel_state[3:0] (in view: work.sobel_8s_720s_540s_3s(verilog)); safe FSM implementation is not required.

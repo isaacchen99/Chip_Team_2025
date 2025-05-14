@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the information about resource utilization per module to be displayed in the summary report.
+*******************************************************************************************-->
+<modules>
+<column_headers>
+<data>Module name</data>
+<data>ATOMS</data>
+<data>ARITHMETIC MODE</data>
+<data>REGISTERS</data>
+<data>SYNC RAMS</data>
+<data>MACs</data>
+</column_headers>
+<module>
+<data>edge_detect_top</data>
+<data>329</data>
+<data>0</data>
+<data>404</data>
+<data>2</data>
+<data>4</data>
+<module>
+<data>fifo_24s_4s_3s</data>
+<data>65</data>
+<data>0</data>
+<data>127</data>
+<data>0</data>
+<data>0</data>
+</module>
+<module>
+<data>fifo_8s_4s_3s_1</data>
+<data>33</data>
+<data>0</data>
+<data>47</data>
+<data>0</data>
+<data>0</data>
+</module>
+<module>
+<data>fifo_8s_4s_3s_1_0</data>
+<data>31</data>
+<data>0</data>
+<data>47</data>
+<data>0</data>
+<data>0</data>
+</module>
+<module>
+<data>gray_scale_8s</data>
+<data>14</data>
+<data>0</data>
+<data>9</data>
+<data>0</data>
+<data>0</data>
+<module>
+<data>manage_fifo_8s_1s_1s</data>
+<data>7</data>
+<data>0</data>
+<data>9</data>
+<data>0</data>
+<data>0</data>
+</module>
+</module>
+<module>
+<data>sobel_8s_720s_540s_3s</data>
+<data>149</data>
+<data>0</data>
+<data>174</data>
+<data>2</data>
+<data>4</data>
+</module>
+</module>
+</modules>

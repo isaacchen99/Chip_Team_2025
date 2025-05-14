@@ -1,0 +1,4 @@
+g++ -std=c++17 model_parms.cpp \
+-ltensorflow-lite \
+-I/home/donald/.local/lib/python3.10/site-packages/tflite_runtime/include \
+-L/home/donald/.local/lib/python3.10/site-packages/tflite_runtime

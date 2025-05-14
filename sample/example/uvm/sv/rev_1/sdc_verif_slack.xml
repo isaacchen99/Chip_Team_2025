@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Timing Correlation XML file -->
+<timing_correlation_data>
+<!-- Points -->
+<path_info title="true">
+<index> Index   </index>
+<start_inst> Start Inst   </start_inst>
+<start_type> Start Type   </start_type>
+<start_clock> Start Clock   </start_clock>
+<end_inst> End Inst   </end_inst>
+<end_type> End Type   </end_type>
+<end_clock> End Clock   </end_clock>
+<clock_skew> Clock Skew   </clock_skew>
+<req_per> Required Time   </req_per>
+<slack> Slack   </slack>
+<ucf> Clock Group   </ucf>
+<status> Status   </status>
+</path_info>
+<path_info>
+<index> 1   </index>
+<start_inst> sobel_unit/vertical_product_ff\[2\]_0[0]   </start_inst>
+<start_type> reg </start_type>
+<start_clock> edge_detect_top|clk:r   </start_clock>
+<end_inst> sobel_out_fifo/fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0]   </end_inst>
+<end_type> reg   </end_type>
+<end_clock> edge_detect_top|clk:r   </end_clock>
+<clock_skew>
+<val> 0.0 </val>
+<txt> 0.000 - 0.000 </txt>
+</clock_skew>
+<req_per> 8.975 </req_per>
+<slack> -2.155 </slack>
+<ucf>  </ucf>
+<status>
+<val> 0 </val>
+</status>
+<margin>
+<val> 0 </val>
+</margin>
+</path_info>
+<path_info>
+<index> 2   </index>
+<start_inst> sobel_unit/shift_reg_0   </start_inst>
+<start_type> reg </start_type>
+<start_clock> System:r   </start_clock>
+<end_inst> sobel_unit/vertical_product_ff\[0\]_0[8]   </end_inst>
+<end_type> reg   </end_type>
+<end_clock> edge_detect_top|clk:r   </end_clock>
+<clock_skew>
+<val> 0.0 </val>
+<txt> 0.000 - 0.000 </txt>
+</clock_skew>
+<req_per> 8.975 </req_per>
+<slack> 7.428 </slack>
+<ucf>  </ucf>
+<status>
+<val> 0 </val>
+</status>
+<margin>
+<val> 0 </val>
+</margin>
+</path_info>
+<path_info>
+<index> 3   </index>
+<start_inst> sobel_unit/shift_reg_1_rst_cntr_rst   </start_inst>
+<start_type> reg </start_type>
+<start_clock> edge_detect_top|clk:r   </start_clock>
+<end_inst> sobel_unit/shift_reg_0   </end_inst>
+<end_type> reg   </end_type>
+<end_clock> System:r   </end_clock>
+<clock_skew>
+<val> 0.0 </val>
+<txt> 0.000 - 0.000 </txt>
+</clock_skew>
+<req_per> 8.975 </req_per>
+<slack> 7.797 </slack>
+<ucf>  </ucf>
+<status>
+<val> 0 </val>
+</status>
+<margin>
+<val> 0 </val>
+</margin>
+</path_info>
+</timing_correlation_data>

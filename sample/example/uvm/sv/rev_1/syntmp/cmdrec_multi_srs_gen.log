@@ -1,0 +1,8 @@
+/vol/synopsys/fpga/O-2018.09-SP1/bin/syn_nfilter  -link  -multisrs  /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/synwork/sobel_comp.srs  -osyn  /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/synwork/sobel_mult.srs  -log  /home/dcc3637/Courses/CE_387/assignment4/uvm/sv/rev_1/synlog/sobel_multi_srs_gen.srr 
+relcom:/vol/synopsys/fpga/O-2018.09-SP1/bin/syn_nfilter -link -multisrs ../synwork/sobel_comp.srs -osyn ../synwork/sobel_mult.srs -log ../synlog/sobel_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:../synwork/sobel_comp.srs|io:i|time:1738817040|size:18989|exec:0|csum:D1719FD787C7842D1077BD6B567171FB
+file:../synwork/sobel_mult.srs|io:o|time:1738817042|size:4332|exec:0|csum:
+file:../synlog/sobel_multi_srs_gen.srr|io:o|time:1738817042|size:1469|exec:0|csum:
+file:/vol/synopsys/fpga/O-2018.09-SP1/linux_a_64/syn_nfilter|io:i|time:1543382463|size:12202632|exec:1|csum:2CF5CA82A12C53A85C3E36D57C2461DC
+file:/vol/synopsys/fpga/O-2018.09-SP1/bin/syn_nfilter|io:i|time:1543382354|size:368|exec:1|csum:004E4455B64BA10AD6A92FB2301610E0

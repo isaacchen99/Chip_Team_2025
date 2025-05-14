@@ -1,0 +1,4 @@
+@W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
+@W: MT246 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Blackbox synplicity_altsyncram_RAM_RW_0 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/dcc3637/Courses/CE_387/assignment4/uvm/sv/sobel.sv":138:2:138:10|Blackbox synplicity_altsyncram_RAM_RW is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock edge_detect_top|clk with period 8.97ns. Please declare a user-defined clock on port clk.

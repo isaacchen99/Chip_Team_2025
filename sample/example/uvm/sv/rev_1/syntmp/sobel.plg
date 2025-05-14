@@ -1,0 +1,19 @@
+@P:  Part : ep4ce115fi29-7
+@P:  Worst Slack : -2.155
+@P:  edge_detect_top|clk - Estimated Frequency : 89.8 MHz
+@P:  edge_detect_top|clk - Requested Frequency : 111.4 MHz
+@P:  edge_detect_top|clk - Estimated Period : 11.130
+@P:  edge_detect_top|clk - Requested Period : 8.975
+@P:  edge_detect_top|clk - Slack : -2.155
+@P:  System - Estimated Frequency : 1.0 MHz
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : 992.572
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : 7.428
+@P: edge_detect_top Part : ep4ce115fi29-7
+@P: edge_detect_top I/O ATOMs : 28
+@P: edge_detect_top Total LUTs : 518 
+@P: edge_detect_top Register bits : 404
+@P: edge_detect_top .Simple_Multipliers_18_bit : 2
+@P: edge_detect_top DSP Blocks : 2 (4 nine-bit DSP elements)
+@P:  CPU Time : 0h:00m:02s

@@ -1,0 +1,1289 @@
+
+BeginView edge_detect_top edge_detect_top
+Inst: retsobel_out_fifo.SUM_0[1]   retsobel_out_fifo_SUM_0_1_ cycloneive_lcell_comb 
+Inst: retsobel_out_fifo.SUM_0[2]   retsobel_out_fifo_SUM_0_2_ cycloneive_lcell_comb 
+Inst: retgray_scale_in.un7_gray_value.if_generate_plus\.mult1_un40_sum_m[2]   retgray_scale_in_un7_gray_value_if_generate_plus_mult1_un40_sum_m_2_ cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.SUM_0[1]   retretsobel_out_fifo_SUM_0_1_ cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.SUM_0[2]   retretsobel_out_fifo_SUM_0_2_ cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4   retretsobel_out_fifo_fifo_buf_muxe0__0_0__g4 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_1__g4   retretsobel_out_fifo_fifo_buf_muxe0__0_1__g4 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_2__g4   retretsobel_out_fifo_fifo_buf_muxe0__0_2__g4 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_3__g4   retretsobel_out_fifo_fifo_buf_muxe0__0_3__g4 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_4__g4   retretsobel_out_fifo_fifo_buf_muxe0__0_4__g4 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_5__g4   retretsobel_out_fifo_fifo_buf_muxe0__0_5__g4 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_6__g4   retretsobel_out_fifo_fifo_buf_muxe0__0_6__g4 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_7__g4   retretsobel_out_fifo_fifo_buf_muxe0__0_7__g4 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4_0   retretsobel_out_fifo_fifo_buf_muxe0__0_0__g4_0 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_1__g4_0   retretsobel_out_fifo_fifo_buf_muxe0__0_1__g4_0 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_2__g4_0   retretsobel_out_fifo_fifo_buf_muxe0__0_2__g4_0 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_3__g4_0   retretsobel_out_fifo_fifo_buf_muxe0__0_3__g4_0 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_4__g4_0   retretsobel_out_fifo_fifo_buf_muxe0__0_4__g4_0 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_5__g4_0   retretsobel_out_fifo_fifo_buf_muxe0__0_5__g4_0 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_6__g4_0   retretsobel_out_fifo_fifo_buf_muxe0__0_6__g4_0 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_7__g4_0   retretsobel_out_fifo_fifo_buf_muxe0__0_7__g4_0 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4_1   retretsobel_out_fifo_fifo_buf_muxe0__0_0__g4_1 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_1__g4_1   retretsobel_out_fifo_fifo_buf_muxe0__0_1__g4_1 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_2__g4_1   retretsobel_out_fifo_fifo_buf_muxe0__0_2__g4_1 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_3__g4_1   retretsobel_out_fifo_fifo_buf_muxe0__0_3__g4_1 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_4__g4_1   retretsobel_out_fifo_fifo_buf_muxe0__0_4__g4_1 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_5__g4_1   retretsobel_out_fifo_fifo_buf_muxe0__0_5__g4_1 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_6__g4_1   retretsobel_out_fifo_fifo_buf_muxe0__0_6__g4_1 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_7__g4_1   retretsobel_out_fifo_fifo_buf_muxe0__0_7__g4_1 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_0__g4_2   retretsobel_out_fifo_fifo_buf_muxe0__0_0__g4_2 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_1__g4_2   retretsobel_out_fifo_fifo_buf_muxe0__0_1__g4_2 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_2__g4_2   retretsobel_out_fifo_fifo_buf_muxe0__0_2__g4_2 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_3__g4_2   retretsobel_out_fifo_fifo_buf_muxe0__0_3__g4_2 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_4__g4_2   retretsobel_out_fifo_fifo_buf_muxe0__0_4__g4_2 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_5__g4_2   retretsobel_out_fifo_fifo_buf_muxe0__0_5__g4_2 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_6__g4_2   retretsobel_out_fifo_fifo_buf_muxe0__0_6__g4_2 cycloneive_lcell_comb 
+Inst: retretsobel_out_fifo.fifo_buf.muxe0__0_7__g4_2   retretsobel_out_fifo_fifo_buf_muxe0__0_7__g4_2 cycloneive_lcell_comb 
+Inst: blue_in_in[7]   blue_in_in_7_ cycloneive_io_ibuf 
+Inst: blue_in_in[6]   blue_in_in_6_ cycloneive_io_ibuf 
+Inst: blue_in_in[5]   blue_in_in_5_ cycloneive_io_ibuf 
+Inst: blue_in_in[4]   blue_in_in_4_ cycloneive_io_ibuf 
+Inst: blue_in_in[3]   blue_in_in_3_ cycloneive_io_ibuf 
+Inst: blue_in_in[2]   blue_in_in_2_ cycloneive_io_ibuf 
+Inst: blue_in_in[1]   blue_in_in_1_ cycloneive_io_ibuf 
+Inst: blue_in_in[0]   blue_in_in_0_ cycloneive_io_ibuf 
+Inst: green_in_in[7]   green_in_in_7_ cycloneive_io_ibuf 
+Inst: green_in_in[6]   green_in_in_6_ cycloneive_io_ibuf 
+Inst: green_in_in[5]   green_in_in_5_ cycloneive_io_ibuf 
+Inst: green_in_in[4]   green_in_in_4_ cycloneive_io_ibuf 
+Inst: green_in_in[3]   green_in_in_3_ cycloneive_io_ibuf 
+Inst: green_in_in[2]   green_in_in_2_ cycloneive_io_ibuf 
+Inst: green_in_in[1]   green_in_in_1_ cycloneive_io_ibuf 
+Inst: green_in_in[0]   green_in_in_0_ cycloneive_io_ibuf 
+Inst: red_in_in[7]   red_in_in_7_ cycloneive_io_ibuf 
+Inst: red_in_in[6]   red_in_in_6_ cycloneive_io_ibuf 
+Inst: red_in_in[5]   red_in_in_5_ cycloneive_io_ibuf 
+Inst: red_in_in[4]   red_in_in_4_ cycloneive_io_ibuf 
+Inst: red_in_in[3]   red_in_in_3_ cycloneive_io_ibuf 
+Inst: red_in_in[2]   red_in_in_2_ cycloneive_io_ibuf 
+Inst: red_in_in[1]   red_in_in_1_ cycloneive_io_ibuf 
+Inst: red_in_in[0]   red_in_in_0_ cycloneive_io_ibuf 
+Inst: data_out_out[7]   data_out_out_7_ cycloneive_io_obuf 
+Inst: data_out_out[6]   data_out_out_6_ cycloneive_io_obuf 
+Inst: data_out_out[5]   data_out_out_5_ cycloneive_io_obuf 
+Inst: data_out_out[4]   data_out_out_4_ cycloneive_io_obuf 
+Inst: data_out_out[3]   data_out_out_3_ cycloneive_io_obuf 
+Inst: data_out_out[2]   data_out_out_2_ cycloneive_io_obuf 
+Inst: data_out_out[1]   data_out_out_1_ cycloneive_io_obuf 
+Inst: data_out_out[0]   data_out_out_0_ cycloneive_io_obuf 
+Net:  in_to_gray_fifo.dout_0_0[8]   in_to_gray_fifo_dout_0_0[8] 
+Net:  in_to_gray_fifo.dout_0_0[9]   in_to_gray_fifo_dout_0_0[9] 
+Net:  in_to_gray_fifo.dout_0_0[10]   in_to_gray_fifo_dout_0_0[10] 
+Net:  in_to_gray_fifo.dout_0_0[11]   in_to_gray_fifo_dout_0_0[11] 
+Net:  in_to_gray_fifo.dout_0_0[12]   in_to_gray_fifo_dout_0_0[12] 
+Net:  in_to_gray_fifo.dout_0_0[13]   in_to_gray_fifo_dout_0_0[13] 
+Net:  in_to_gray_fifo.dout_0_0[14]   in_to_gray_fifo_dout_0_0[14] 
+Net:  in_to_gray_fifo.dout_0[8]   in_to_gray_fifo_dout_0[8] 
+Net:  in_to_gray_fifo.dout_0[9]   in_to_gray_fifo_dout_0[9] 
+Net:  in_to_gray_fifo.dout_0[10]   in_to_gray_fifo_dout_0[10] 
+Net:  in_to_gray_fifo.dout_0[11]   in_to_gray_fifo_dout_0[11] 
+Net:  in_to_gray_fifo.dout_0[12]   in_to_gray_fifo_dout_0[12] 
+Net:  in_to_gray_fifo.dout_0[13]   in_to_gray_fifo_dout_0[13] 
+Net:  in_to_gray_fifo.dout_0[14]   in_to_gray_fifo_dout_0[14] 
+Net:  in_to_gray_fifo.dout_0[15]   in_to_gray_fifo_dout_0[15] 
+Net:  in_to_gray_fifo.dout_0_0[7]   in_to_gray_fifo_dout_0_0[7] 
+Net:  in_to_gray_fifo.dout_0[1]   in_to_gray_fifo_dout_0[1] 
+Net:  in_to_gray_fifo.dout_0[2]   in_to_gray_fifo_dout_0[2] 
+Net:  in_to_gray_fifo.dout_0[3]   in_to_gray_fifo_dout_0[3] 
+Net:  in_to_gray_fifo.dout_0[4]   in_to_gray_fifo_dout_0[4] 
+Net:  in_to_gray_fifo.dout_0[5]   in_to_gray_fifo_dout_0[5] 
+Net:  in_to_gray_fifo.dout_0[6]   in_to_gray_fifo_dout_0[6] 
+Net:  in_to_gray_fifo.dout_0[7]   in_to_gray_fifo_dout_0[7] 
+Net:  gray_scale_in.manage_gray.dout[0]   gray_scale_in_manage_gray_dout[0] 
+Net:  gray_scale_in.manage_gray.dout[1]   gray_scale_in_manage_gray_dout[1] 
+Net:  gray_scale_in.manage_gray.dout[2]   gray_scale_in_manage_gray_dout[2] 
+Net:  gray_scale_in.manage_gray.dout[3]   gray_scale_in_manage_gray_dout[3] 
+Net:  gray_scale_in.manage_gray.dout[4]   gray_scale_in_manage_gray_dout[4] 
+Net:  gray_scale_in.manage_gray.dout[5]   gray_scale_in_manage_gray_dout[5] 
+Net:  gray_scale_in.manage_gray.dout[6]   gray_scale_in_manage_gray_dout[6] 
+Net:  gray_scale_in.manage_gray.dout[7]   gray_scale_in_manage_gray_dout[7] 
+Net:  sobel_unit.read_fifo   sobel_unit_read_fifo 
+Net:  gray_in_fifo.dout_0[1]   gray_in_fifo_dout_0[1] 
+Net:  gray_in_fifo.dout_0[2]   gray_in_fifo_dout_0[2] 
+Net:  gray_in_fifo.dout_0[3]   gray_in_fifo_dout_0[3] 
+Net:  gray_in_fifo.dout_0[4]   gray_in_fifo_dout_0[4] 
+Net:  gray_in_fifo.dout_0[5]   gray_in_fifo_dout_0[5] 
+Net:  gray_in_fifo.dout_0[6]   gray_in_fifo_dout_0[6] 
+Net:  gray_in_fifo.dout_0[7]   gray_in_fifo_dout_0[7] 
+Net:  sobel_unit.write_fifo   sobel_unit_write_fifo 
+Net:  sobel_out_fifo.rd_addr[2]   sobel_out_fifo_rd_addr[2] 
+Net:  sobel_out_fifo.rd_addr[0]   sobel_out_fifo_rd_addr[0] 
+Net:  sobel_out_fifo.rd_addr[1]   sobel_out_fifo_rd_addr[1] 
+Net:  sobel_unit.total_avg_add1   sobel_unit_total_avg_add1 
+Net:  sobel_unit.total_avg_add2   sobel_unit_total_avg_add2 
+Net:  sobel_unit.total_avg_add3   sobel_unit_total_avg_add3 
+Net:  sobel_unit.total_avg_add4   sobel_unit_total_avg_add4 
+Net:  sobel_unit.total_avg_add5   sobel_unit_total_avg_add5 
+Net:  sobel_unit.total_avg_add6   sobel_unit_total_avg_add6 
+Net:  sobel_unit.total_avg_add7   sobel_unit_total_avg_add7 
+Net:  sobel_unit.total_avg_add8   sobel_unit_total_avg_add8 
+Net:  sobel_unit.total_avg_add9   sobel_unit_total_avg_add9 
+Net:  sobel_unit.total_avg[10]   sobel_unit_total_avg[10] 
+Net:  gray_scale_in.un1_gray_value_add8   gray_scale_in_un1_gray_value_add8 
+Net:  gray_scale_in.CO0   gray_scale_in_CO0 
+Net:  gray_in_fifo.dout_0_0[0]   gray_in_fifo_dout_0_0[0] 
+Net:  in_to_gray_fifo.dout_0_0[0]   in_to_gray_fifo_dout_0_0[0] 
+Net:  gray_in_fifo.empty   gray_in_fifo_empty 
+Net:  gray_scale_in.manage_gray.out_ff_state[0]   gray_scale_in_manage_gray_out_ff_state[0] 
+Net:  in_to_gray_fifo.empty   in_to_gray_fifo_empty 
+Net:  in_to_gray_fifo.full   in_to_gray_fifo_full 
+Net:  sobel_out_fifo.dout_0_0[0]   sobel_out_fifo_dout_0_0[0] 
+Net:  sobel_out_fifo.dout_0[1]   sobel_out_fifo_dout_0[1] 
+Net:  sobel_out_fifo.dout_0[2]   sobel_out_fifo_dout_0[2] 
+Net:  sobel_out_fifo.dout_0[3]   sobel_out_fifo_dout_0[3] 
+Net:  sobel_out_fifo.dout_0[4]   sobel_out_fifo_dout_0[4] 
+Net:  sobel_out_fifo.dout_0[5]   sobel_out_fifo_dout_0[5] 
+Net:  sobel_out_fifo.dout_0[6]   sobel_out_fifo_dout_0[6] 
+Net:  sobel_out_fifo.dout_0[7]   sobel_out_fifo_dout_0[7] 
+Net:  gray_scale_in.un7_gray_value.if_generate_plus\.mult1_un40_sum_1_anc2   gray_scale_in_un7_gray_value_if_generate_plus_mult1_un40_sum_1_anc2 
+Net:  sobel_out_fifo.un13_rd_addr_t   sobel_out_fifo_un13_rd_addr_t 
+Net:  gray_in_fifo.full   gray_in_fifo_full 
+Net:  gray_scale_in.un7_gray_value.if_generate_plus\.mult1_un40_sum_0_sum2   gray_scale_in_un7_gray_value_if_generate_plus_mult1_un40_sum_0_sum2 
+Net:  gray_scale_in.manage_gray.read_fifo_i   gray_scale_in_manage_gray_read_fifo_i 
+Net:  sobel_out_fifo.full   sobel_out_fifo_full 
+Net:  sobel_out_fifo.SUM_0[1]   sobel_out_fifo_SUM_0[1] 
+Net:  sobel_out_fifo.SUM_0[2]   sobel_out_fifo_SUM_0[2] 
+EndView edge_detect_top edge_detect_top
+
+BeginView fifo_24s_4s_3s fifo_24s_4s_3s
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[23]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__23_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[22]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__22_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[21]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__21_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[20]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__20_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[19]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__19_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[18]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__18_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[17]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__17_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[16]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__16_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[15]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__15_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[14]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__14_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[13]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__13_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[12]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__12_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[11]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__11_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[10]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__10_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[9]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__9_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[8]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__8_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[7]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__7_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[6]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__6_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[5]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__5_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[4]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__4_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[3]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__3_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[2]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__2_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[1]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__1_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3_[0]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__0_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[23]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__23_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[22]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__22_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[21]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__21_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[20]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__20_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[19]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__19_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[18]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__18_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[17]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__17_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[16]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__16_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[15]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__15_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[14]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__14_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[13]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__13_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[12]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__12_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[11]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__11_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[10]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__10_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[9]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__9_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[8]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__8_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[7]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__7_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[6]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__6_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[5]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__5_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[4]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__4_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[3]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__3_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[2]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__2_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[1]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__1_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram2_[0]   fifo_buf_in_to_gray_fifo_fifo_buf_ram2__0_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[23]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__23_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[22]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__22_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[21]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__21_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[20]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__20_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[19]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__19_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[18]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__18_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[17]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__17_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[16]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__16_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[15]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__15_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[14]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__14_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[13]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__13_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[12]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__12_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[11]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__11_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[10]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__10_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[9]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__9_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[8]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__8_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[7]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__7_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[6]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__6_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[5]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__5_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[4]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__4_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[3]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__3_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[2]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__2_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[1]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__1_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram1_[0]   fifo_buf_in_to_gray_fifo_fifo_buf_ram1__0_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[23]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__23_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[22]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__22_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[21]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__21_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[20]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__20_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[19]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__19_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[18]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__18_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[17]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__17_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[16]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__16_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[15]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__15_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[14]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__14_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[13]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__13_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[12]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__12_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[11]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__11_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[10]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__10_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[9]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__9_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[8]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__8_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[7]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__7_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[6]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__6_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[5]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__5_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[4]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__4_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[3]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__3_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[2]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__2_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[1]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__1_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0_[0]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__0_ dffeas 
+Inst: dout_0_0[0]   dout_0_0_0_ dffeas 
+Inst: dout_0_0[14]   dout_0_0_14_ dffeas 
+Inst: dout_0_0[13]   dout_0_0_13_ dffeas 
+Inst: dout_0_0[12]   dout_0_0_12_ dffeas 
+Inst: dout_0_0[11]   dout_0_0_11_ dffeas 
+Inst: dout_0_0[10]   dout_0_0_10_ dffeas 
+Inst: dout_0_0[9]   dout_0_0_9_ dffeas 
+Inst: dout_0_0[8]   dout_0_0_8_ dffeas 
+Inst: dout_0_0[7]   dout_0_0_7_ dffeas 
+Inst: dout_0[15]   dout_0_15_ dffeas 
+Inst: dout_0[14]   dout_0_14_ dffeas 
+Inst: dout_0[13]   dout_0_13_ dffeas 
+Inst: dout_0[12]   dout_0_12_ dffeas 
+Inst: dout_0[11]   dout_0_11_ dffeas 
+Inst: dout_0[10]   dout_0_10_ dffeas 
+Inst: dout_0[9]   dout_0_9_ dffeas 
+Inst: dout_0[8]   dout_0_8_ dffeas 
+Inst: dout_0[7]   dout_0_7_ dffeas 
+Inst: dout_0[6]   dout_0_6_ dffeas 
+Inst: dout_0[5]   dout_0_5_ dffeas 
+Inst: dout_0[4]   dout_0_4_ dffeas 
+Inst: dout_0[3]   dout_0_3_ dffeas 
+Inst: dout_0[2]   dout_0_2_ dffeas 
+Inst: dout_0[1]   dout_0_1_ dffeas 
+Inst: rd_addr[2]   rd_addr_2_ dffeas 
+Inst: rd_addr[1]   rd_addr_1_ dffeas 
+Inst: rd_addr[0]   rd_addr_0_ dffeas 
+Inst: wr_addr[2]   wr_addr_2_ dffeas 
+Inst: wr_addr[1]   wr_addr_1_ dffeas 
+Inst: wr_addr[0]   wr_addr_0_ dffeas 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIKOKC1[17]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIKOKC1_17_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNI1K5Q[17]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNI1K5Q_17_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIMQKC1[18]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIMQKC1_18_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIOSKC1[19]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIOSKC1_19_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNI8EMC1[20]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNI8EMC1_20_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIAGMC1[21]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIAGMC1_21_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIPD7Q[22]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIPD7Q_22_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNICIMC1[22]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNICIMC1_22_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIEKMC1[23]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIEKMC1_23_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIKJ9N1[8]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIKJ9N1_8_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIML9N1[9]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIML9N1_9_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNI3FIO[9]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNI3FIO_9_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIJ55Q[10]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIJ55Q_10_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNI6AKC1[10]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNI6AKC1_10_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNI8CKC1[11]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNI8CKC1_11_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIAEKC1[12]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIAEKC1_12_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNICGKC1[13]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNICGKC1_13_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIEIKC1[14]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIEIKC1_14_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIGKKC1[15]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIGKKC1_15_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIIMKC1[16]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIIMKC1_16_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNI659N1[1]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNI659N1_1_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNI879N1[2]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNI879N1_2_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIA99N1[3]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIA99N1_3_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIN2IO[3]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIN2IO_3_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNICB9N1[4]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNICB9N1_4_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIED9N1[5]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIED9N1_5_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIGF9N1[6]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIGF9N1_6_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNIIH9N1[7]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNIIH9N1_7_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram0__RNI439N1[0]   fifo_buf_in_to_gray_fifo_fifo_buf_ram0__RNI439N1_0_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[2]   wr_addr_RNO_2_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIT8IO[6]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIT8IO_6_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNI3M5Q[18]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNI3M5Q_18_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNI5O5Q[19]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNI5O5Q_19_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIL97Q[20]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIL97Q_20_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNINB7Q[21]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNINB7Q_21_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIRF7Q[23]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIRF7Q_23_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNI1DIO[8]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNI1DIO_8_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIL75Q[11]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIL75Q_11_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIN95Q[12]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIN95Q_12_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIPB5Q[13]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIPB5Q_13_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIRD5Q[14]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIRD5Q_14_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNITF5Q[15]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNITF5Q_15_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIVH5Q[16]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIVH5Q_16_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIJUHO[1]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIJUHO_1_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIL0IO[2]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIL0IO_2_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIP4IO[4]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIP4IO_4_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIR6IO[5]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIR6IO_5_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIVAIO[7]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIVAIO_7_ cycloneive_lcell_comb 
+Inst: fifo_buf.in_to_gray_fifo.fifo_buf_ram3__RNIHSHO[0]   fifo_buf_in_to_gray_fifo_fifo_buf_ram3__RNIHSHO_0_ cycloneive_lcell_comb 
+Inst: empty_t_NE_0   empty_t_NE_0_cZ cycloneive_lcell_comb 
+Inst: full_0   full_0_cZ cycloneive_lcell_comb 
+Inst: rd_addr_t   rd_addr_t_cZ cycloneive_lcell_comb 
+Inst: fifo_buf.ramout_3_0_0__g1_i_x4   fifo_buf_ramout_3_0_0__g1_i_x4 cycloneive_lcell_comb 
+Inst: wr_addr_RNO[1]   wr_addr_RNO_1_ cycloneive_lcell_comb 
+Inst: fifo_buf.muxe1__0_0__g2   fifo_buf_muxe1__0_0__g2 cycloneive_lcell_comb 
+Inst: fifo_buf.muxe3__0_0__g2   fifo_buf_muxe3__0_0__g2 cycloneive_lcell_comb 
+Inst: fifo_buf.muxe0__0_0__g2   fifo_buf_muxe0__0_0__g2 cycloneive_lcell_comb 
+Inst: fifo_buf.muxe2__0_0__g2   fifo_buf_muxe2__0_0__g2 cycloneive_lcell_comb 
+Inst: wr_addr_RNO[0]   wr_addr_RNO_0_ cycloneive_lcell_comb 
+Inst: dout[23]   dout_23_ ghost 
+Inst: dout[22]   dout_22_ ghost 
+Inst: dout[21]   dout_21_ ghost 
+Inst: dout[20]   dout_20_ ghost 
+Inst: dout[19]   dout_19_ ghost 
+Inst: dout[18]   dout_18_ ghost 
+Inst: dout[17]   dout_17_ ghost 
+Inst: dout[16]   dout_16_ ghost 
+Inst: dout[15]   dout_15_ ghost 
+Inst: dout[14]   dout_14_ ghost 
+Inst: dout[13]   dout_13_ ghost 
+Inst: dout[12]   dout_12_ ghost 
+Inst: dout[11]   dout_11_ ghost 
+Inst: dout[10]   dout_10_ ghost 
+Inst: dout[9]   dout_9_ ghost 
+Inst: dout[8]   dout_8_ ghost 
+Inst: dout[7]   dout_7_ ghost 
+Inst: dout[6]   dout_6_ ghost 
+Inst: dout[5]   dout_5_ ghost 
+Inst: dout[4]   dout_4_ ghost 
+Inst: dout[3]   dout_3_ ghost 
+Inst: dout[2]   dout_2_ ghost 
+Inst: dout[1]   dout_1_ ghost 
+Inst: dout[0]   dout_0_ ghost 
+Inst: rst_c_i   rst_c_i_cZ inv 
+Inst: SUM_0_i[0]   SUM_0_i_0_ inv 
+EndView fifo_24s_4s_3s fifo_24s_4s_3s
+
+BeginView gray_scale_8s gray_scale_8s
+Inst: un1_gray_value_add0   un1_gray_value_add0_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_add1   un1_gray_value_add1_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_add2   un1_gray_value_add2_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_add3   un1_gray_value_add3_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_add4   un1_gray_value_add4_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_add5   un1_gray_value_add5_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_add6   un1_gray_value_add6_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_add7   un1_gray_value_add7_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_0_add0   un1_gray_value_0_add0_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_0_add1   un1_gray_value_0_add1_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_0_add2   un1_gray_value_0_add2_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_0_add3   un1_gray_value_0_add3_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_0_add4   un1_gray_value_0_add4_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_0_add5   un1_gray_value_0_add5_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_0_add6   un1_gray_value_0_add6_cZ cycloneive_lcell_comb 
+Inst: un1_gray_value_0_add7   un1_gray_value_0_add7_cZ cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un68_sum_add1   un7_gray_value_if_generate_plus_mult1_un68_sum_add1 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un68_sum_add2   un7_gray_value_if_generate_plus_mult1_un68_sum_add2 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un68_sum_add3   un7_gray_value_if_generate_plus_mult1_un68_sum_add3 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un61_sum_add1   un7_gray_value_if_generate_plus_mult1_un61_sum_add1 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un61_sum_add2   un7_gray_value_if_generate_plus_mult1_un61_sum_add2 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un61_sum_add3   un7_gray_value_if_generate_plus_mult1_un61_sum_add3 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un54_sum_add1   un7_gray_value_if_generate_plus_mult1_un54_sum_add1 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un54_sum_add2   un7_gray_value_if_generate_plus_mult1_un54_sum_add2 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un54_sum_add3   un7_gray_value_if_generate_plus_mult1_un54_sum_add3 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un47_sum_add1   un7_gray_value_if_generate_plus_mult1_un47_sum_add1 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un47_sum_add2   un7_gray_value_if_generate_plus_mult1_un47_sum_add2 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un40_sum_0_sum2_1   un7_gray_value_if_generate_plus_mult1_un40_sum_0_sum2_1 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un40_sum_1_anc2   un7_gray_value_if_generate_plus_mult1_un40_sum_1_anc2 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un40_sum_m_a[1]   un7_gray_value_if_generate_plus_mult1_un40_sum_m_a_1_ cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un40_sum_m[1]   un7_gray_value_if_generate_plus_mult1_un40_sum_m_1_ cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un40_sum_0_sum2_a   un7_gray_value_if_generate_plus_mult1_un40_sum_0_sum2_a cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un40_sum_0_sum2   un7_gray_value_if_generate_plus_mult1_un40_sum_0_sum2 cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un40_sum_m[2]   un7_gray_value_if_generate_plus_mult1_un40_sum_m_2_ cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un47_sum_add2_term   un7_gray_value_if_generate_plus_mult1_un47_sum_add2_term cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un47_sum_add1_start   un7_gray_value_if_generate_plus_mult1_un47_sum_add1_start cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un54_sum_add1_start   un7_gray_value_if_generate_plus_mult1_un54_sum_add1_start cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un61_sum_add1_start   un7_gray_value_if_generate_plus_mult1_un61_sum_add1_start cycloneive_lcell_comb 
+Inst: un7_gray_value.if_generate_plus\.mult1_un68_sum_add1_start   un7_gray_value_if_generate_plus_mult1_un68_sum_add1_start cycloneive_lcell_comb 
+EndView gray_scale_8s gray_scale_8s
+
+BeginView manage_fifo_8s_1s_1s manage_fifo_8s_1s_1s
+Inst: out_ff_state[0]   out_ff_state_0_ dffeas 
+Inst: dout[7]   dout_7_ dffeas 
+Inst: dout[6]   dout_6_ dffeas 
+Inst: dout[5]   dout_5_ dffeas 
+Inst: dout[4]   dout_4_ dffeas 
+Inst: dout[3]   dout_3_ dffeas 
+Inst: dout[2]   dout_2_ dffeas 
+Inst: dout[1]   dout_1_ dffeas 
+Inst: dout[0]   dout_0_ dffeas 
+Inst: dout_RNO_0[7]   dout_RNO_0_7_ cycloneive_lcell_comb 
+Inst: dout_RNO[7]   dout_RNO_7_ cycloneive_lcell_comb 
+Inst: dout_RNO[6]   dout_RNO_6_ cycloneive_lcell_comb 
+Inst: out_ff_state_RNO[0]   out_ff_state_RNO_0_ cycloneive_lcell_comb 
+Inst: dout_RNO_0[0]   dout_RNO_0_0_ cycloneive_lcell_comb 
+Inst: dout_RNO[0]   dout_RNO_0_ cycloneive_lcell_comb 
+Inst: out_ff_state[1:0]   out_ff_state_1_0_ ghost 
+Inst: rst_c_i   rst_c_i_cZ inv 
+EndView manage_fifo_8s_1s_1s manage_fifo_8s_1s_1s
+
+BeginView fifo_8s_4s_3s_1 fifo_8s_4s_3s_1
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram3_[7]   fifo_buf_gray_in_fifo_fifo_buf_ram3__7_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram3_[6]   fifo_buf_gray_in_fifo_fifo_buf_ram3__6_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram3_[5]   fifo_buf_gray_in_fifo_fifo_buf_ram3__5_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram3_[4]   fifo_buf_gray_in_fifo_fifo_buf_ram3__4_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram3_[3]   fifo_buf_gray_in_fifo_fifo_buf_ram3__3_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram3_[2]   fifo_buf_gray_in_fifo_fifo_buf_ram3__2_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram3_[1]   fifo_buf_gray_in_fifo_fifo_buf_ram3__1_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram3_[0]   fifo_buf_gray_in_fifo_fifo_buf_ram3__0_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2_[7]   fifo_buf_gray_in_fifo_fifo_buf_ram2__7_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2_[6]   fifo_buf_gray_in_fifo_fifo_buf_ram2__6_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2_[5]   fifo_buf_gray_in_fifo_fifo_buf_ram2__5_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2_[4]   fifo_buf_gray_in_fifo_fifo_buf_ram2__4_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2_[3]   fifo_buf_gray_in_fifo_fifo_buf_ram2__3_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2_[2]   fifo_buf_gray_in_fifo_fifo_buf_ram2__2_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2_[1]   fifo_buf_gray_in_fifo_fifo_buf_ram2__1_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2_[0]   fifo_buf_gray_in_fifo_fifo_buf_ram2__0_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1_[7]   fifo_buf_gray_in_fifo_fifo_buf_ram1__7_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1_[6]   fifo_buf_gray_in_fifo_fifo_buf_ram1__6_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1_[5]   fifo_buf_gray_in_fifo_fifo_buf_ram1__5_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1_[4]   fifo_buf_gray_in_fifo_fifo_buf_ram1__4_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1_[3]   fifo_buf_gray_in_fifo_fifo_buf_ram1__3_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1_[2]   fifo_buf_gray_in_fifo_fifo_buf_ram1__2_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1_[1]   fifo_buf_gray_in_fifo_fifo_buf_ram1__1_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1_[0]   fifo_buf_gray_in_fifo_fifo_buf_ram1__0_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram0_[7]   fifo_buf_gray_in_fifo_fifo_buf_ram0__7_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram0_[6]   fifo_buf_gray_in_fifo_fifo_buf_ram0__6_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram0_[5]   fifo_buf_gray_in_fifo_fifo_buf_ram0__5_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram0_[4]   fifo_buf_gray_in_fifo_fifo_buf_ram0__4_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram0_[3]   fifo_buf_gray_in_fifo_fifo_buf_ram0__3_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram0_[2]   fifo_buf_gray_in_fifo_fifo_buf_ram0__2_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram0_[1]   fifo_buf_gray_in_fifo_fifo_buf_ram0__1_ dffeas 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram0_[0]   fifo_buf_gray_in_fifo_fifo_buf_ram0__0_ dffeas 
+Inst: dout_0_0[0]   dout_0_0_0_ dffeas 
+Inst: dout_0[7]   dout_0_7_ dffeas 
+Inst: dout_0[6]   dout_0_6_ dffeas 
+Inst: dout_0[5]   dout_0_5_ dffeas 
+Inst: dout_0[4]   dout_0_4_ dffeas 
+Inst: dout_0[3]   dout_0_3_ dffeas 
+Inst: dout_0[2]   dout_0_2_ dffeas 
+Inst: dout_0[1]   dout_0_1_ dffeas 
+Inst: rd_addr[2]   rd_addr_2_ dffeas 
+Inst: rd_addr[1]   rd_addr_1_ dffeas 
+Inst: rd_addr[0]   rd_addr_0_ dffeas 
+Inst: wr_addr[2]   wr_addr_2_ dffeas 
+Inst: wr_addr[1]   wr_addr_1_ dffeas 
+Inst: wr_addr[0]   wr_addr_0_ dffeas 
+Inst: wr_addr_RNO[2]   wr_addr_RNO_2_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1__RNI932J[1]   fifo_buf_gray_in_fifo_fifo_buf_ram1__RNI932J_1_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2__RNI1GRS1[1]   fifo_buf_gray_in_fifo_fifo_buf_ram2__RNI1GRS1_1_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2__RNI3IRS1[2]   fifo_buf_gray_in_fifo_fifo_buf_ram2__RNI3IRS1_2_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1__RNIB52J[2]   fifo_buf_gray_in_fifo_fifo_buf_ram1__RNIB52J_2_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1__RNID72J[3]   fifo_buf_gray_in_fifo_fifo_buf_ram1__RNID72J_3_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2__RNI5KRS1[3]   fifo_buf_gray_in_fifo_fifo_buf_ram2__RNI5KRS1_3_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2__RNI7MRS1[4]   fifo_buf_gray_in_fifo_fifo_buf_ram2__RNI7MRS1_4_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1__RNIF92J[4]   fifo_buf_gray_in_fifo_fifo_buf_ram1__RNIF92J_4_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1__RNIHB2J[5]   fifo_buf_gray_in_fifo_fifo_buf_ram1__RNIHB2J_5_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2__RNI9ORS1[5]   fifo_buf_gray_in_fifo_fifo_buf_ram2__RNI9ORS1_5_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2__RNIBQRS1[6]   fifo_buf_gray_in_fifo_fifo_buf_ram2__RNIBQRS1_6_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1__RNIJD2J[6]   fifo_buf_gray_in_fifo_fifo_buf_ram1__RNIJD2J_6_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1__RNILF2J[7]   fifo_buf_gray_in_fifo_fifo_buf_ram1__RNILF2J_7_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2__RNIDSRS1[7]   fifo_buf_gray_in_fifo_fifo_buf_ram2__RNIDSRS1_7_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram2__RNIVDRS1[0]   fifo_buf_gray_in_fifo_fifo_buf_ram2__RNIVDRS1_0_ cycloneive_lcell_comb 
+Inst: fifo_buf.gray_in_fifo.fifo_buf_ram1__RNI712J[0]   fifo_buf_gray_in_fifo_fifo_buf_ram1__RNI712J_0_ cycloneive_lcell_comb 
+Inst: un4_empty_t_NE_0   un4_empty_t_NE_0_cZ cycloneive_lcell_comb 
+Inst: full_0   full_0_cZ cycloneive_lcell_comb 
+Inst: un13_rd_addr_t   un13_rd_addr_t_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[0]   wr_addr_RNO_0_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[1]   wr_addr_RNO_1_ cycloneive_lcell_comb 
+Inst: fifo_buf.ramout_3_0_0__g1_i_x4   fifo_buf_ramout_3_0_0__g1_i_x4 cycloneive_lcell_comb 
+Inst: fifo_buf.muxe0__0_0__g2   fifo_buf_muxe0__0_0__g2 cycloneive_lcell_comb 
+Inst: fifo_buf.muxe1__0_0__g2   fifo_buf_muxe1__0_0__g2 cycloneive_lcell_comb 
+Inst: fifo_buf.muxe2__0_0__g2   fifo_buf_muxe2__0_0__g2 cycloneive_lcell_comb 
+Inst: fifo_buf.muxe3__0_0__g2   fifo_buf_muxe3__0_0__g2 cycloneive_lcell_comb 
+Inst: rd_addr_RNISRFL[2]   rd_addr_RNISRFL_2_ cycloneive_lcell_comb 
+Inst: dout[7]   dout_7_ ghost 
+Inst: dout[6]   dout_6_ ghost 
+Inst: dout[5]   dout_5_ ghost 
+Inst: dout[4]   dout_4_ ghost 
+Inst: dout[3]   dout_3_ ghost 
+Inst: dout[2]   dout_2_ ghost 
+Inst: dout[1]   dout_1_ ghost 
+Inst: dout[0]   dout_0_ ghost 
+Inst: rst_c_i   rst_c_i_cZ inv 
+Inst: SUM_0_i[0]   SUM_0_i_0_ inv 
+EndView fifo_8s_4s_3s_1 fifo_8s_4s_3s_1
+
+BeginView sobel_8s_720s_540s_3s sobel_8s_720s_540s_3s
+Inst: height_counter[9]   height_counter_9_ dffeas 
+Inst: height_counter[8]   height_counter_8_ dffeas 
+Inst: height_counter[7]   height_counter_7_ dffeas 
+Inst: height_counter[6]   height_counter_6_ dffeas 
+Inst: height_counter[5]   height_counter_5_ dffeas 
+Inst: height_counter[4]   height_counter_4_ dffeas 
+Inst: height_counter[3]   height_counter_3_ dffeas 
+Inst: height_counter[2]   height_counter_2_ dffeas 
+Inst: height_counter[1]   height_counter_1_ dffeas 
+Inst: height_counter[0]   height_counter_0_ dffeas 
+Inst: width_counter[9]   width_counter_9_ dffeas 
+Inst: width_counter[8]   width_counter_8_ dffeas 
+Inst: width_counter[7]   width_counter_7_ dffeas 
+Inst: width_counter[6]   width_counter_6_ dffeas 
+Inst: width_counter[5]   width_counter_5_ dffeas 
+Inst: width_counter[4]   width_counter_4_ dffeas 
+Inst: width_counter[3]   width_counter_3_ dffeas 
+Inst: width_counter[2]   width_counter_2_ dffeas 
+Inst: width_counter[1]   width_counter_1_ dffeas 
+Inst: width_counter[0]   width_counter_0_ dffeas 
+Inst: shift_reg\[1\][7]   shift_reg_1__7_ dffeas 
+Inst: shift_reg\[1\][6]   shift_reg_1__6_ dffeas 
+Inst: shift_reg\[1\][5]   shift_reg_1__5_ dffeas 
+Inst: shift_reg\[1\][4]   shift_reg_1__4_ dffeas 
+Inst: shift_reg\[1\][3]   shift_reg_1__3_ dffeas 
+Inst: shift_reg\[1\][2]   shift_reg_1__2_ dffeas 
+Inst: shift_reg\[1\][1]   shift_reg_1__1_ dffeas 
+Inst: shift_reg\[1\][0]   shift_reg_1__0_ dffeas 
+Inst: shift_reg\[2\][7]   shift_reg_2__7_ dffeas 
+Inst: shift_reg\[2\][6]   shift_reg_2__6_ dffeas 
+Inst: shift_reg\[2\][5]   shift_reg_2__5_ dffeas 
+Inst: shift_reg\[2\][4]   shift_reg_2__4_ dffeas 
+Inst: shift_reg\[2\][3]   shift_reg_2__3_ dffeas 
+Inst: shift_reg\[2\][2]   shift_reg_2__2_ dffeas 
+Inst: shift_reg\[2\][1]   shift_reg_2__1_ dffeas 
+Inst: shift_reg\[2\][0]   shift_reg_2__0_ dffeas 
+Inst: shift_reg\[0\][7]   shift_reg_0__7_ dffeas 
+Inst: shift_reg\[0\][6]   shift_reg_0__6_ dffeas 
+Inst: shift_reg\[0\][5]   shift_reg_0__5_ dffeas 
+Inst: shift_reg\[0\][4]   shift_reg_0__4_ dffeas 
+Inst: shift_reg\[0\][3]   shift_reg_0__3_ dffeas 
+Inst: shift_reg\[0\][2]   shift_reg_0__2_ dffeas 
+Inst: shift_reg\[0\][1]   shift_reg_0__1_ dffeas 
+Inst: shift_reg\[0\][0]   shift_reg_0__0_ dffeas 
+Inst: shift_reg\[1440\][7]   shift_reg_1440__7_ dffeas 
+Inst: shift_reg\[1440\][6]   shift_reg_1440__6_ dffeas 
+Inst: shift_reg\[1440\][5]   shift_reg_1440__5_ dffeas 
+Inst: shift_reg\[1440\][4]   shift_reg_1440__4_ dffeas 
+Inst: shift_reg\[1440\][3]   shift_reg_1440__3_ dffeas 
+Inst: shift_reg\[1440\][2]   shift_reg_1440__2_ dffeas 
+Inst: shift_reg\[1440\][1]   shift_reg_1440__1_ dffeas 
+Inst: shift_reg\[1440\][0]   shift_reg_1440__0_ dffeas 
+Inst: shift_reg\[720\][7]   shift_reg_720__7_ dffeas 
+Inst: shift_reg\[720\][6]   shift_reg_720__6_ dffeas 
+Inst: shift_reg\[720\][5]   shift_reg_720__5_ dffeas 
+Inst: shift_reg\[720\][4]   shift_reg_720__4_ dffeas 
+Inst: shift_reg\[720\][3]   shift_reg_720__3_ dffeas 
+Inst: shift_reg\[720\][2]   shift_reg_720__2_ dffeas 
+Inst: shift_reg\[720\][1]   shift_reg_720__1_ dffeas 
+Inst: shift_reg\[720\][0]   shift_reg_720__0_ dffeas 
+Inst: shift_reg\[1441\][7]   shift_reg_1441__7_ dffeas 
+Inst: shift_reg\[1441\][6]   shift_reg_1441__6_ dffeas 
+Inst: shift_reg\[1441\][5]   shift_reg_1441__5_ dffeas 
+Inst: shift_reg\[1441\][4]   shift_reg_1441__4_ dffeas 
+Inst: shift_reg\[1441\][3]   shift_reg_1441__3_ dffeas 
+Inst: shift_reg\[1441\][2]   shift_reg_1441__2_ dffeas 
+Inst: shift_reg\[1441\][1]   shift_reg_1441__1_ dffeas 
+Inst: shift_reg\[1441\][0]   shift_reg_1441__0_ dffeas 
+Inst: shift_reg\[1442\][7]   shift_reg_1442__7_ dffeas 
+Inst: shift_reg\[1442\][6]   shift_reg_1442__6_ dffeas 
+Inst: shift_reg\[1442\][5]   shift_reg_1442__5_ dffeas 
+Inst: shift_reg\[1442\][4]   shift_reg_1442__4_ dffeas 
+Inst: shift_reg\[1442\][3]   shift_reg_1442__3_ dffeas 
+Inst: shift_reg\[1442\][2]   shift_reg_1442__2_ dffeas 
+Inst: shift_reg\[1442\][1]   shift_reg_1442__1_ dffeas 
+Inst: shift_reg\[1442\][0]   shift_reg_1442__0_ dffeas 
+Inst: shift_reg\[721\][7]   shift_reg_721__7_ dffeas 
+Inst: shift_reg\[721\][6]   shift_reg_721__6_ dffeas 
+Inst: shift_reg\[721\][5]   shift_reg_721__5_ dffeas 
+Inst: shift_reg\[721\][4]   shift_reg_721__4_ dffeas 
+Inst: shift_reg\[721\][3]   shift_reg_721__3_ dffeas 
+Inst: shift_reg\[721\][2]   shift_reg_721__2_ dffeas 
+Inst: shift_reg\[721\][1]   shift_reg_721__1_ dffeas 
+Inst: shift_reg\[721\][0]   shift_reg_721__0_ dffeas 
+Inst: shift_reg\[722\][7]   shift_reg_722__7_ dffeas 
+Inst: shift_reg\[722\][6]   shift_reg_722__6_ dffeas 
+Inst: shift_reg\[722\][5]   shift_reg_722__5_ dffeas 
+Inst: shift_reg\[722\][4]   shift_reg_722__4_ dffeas 
+Inst: shift_reg\[722\][3]   shift_reg_722__3_ dffeas 
+Inst: shift_reg\[722\][2]   shift_reg_722__2_ dffeas 
+Inst: shift_reg\[722\][1]   shift_reg_722__1_ dffeas 
+Inst: shift_reg\[722\][0]   shift_reg_722__0_ dffeas 
+Inst: horizontal_product_ff\[2\]_0[8]   horizontal_product_ff_2__0_8_ dffeas 
+Inst: horizontal_product_ff\[2\]_0[7]   horizontal_product_ff_2__0_7_ dffeas 
+Inst: horizontal_product_ff\[2\]_0[6]   horizontal_product_ff_2__0_6_ dffeas 
+Inst: horizontal_product_ff\[2\]_0[5]   horizontal_product_ff_2__0_5_ dffeas 
+Inst: horizontal_product_ff\[2\]_0[4]   horizontal_product_ff_2__0_4_ dffeas 
+Inst: horizontal_product_ff\[2\]_0[3]   horizontal_product_ff_2__0_3_ dffeas 
+Inst: horizontal_product_ff\[2\]_0[2]   horizontal_product_ff_2__0_2_ dffeas 
+Inst: horizontal_product_ff\[2\]_0[1]   horizontal_product_ff_2__0_1_ dffeas 
+Inst: horizontal_product_ff\[2\]_0[0]   horizontal_product_ff_2__0_0_ dffeas 
+Inst: horizontal_product_ff\[0\]_0[8]   horizontal_product_ff_0__0_8_ dffeas 
+Inst: horizontal_product_ff\[0\]_0[7]   horizontal_product_ff_0__0_7_ dffeas 
+Inst: horizontal_product_ff\[0\]_0[6]   horizontal_product_ff_0__0_6_ dffeas 
+Inst: horizontal_product_ff\[0\]_0[5]   horizontal_product_ff_0__0_5_ dffeas 
+Inst: horizontal_product_ff\[0\]_0[4]   horizontal_product_ff_0__0_4_ dffeas 
+Inst: horizontal_product_ff\[0\]_0[3]   horizontal_product_ff_0__0_3_ dffeas 
+Inst: horizontal_product_ff\[0\]_0[2]   horizontal_product_ff_0__0_2_ dffeas 
+Inst: horizontal_product_ff\[0\]_0[1]   horizontal_product_ff_0__0_1_ dffeas 
+Inst: horizontal_product_ff\[1\]_0[9]   horizontal_product_ff_1__0_9_ dffeas 
+Inst: horizontal_product_ff\[1\]_0[8]   horizontal_product_ff_1__0_8_ dffeas 
+Inst: horizontal_product_ff\[1\]_0[7]   horizontal_product_ff_1__0_7_ dffeas 
+Inst: horizontal_product_ff\[1\]_0[6]   horizontal_product_ff_1__0_6_ dffeas 
+Inst: horizontal_product_ff\[1\]_0[5]   horizontal_product_ff_1__0_5_ dffeas 
+Inst: horizontal_product_ff\[1\]_0[4]   horizontal_product_ff_1__0_4_ dffeas 
+Inst: horizontal_product_ff\[1\]_0[3]   horizontal_product_ff_1__0_3_ dffeas 
+Inst: horizontal_product_ff\[1\]_0[2]   horizontal_product_ff_1__0_2_ dffeas 
+Inst: horizontal_product_ff\[1\]_0[1]   horizontal_product_ff_1__0_1_ dffeas 
+Inst: horizontal_product_ff\[1\]_0[0]   horizontal_product_ff_1__0_0_ dffeas 
+Inst: vertical_product_ff\[2\]_0[8]   vertical_product_ff_2__0_8_ dffeas 
+Inst: vertical_product_ff\[2\]_0[7]   vertical_product_ff_2__0_7_ dffeas 
+Inst: vertical_product_ff\[2\]_0[6]   vertical_product_ff_2__0_6_ dffeas 
+Inst: vertical_product_ff\[2\]_0[5]   vertical_product_ff_2__0_5_ dffeas 
+Inst: vertical_product_ff\[2\]_0[4]   vertical_product_ff_2__0_4_ dffeas 
+Inst: vertical_product_ff\[2\]_0[3]   vertical_product_ff_2__0_3_ dffeas 
+Inst: vertical_product_ff\[2\]_0[2]   vertical_product_ff_2__0_2_ dffeas 
+Inst: vertical_product_ff\[2\]_0[1]   vertical_product_ff_2__0_1_ dffeas 
+Inst: vertical_product_ff\[2\]_0[0]   vertical_product_ff_2__0_0_ dffeas 
+Inst: vertical_product_ff\[1\]_0[9]   vertical_product_ff_1__0_9_ dffeas 
+Inst: vertical_product_ff\[1\]_0[8]   vertical_product_ff_1__0_8_ dffeas 
+Inst: vertical_product_ff\[1\]_0[7]   vertical_product_ff_1__0_7_ dffeas 
+Inst: vertical_product_ff\[1\]_0[6]   vertical_product_ff_1__0_6_ dffeas 
+Inst: vertical_product_ff\[1\]_0[5]   vertical_product_ff_1__0_5_ dffeas 
+Inst: vertical_product_ff\[1\]_0[4]   vertical_product_ff_1__0_4_ dffeas 
+Inst: vertical_product_ff\[1\]_0[3]   vertical_product_ff_1__0_3_ dffeas 
+Inst: vertical_product_ff\[1\]_0[2]   vertical_product_ff_1__0_2_ dffeas 
+Inst: vertical_product_ff\[1\]_0[1]   vertical_product_ff_1__0_1_ dffeas 
+Inst: vertical_product_ff\[1\]_0[0]   vertical_product_ff_1__0_0_ dffeas 
+Inst: vertical_product_ff\[1\][7]   vertical_product_ff_1__7__0 dffeas 
+Inst: vertical_product_ff\[1\][6]   vertical_product_ff_1__6__0 dffeas 
+Inst: vertical_product_ff\[1\][5]   vertical_product_ff_1__5__0 dffeas 
+Inst: vertical_product_ff\[1\][4]   vertical_product_ff_1__4__0 dffeas 
+Inst: vertical_product_ff\[1\][3]   vertical_product_ff_1__3__0 dffeas 
+Inst: vertical_product_ff\[1\][2]   vertical_product_ff_1__2__0 dffeas 
+Inst: vertical_product_ff\[1\][1]   vertical_product_ff_1__1__0 dffeas 
+Inst: vertical_product_ff\[0\]_0[8]   vertical_product_ff_0__0_8_ dffeas 
+Inst: shift_reg_addr_cntr_reg[0]   shift_reg_addr_cntr_reg_0_ dffeas 
+Inst: shift_reg_addr_cntr_reg[1]   shift_reg_addr_cntr_reg_1_ dffeas 
+Inst: shift_reg_addr_cntr_reg[2]   shift_reg_addr_cntr_reg_2_ dffeas 
+Inst: shift_reg_addr_cntr_reg[3]   shift_reg_addr_cntr_reg_3_ dffeas 
+Inst: shift_reg_addr_cntr_reg[4]   shift_reg_addr_cntr_reg_4_ dffeas 
+Inst: shift_reg_addr_cntr_reg[5]   shift_reg_addr_cntr_reg_5_ dffeas 
+Inst: shift_reg_addr_cntr_reg[6]   shift_reg_addr_cntr_reg_6_ dffeas 
+Inst: shift_reg_addr_cntr_reg[7]   shift_reg_addr_cntr_reg_7_ dffeas 
+Inst: shift_reg_addr_cntr_reg[8]   shift_reg_addr_cntr_reg_8_ dffeas 
+Inst: shift_reg_addr_cntr_reg[9]   shift_reg_addr_cntr_reg_9_ dffeas 
+Inst: shift_reg_1_addr_cntr_reg[0]   shift_reg_1_addr_cntr_reg_0_ dffeas 
+Inst: shift_reg_1_addr_cntr_reg[1]   shift_reg_1_addr_cntr_reg_1_ dffeas 
+Inst: shift_reg_1_addr_cntr_reg[2]   shift_reg_1_addr_cntr_reg_2_ dffeas 
+Inst: shift_reg_1_addr_cntr_reg[3]   shift_reg_1_addr_cntr_reg_3_ dffeas 
+Inst: shift_reg_1_addr_cntr_reg[4]   shift_reg_1_addr_cntr_reg_4_ dffeas 
+Inst: shift_reg_1_addr_cntr_reg[5]   shift_reg_1_addr_cntr_reg_5_ dffeas 
+Inst: shift_reg_1_addr_cntr_reg[6]   shift_reg_1_addr_cntr_reg_6_ dffeas 
+Inst: shift_reg_1_addr_cntr_reg[7]   shift_reg_1_addr_cntr_reg_7_ dffeas 
+Inst: shift_reg_1_addr_cntr_reg[8]   shift_reg_1_addr_cntr_reg_8_ dffeas 
+Inst: shift_reg_1_addr_cntr_reg[9]   shift_reg_1_addr_cntr_reg_9_ dffeas 
+Inst: sobel_state[0]   sobel_state_0_ dffeas 
+Inst: sobel_state[1]   sobel_state_1_ dffeas 
+Inst: shift_reg_1_rst_cntr_delay   shift_reg_1_rst_cntr_delay_Z dffeas 
+Inst: shift_reg_1_rst_cntr_rst   shift_reg_1_rst_cntr_rst_Z dffeas 
+Inst: shift_reg_rst_cntr_delay   shift_reg_rst_cntr_delay_Z dffeas 
+Inst: shift_reg_rst_cntr_rst   shift_reg_rst_cntr_rst_Z dffeas 
+Inst: shift_reg_2_RNO   shift_reg_2_RNO_cZ inv 
+Inst: shift_reg_0_RNO   shift_reg_0_RNO_cZ inv 
+Inst: shift_reg_addr_cntr_reg_RNII261[0]   shift_reg_addr_cntr_reg_RNII261_0_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNI56C2[1]   shift_reg_addr_cntr_reg_RNI56C2_1_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNIPAI3[2]   shift_reg_addr_cntr_reg_RNIPAI3_2_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNIEGO4[3]   shift_reg_addr_cntr_reg_RNIEGO4_3_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNI4NU5[4]   shift_reg_addr_cntr_reg_RNI4NU5_4_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNIRU47[5]   shift_reg_addr_cntr_reg_RNIRU47_5_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNIJ7B8[6]   shift_reg_addr_cntr_reg_RNIJ7B8_6_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNICHH9[7]   shift_reg_addr_cntr_reg_RNICHH9_7_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNI6SNA[8]   shift_reg_addr_cntr_reg_RNI6SNA_8_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO_0[9]   shift_reg_addr_cntr_reg_RNO_0_9_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNI2GJ4[0]   shift_reg_1_addr_cntr_reg_RNI2GJ4_0_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNI5179[1]   shift_reg_1_addr_cntr_reg_RNI5179_1_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNI9JQD[2]   shift_reg_1_addr_cntr_reg_RNI9JQD_2_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNIE6EI[3]   shift_reg_1_addr_cntr_reg_RNIE6EI_3_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNIKQ1N[4]   shift_reg_1_addr_cntr_reg_RNIKQ1N_4_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNIRFLR[5]   shift_reg_1_addr_cntr_reg_RNIRFLR_5_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNI36901[6]   shift_reg_1_addr_cntr_reg_RNI36901_6_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNICTS41[7]   shift_reg_1_addr_cntr_reg_RNICTS41_7_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNIMLG91[8]   shift_reg_1_addr_cntr_reg_RNIMLG91_8_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO_0[9]   shift_reg_1_addr_cntr_reg_RNO_0_9_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO[9]   shift_reg_1_addr_cntr_reg_RNO_9_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO[8]   shift_reg_1_addr_cntr_reg_RNO_8_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO[7]   shift_reg_1_addr_cntr_reg_RNO_7_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO[6]   shift_reg_1_addr_cntr_reg_RNO_6_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO[5]   shift_reg_1_addr_cntr_reg_RNO_5_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO[4]   shift_reg_1_addr_cntr_reg_RNO_4_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO[3]   shift_reg_1_addr_cntr_reg_RNO_3_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO[2]   shift_reg_1_addr_cntr_reg_RNO_2_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO[1]   shift_reg_1_addr_cntr_reg_RNO_1_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNO[0]   shift_reg_1_addr_cntr_reg_RNO_0_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO[9]   shift_reg_addr_cntr_reg_RNO_9_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO[8]   shift_reg_addr_cntr_reg_RNO_8_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO[7]   shift_reg_addr_cntr_reg_RNO_7_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO[6]   shift_reg_addr_cntr_reg_RNO_6_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO[5]   shift_reg_addr_cntr_reg_RNO_5_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO[4]   shift_reg_addr_cntr_reg_RNO_4_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO[3]   shift_reg_addr_cntr_reg_RNO_3_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO[2]   shift_reg_addr_cntr_reg_RNO_2_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO[1]   shift_reg_addr_cntr_reg_RNO_1_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNO[0]   shift_reg_addr_cntr_reg_RNO_0_ cycloneive_lcell_comb 
+Inst: vertical_sum_add0   vertical_sum_add0_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_add1   vertical_sum_add1_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_add2   vertical_sum_add2_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_add3   vertical_sum_add3_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_add4   vertical_sum_add4_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_add5   vertical_sum_add5_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_add6   vertical_sum_add6_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_add7   vertical_sum_add7_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_add8   vertical_sum_add8_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_add9   vertical_sum_add9_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add0   vertical_sum_0_add0_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add1   vertical_sum_0_add1_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add2   vertical_sum_0_add2_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add3   vertical_sum_0_add3_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add4   vertical_sum_0_add4_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add5   vertical_sum_0_add5_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add6   vertical_sum_0_add6_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add7   vertical_sum_0_add7_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add8   vertical_sum_0_add8_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add9   vertical_sum_0_add9_cZ cycloneive_lcell_comb 
+Inst: vertical_sum_0_add10   vertical_sum_0_add10_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_add0   horizontal_sum_add0_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_add1   horizontal_sum_add1_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_add2   horizontal_sum_add2_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_add3   horizontal_sum_add3_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_add4   horizontal_sum_add4_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_add5   horizontal_sum_add5_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_add6   horizontal_sum_add6_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_add7   horizontal_sum_add7_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_add8   horizontal_sum_add8_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_add9   horizontal_sum_add9_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add0   horizontal_sum_0_add0_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add1   horizontal_sum_0_add1_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add2   horizontal_sum_0_add2_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add3   horizontal_sum_0_add3_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add4   horizontal_sum_0_add4_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add5   horizontal_sum_0_add5_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add6   horizontal_sum_0_add6_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add7   horizontal_sum_0_add7_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add8   horizontal_sum_0_add8_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add9   horizontal_sum_0_add9_cZ cycloneive_lcell_comb 
+Inst: horizontal_sum_0_add10   horizontal_sum_0_add10_cZ cycloneive_lcell_comb 
+Inst: un1_height_counter[0]   un1_height_counter_0_ cycloneive_lcell_comb 
+Inst: un1_height_counter_a[0]   un1_height_counter_a_0_ cycloneive_lcell_comb 
+Inst: un1_height_counter[1]   un1_height_counter_1_ cycloneive_lcell_comb 
+Inst: un1_height_counter[2]   un1_height_counter_2_ cycloneive_lcell_comb 
+Inst: un1_height_counter[3]   un1_height_counter_3_ cycloneive_lcell_comb 
+Inst: un1_height_counter[4]   un1_height_counter_4_ cycloneive_lcell_comb 
+Inst: un1_height_counter[5]   un1_height_counter_5_ cycloneive_lcell_comb 
+Inst: un1_height_counter[6]   un1_height_counter_6_ cycloneive_lcell_comb 
+Inst: un1_height_counter[7]   un1_height_counter_7_ cycloneive_lcell_comb 
+Inst: un1_height_counter[8]   un1_height_counter_8_ cycloneive_lcell_comb 
+Inst: un1_height_counter[9]   un1_height_counter_9_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_add0   un20_vertical_product_add0_cZ cycloneive_lcell_comb 
+Inst: un20_vertical_product_add1   un20_vertical_product_add1_cZ cycloneive_lcell_comb 
+Inst: un20_vertical_product_add2   un20_vertical_product_add2_cZ cycloneive_lcell_comb 
+Inst: un20_vertical_product_add3   un20_vertical_product_add3_cZ cycloneive_lcell_comb 
+Inst: un20_vertical_product_add4   un20_vertical_product_add4_cZ cycloneive_lcell_comb 
+Inst: un20_vertical_product_add5   un20_vertical_product_add5_cZ cycloneive_lcell_comb 
+Inst: un20_vertical_product_add6   un20_vertical_product_add6_cZ cycloneive_lcell_comb 
+Inst: un20_vertical_product_add7   un20_vertical_product_add7_cZ cycloneive_lcell_comb 
+Inst: un13_vertical_product_add0   un13_vertical_product_add0_cZ cycloneive_lcell_comb 
+Inst: un13_vertical_product_add1   un13_vertical_product_add1_cZ cycloneive_lcell_comb 
+Inst: un13_vertical_product_add2   un13_vertical_product_add2_cZ cycloneive_lcell_comb 
+Inst: un13_vertical_product_add3   un13_vertical_product_add3_cZ cycloneive_lcell_comb 
+Inst: un13_vertical_product_add4   un13_vertical_product_add4_cZ cycloneive_lcell_comb 
+Inst: un13_vertical_product_add5   un13_vertical_product_add5_cZ cycloneive_lcell_comb 
+Inst: un13_vertical_product_add6   un13_vertical_product_add6_cZ cycloneive_lcell_comb 
+Inst: un13_vertical_product_add7   un13_vertical_product_add7_cZ cycloneive_lcell_comb 
+Inst: un6_vertical_product_add0   un6_vertical_product_add0_cZ cycloneive_lcell_comb 
+Inst: un6_vertical_product_add1   un6_vertical_product_add1_cZ cycloneive_lcell_comb 
+Inst: un6_vertical_product_add2   un6_vertical_product_add2_cZ cycloneive_lcell_comb 
+Inst: un6_vertical_product_add3   un6_vertical_product_add3_cZ cycloneive_lcell_comb 
+Inst: un6_vertical_product_add4   un6_vertical_product_add4_cZ cycloneive_lcell_comb 
+Inst: un6_vertical_product_add5   un6_vertical_product_add5_cZ cycloneive_lcell_comb 
+Inst: un6_vertical_product_add6   un6_vertical_product_add6_cZ cycloneive_lcell_comb 
+Inst: un6_vertical_product_add7   un6_vertical_product_add7_cZ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_add0   un22_horizontal_product_add0_cZ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_add1   un22_horizontal_product_add1_cZ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_add2   un22_horizontal_product_add2_cZ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_add3   un22_horizontal_product_add3_cZ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_add4   un22_horizontal_product_add4_cZ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_add5   un22_horizontal_product_add5_cZ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_add6   un22_horizontal_product_add6_cZ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_add7   un22_horizontal_product_add7_cZ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_add0   un15_horizontal_product_add0_cZ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_add1   un15_horizontal_product_add1_cZ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_add2   un15_horizontal_product_add2_cZ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_add3   un15_horizontal_product_add3_cZ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_add4   un15_horizontal_product_add4_cZ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_add5   un15_horizontal_product_add5_cZ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_add6   un15_horizontal_product_add6_cZ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_add7   un15_horizontal_product_add7_cZ cycloneive_lcell_comb 
+Inst: un6_horizontal_product_add0   un6_horizontal_product_add0_cZ cycloneive_lcell_comb 
+Inst: un6_horizontal_product_add1   un6_horizontal_product_add1_cZ cycloneive_lcell_comb 
+Inst: un6_horizontal_product_add2   un6_horizontal_product_add2_cZ cycloneive_lcell_comb 
+Inst: un6_horizontal_product_add3   un6_horizontal_product_add3_cZ cycloneive_lcell_comb 
+Inst: un6_horizontal_product_add4   un6_horizontal_product_add4_cZ cycloneive_lcell_comb 
+Inst: un6_horizontal_product_add5   un6_horizontal_product_add5_cZ cycloneive_lcell_comb 
+Inst: un6_horizontal_product_add6   un6_horizontal_product_add6_cZ cycloneive_lcell_comb 
+Inst: un6_horizontal_product_add7   un6_horizontal_product_add7_cZ cycloneive_lcell_comb 
+Inst: un5_width_counter[0]   un5_width_counter_0_ cycloneive_lcell_comb 
+Inst: un5_width_counter[1]   un5_width_counter_1_ cycloneive_lcell_comb 
+Inst: un5_width_counter[2]   un5_width_counter_2_ cycloneive_lcell_comb 
+Inst: un5_width_counter[3]   un5_width_counter_3_ cycloneive_lcell_comb 
+Inst: un5_width_counter[4]   un5_width_counter_4_ cycloneive_lcell_comb 
+Inst: un5_width_counter[5]   un5_width_counter_5_ cycloneive_lcell_comb 
+Inst: un5_width_counter[6]   un5_width_counter_6_ cycloneive_lcell_comb 
+Inst: un5_width_counter[7]   un5_width_counter_7_ cycloneive_lcell_comb 
+Inst: un5_width_counter[8]   un5_width_counter_8_ cycloneive_lcell_comb 
+Inst: un5_width_counter[9]   un5_width_counter_9_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_inv_m[3]   un20_vertical_product_inv_m_3_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_inv_m[4]   un20_vertical_product_inv_m_4_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_inv_m[5]   un20_vertical_product_inv_m_5_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_inv_m[6]   un20_vertical_product_inv_m_6_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_inv_m[7]   un20_vertical_product_inv_m_7_ cycloneive_lcell_comb 
+Inst: un6_vertical_product_m[0]   un6_vertical_product_m_0_ cycloneive_lcell_comb 
+Inst: un6_vertical_product_m[1]   un6_vertical_product_m_1_ cycloneive_lcell_comb 
+Inst: un6_vertical_product_m[2]   un6_vertical_product_m_2_ cycloneive_lcell_comb 
+Inst: un6_vertical_product_m[3]   un6_vertical_product_m_3_ cycloneive_lcell_comb 
+Inst: un6_vertical_product_m[4]   un6_vertical_product_m_4_ cycloneive_lcell_comb 
+Inst: un6_vertical_product_m[5]   un6_vertical_product_m_5_ cycloneive_lcell_comb 
+Inst: un6_vertical_product_m[6]   un6_vertical_product_m_6_ cycloneive_lcell_comb 
+Inst: un6_vertical_product_m[7]   un6_vertical_product_m_7_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_m[0]   un13_vertical_product_m_0_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_m[1]   un13_vertical_product_m_1_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_m[2]   un13_vertical_product_m_2_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_m[3]   un13_vertical_product_m_3_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_m[4]   un13_vertical_product_m_4_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_m[5]   un13_vertical_product_m_5_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_m[6]   un13_vertical_product_m_6_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_m[7]   un13_vertical_product_m_7_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_m[0]   un20_vertical_product_m_0_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_m[1]   un20_vertical_product_m_1_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_m[2]   un20_vertical_product_m_2_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_m[3]   un20_vertical_product_m_3_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_m[4]   un20_vertical_product_m_4_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_m[5]   un20_vertical_product_m_5_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_m[6]   un20_vertical_product_m_6_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_m[7]   un20_vertical_product_m_7_ cycloneive_lcell_comb 
+Inst: abs_horizontal_sum_1[9]   abs_horizontal_sum_1_9_ cycloneive_lcell_comb 
+Inst: abs_horizontal_sum_1[8]   abs_horizontal_sum_1_8_ cycloneive_lcell_comb 
+Inst: abs_horizontal_sum_1[7]   abs_horizontal_sum_1_7_ cycloneive_lcell_comb 
+Inst: abs_horizontal_sum_1[6]   abs_horizontal_sum_1_6_ cycloneive_lcell_comb 
+Inst: abs_horizontal_sum_1[5]   abs_horizontal_sum_1_5_ cycloneive_lcell_comb 
+Inst: abs_horizontal_sum_1[4]   abs_horizontal_sum_1_4_ cycloneive_lcell_comb 
+Inst: abs_horizontal_sum_1[3]   abs_horizontal_sum_1_3_ cycloneive_lcell_comb 
+Inst: abs_horizontal_sum_1[2]   abs_horizontal_sum_1_2_ cycloneive_lcell_comb 
+Inst: abs_horizontal_sum_1[1]   abs_horizontal_sum_1_1_ cycloneive_lcell_comb 
+Inst: abs_vertical_sum_1[9]   abs_vertical_sum_1_9_ cycloneive_lcell_comb 
+Inst: abs_vertical_sum_1[8]   abs_vertical_sum_1_8_ cycloneive_lcell_comb 
+Inst: abs_vertical_sum_1[7]   abs_vertical_sum_1_7_ cycloneive_lcell_comb 
+Inst: abs_vertical_sum_1[6]   abs_vertical_sum_1_6_ cycloneive_lcell_comb 
+Inst: abs_vertical_sum_1[5]   abs_vertical_sum_1_5_ cycloneive_lcell_comb 
+Inst: abs_vertical_sum_1[4]   abs_vertical_sum_1_4_ cycloneive_lcell_comb 
+Inst: abs_vertical_sum_1[3]   abs_vertical_sum_1_3_ cycloneive_lcell_comb 
+Inst: abs_vertical_sum_1[2]   abs_vertical_sum_1_2_ cycloneive_lcell_comb 
+Inst: abs_vertical_sum_1[1]   abs_vertical_sum_1_1_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_inv_m[6]   un13_vertical_product_inv_m_6_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_inv_m[5]   un13_vertical_product_inv_m_5_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_inv_m[4]   un13_vertical_product_inv_m_4_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_inv_m[3]   un13_vertical_product_inv_m_3_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_inv_m[2]   un13_vertical_product_inv_m_2_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_inv_m[1]   un13_vertical_product_inv_m_1_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_inv_m[0]   un13_vertical_product_inv_m_0_ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_m[7]   un22_horizontal_product_m_7_ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_m[6]   un22_horizontal_product_m_6_ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_m[5]   un22_horizontal_product_m_5_ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_m[4]   un22_horizontal_product_m_4_ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_m[3]   un22_horizontal_product_m_3_ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_m[2]   un22_horizontal_product_m_2_ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_m[1]   un22_horizontal_product_m_1_ cycloneive_lcell_comb 
+Inst: un22_horizontal_product_m[0]   un22_horizontal_product_m_0_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_inv_m[2]   un20_vertical_product_inv_m_2_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_inv_m[1]   un20_vertical_product_inv_m_1_ cycloneive_lcell_comb 
+Inst: un20_vertical_product_inv_m[0]   un20_vertical_product_inv_m_0_ cycloneive_lcell_comb 
+Inst: un13_vertical_product_inv_m[7]   un13_vertical_product_inv_m_7_ cycloneive_lcell_comb 
+Inst: width_counter_RNO[0]   width_counter_RNO_0_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_inv_m[0]   un15_horizontal_product_inv_m_0_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_m[4]   un15_horizontal_product_m_4_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_m[5]   un15_horizontal_product_m_5_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_m[6]   un15_horizontal_product_m_6_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_m[7]   un15_horizontal_product_m_7_ cycloneive_lcell_comb 
+Inst: sobel_state_RNIVGMN[0]   sobel_state_RNIVGMN_0_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_inv_m[1]   un15_horizontal_product_inv_m_1_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_inv_m[2]   un15_horizontal_product_inv_m_2_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_inv_m[3]   un15_horizontal_product_inv_m_3_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_inv_m[4]   un15_horizontal_product_inv_m_4_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_inv_m[5]   un15_horizontal_product_inv_m_5_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_inv_m[6]   un15_horizontal_product_inv_m_6_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_inv_m[7]   un15_horizontal_product_inv_m_7_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_m[0]   un15_horizontal_product_m_0_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_m[1]   un15_horizontal_product_m_1_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_m[2]   un15_horizontal_product_m_2_ cycloneive_lcell_comb 
+Inst: un15_horizontal_product_m[3]   un15_horizontal_product_m_3_ cycloneive_lcell_comb 
+Inst: width_counter_RNIR1N[4]   width_counter_RNIR1N_4_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_o2_0[1]   sobel_state_ns_i_a2_0_0_o2_0_1_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a2_2_0[0]   sobel_state_ns_i_a2_0_0_a2_2_0_0_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a2_0[0]   sobel_state_ns_i_a2_0_0_a2_0_0_ cycloneive_lcell_comb 
+Inst: height_counter_1_sqmuxa_i_0_a2_1   height_counter_1_sqmuxa_i_0_a2_1_cZ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_o2_i_a2_0_o3_3[0]   sobel_state_ns_i_a2_0_o2_i_a2_0_o3_3_0_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a2_2_4[0]   sobel_state_ns_i_a2_0_0_a2_2_4_0_ cycloneive_lcell_comb 
+Inst: width_counter_RNIQ7E1[9]   width_counter_RNIQ7E1_9_ cycloneive_lcell_comb 
+Inst: width_counter_RNIIVD1[1]   width_counter_RNIIVD1_1_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNIEGO4[0]   shift_reg_addr_cntr_reg_RNIEGO4_0_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNI69P4[6]   shift_reg_addr_cntr_reg_RNI69P4_6_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNIE6EI[0]   shift_reg_1_addr_cntr_reg_RNIE6EI_0_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNI6VEI[6]   shift_reg_1_addr_cntr_reg_RNI6VEI_6_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a3_2[1]   sobel_state_ns_i_a2_0_0_a3_2_1_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a3_2_2[0]   sobel_state_ns_i_a2_0_0_a3_2_2_0_ cycloneive_lcell_comb 
+Inst: sobel_state_RNIO5IS[0]   sobel_state_RNIO5IS_0_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_o2[1]   sobel_state_ns_i_a2_0_0_o2_1_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_o2_i_a2_0_o3[0]   sobel_state_ns_i_a2_0_o2_i_a2_0_o3_0_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a2_2[0]   sobel_state_ns_i_a2_0_0_a2_2_0_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a3[1]   sobel_state_ns_i_a2_0_0_a3_1_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a3_2[0]   sobel_state_ns_i_a2_0_0_a3_2_0_ cycloneive_lcell_comb 
+Inst: width_counter_RNIVE501[1]   width_counter_RNIVE501_1_ cycloneive_lcell_comb 
+Inst: width_counter_RNO[4]   width_counter_RNO_4_ cycloneive_lcell_comb 
+Inst: width_counter_RNO[6]   width_counter_RNO_6_ cycloneive_lcell_comb 
+Inst: width_counter_RNO[7]   width_counter_RNO_7_ cycloneive_lcell_comb 
+Inst: width_counter_RNO[9]   width_counter_RNO_9_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a3_0_3[1]   sobel_state_ns_i_a2_0_0_a3_0_3_1_ cycloneive_lcell_comb 
+Inst: sobel_state_RNO_1[0]   sobel_state_RNO_1_0_ cycloneive_lcell_comb 
+Inst: shift_reg_1_addr_cntr_reg_RNI1F4E1[4]   shift_reg_1_addr_cntr_reg_RNI1F4E1_4_ cycloneive_lcell_comb 
+Inst: shift_reg_addr_cntr_reg_RNI18UB[4]   shift_reg_addr_cntr_reg_RNI18UB_4_ cycloneive_lcell_comb 
+Inst: height_counter_1_sqmuxa_i_0   height_counter_1_sqmuxa_i_0_cZ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a3_0[1]   sobel_state_ns_i_a2_0_0_a3_0_1_ cycloneive_lcell_comb 
+Inst: sobel_state_ns_i_a2_0_0_a2[1]   sobel_state_ns_i_a2_0_0_a2_1_ cycloneive_lcell_comb 
+Inst: height_counter_RNO[9]   height_counter_RNO_9_ cycloneive_lcell_comb 
+Inst: height_counter_RNO[4]   height_counter_RNO_4_ cycloneive_lcell_comb 
+Inst: height_counter_RNO[3]   height_counter_RNO_3_ cycloneive_lcell_comb 
+Inst: height_counter_RNO[2]   height_counter_RNO_2_ cycloneive_lcell_comb 
+Inst: sobel_state_RNO[1]   sobel_state_RNO_1_ cycloneive_lcell_comb 
+Inst: sobel_state_RNO_0[0]   sobel_state_RNO_0_0_ cycloneive_lcell_comb 
+Inst: sobel_state_RNO[0]   sobel_state_RNO_0_ cycloneive_lcell_comb 
+Inst: horizontal_product_ff\[0\]_0_0[0]   horizontal_product_ff_0__0_0_0_ ghost 
+Inst: horizontal_product_ff\[0\]_0[0]   horizontal_product_ff_0__0_0_ ghost 
+Inst: abs_vertical_sum[9:0]   abs_vertical_sum_9_0_ edge_detect_top_SYN_UMULT_10_10_20_2 
+Inst: abs_horizontal_sum[9:0]   abs_horizontal_sum_9_0_ edge_detect_top_SYN_UMULT_10_10_20_1 
+Inst: horizontal_product_ff\[1\][9]   horizontal_product_ff_1__9_ ghost 
+Inst: horizontal_product_ff\[1\][8]   horizontal_product_ff_1__8_ ghost 
+Inst: horizontal_product_ff\[1\][7]   horizontal_product_ff_1__7_ ghost 
+Inst: horizontal_product_ff\[1\][6]   horizontal_product_ff_1__6_ ghost 
+Inst: horizontal_product_ff\[1\][5]   horizontal_product_ff_1__5_ ghost 
+Inst: horizontal_product_ff\[1\][4]   horizontal_product_ff_1__4_ ghost 
+Inst: horizontal_product_ff\[1\][3]   horizontal_product_ff_1__3_ ghost 
+Inst: horizontal_product_ff\[1\][2]   horizontal_product_ff_1__2_ ghost 
+Inst: horizontal_product_ff\[1\][1]   horizontal_product_ff_1__1_ ghost 
+Inst: horizontal_product_ff\[1\][0]   horizontal_product_ff_1__0_ ghost 
+Inst: vertical_product_ff\[1\][9]   vertical_product_ff_1__9_ ghost 
+Inst: vertical_product_ff\[1\][8]   vertical_product_ff_1__8_ ghost 
+Inst: vertical_product_ff\[1\][7]   vertical_product_ff_1__7_ ghost 
+Inst: vertical_product_ff\[1\][6]   vertical_product_ff_1__6_ ghost 
+Inst: vertical_product_ff\[1\][5]   vertical_product_ff_1__5_ ghost 
+Inst: vertical_product_ff\[1\][4]   vertical_product_ff_1__4_ ghost 
+Inst: vertical_product_ff\[1\][3]   vertical_product_ff_1__3_ ghost 
+Inst: vertical_product_ff\[1\][2]   vertical_product_ff_1__2_ ghost 
+Inst: vertical_product_ff\[1\][1]   vertical_product_ff_1__1_ ghost 
+Inst: vertical_product_ff\[1\][0]   vertical_product_ff_1__0_ ghost 
+Inst: horizontal_product_ff\[0\][8]   horizontal_product_ff_0__8_ ghost 
+Inst: horizontal_product_ff\[0\][7]   horizontal_product_ff_0__7_ ghost 
+Inst: horizontal_product_ff\[0\][6]   horizontal_product_ff_0__6_ ghost 
+Inst: horizontal_product_ff\[0\][5]   horizontal_product_ff_0__5_ ghost 
+Inst: horizontal_product_ff\[0\][4]   horizontal_product_ff_0__4_ ghost 
+Inst: horizontal_product_ff\[0\][3]   horizontal_product_ff_0__3_ ghost 
+Inst: horizontal_product_ff\[0\][2]   horizontal_product_ff_0__2_ ghost 
+Inst: horizontal_product_ff\[0\][1]   horizontal_product_ff_0__1_ ghost 
+Inst: horizontal_product_ff\[0\][0]   horizontal_product_ff_0__0_ ghost 
+Inst: horizontal_product_ff\[2\][8]   horizontal_product_ff_2__8_ ghost 
+Inst: horizontal_product_ff\[2\][7]   horizontal_product_ff_2__7_ ghost 
+Inst: horizontal_product_ff\[2\][6]   horizontal_product_ff_2__6_ ghost 
+Inst: horizontal_product_ff\[2\][5]   horizontal_product_ff_2__5_ ghost 
+Inst: horizontal_product_ff\[2\][4]   horizontal_product_ff_2__4_ ghost 
+Inst: horizontal_product_ff\[2\][3]   horizontal_product_ff_2__3_ ghost 
+Inst: horizontal_product_ff\[2\][2]   horizontal_product_ff_2__2_ ghost 
+Inst: horizontal_product_ff\[2\][1]   horizontal_product_ff_2__1_ ghost 
+Inst: horizontal_product_ff\[2\][0]   horizontal_product_ff_2__0_ ghost 
+Inst: vertical_product_ff\[0\][8]   vertical_product_ff_0__8_ ghost 
+Inst: vertical_product_ff\[0\][7]   vertical_product_ff_0__7_ ghost 
+Inst: vertical_product_ff\[0\][6]   vertical_product_ff_0__6_ ghost 
+Inst: vertical_product_ff\[0\][5]   vertical_product_ff_0__5_ ghost 
+Inst: vertical_product_ff\[0\][4]   vertical_product_ff_0__4_ ghost 
+Inst: vertical_product_ff\[0\][3]   vertical_product_ff_0__3_ ghost 
+Inst: vertical_product_ff\[0\][2]   vertical_product_ff_0__2_ ghost 
+Inst: vertical_product_ff\[0\][1]   vertical_product_ff_0__1_ ghost 
+Inst: vertical_product_ff\[0\][0]   vertical_product_ff_0__0_ ghost 
+Inst: vertical_product_ff\[2\][8]   vertical_product_ff_2__8_ ghost 
+Inst: vertical_product_ff\[2\][7]   vertical_product_ff_2__7_ ghost 
+Inst: vertical_product_ff\[2\][6]   vertical_product_ff_2__6_ ghost 
+Inst: vertical_product_ff\[2\][5]   vertical_product_ff_2__5_ ghost 
+Inst: vertical_product_ff\[2\][4]   vertical_product_ff_2__4_ ghost 
+Inst: vertical_product_ff\[2\][3]   vertical_product_ff_2__3_ ghost 
+Inst: vertical_product_ff\[2\][2]   vertical_product_ff_2__2_ ghost 
+Inst: vertical_product_ff\[2\][1]   vertical_product_ff_2__1_ ghost 
+Inst: vertical_product_ff\[2\][0]   vertical_product_ff_2__0_ ghost 
+Inst: shift_reg_reg_0[7]   shift_reg_reg_0_7_ ghost 
+Inst: shift_reg_reg_0[6]   shift_reg_reg_0_6_ ghost 
+Inst: shift_reg_reg_0[5]   shift_reg_reg_0_5_ ghost 
+Inst: shift_reg_reg_0[4]   shift_reg_reg_0_4_ ghost 
+Inst: shift_reg_reg_0[3]   shift_reg_reg_0_3_ ghost 
+Inst: shift_reg_reg_0[2]   shift_reg_reg_0_2_ ghost 
+Inst: shift_reg_reg_0[1]   shift_reg_reg_0_1_ ghost 
+Inst: shift_reg_reg_0[0]   shift_reg_reg_0_0_ ghost 
+Inst: shift_reg_1_reg_0[7]   shift_reg_1_reg_0_7_ ghost 
+Inst: shift_reg_1_reg_0[6]   shift_reg_1_reg_0_6_ ghost 
+Inst: shift_reg_1_reg_0[5]   shift_reg_1_reg_0_5_ ghost 
+Inst: shift_reg_1_reg_0[4]   shift_reg_1_reg_0_4_ ghost 
+Inst: shift_reg_1_reg_0[3]   shift_reg_1_reg_0_3_ ghost 
+Inst: shift_reg_1_reg_0[2]   shift_reg_1_reg_0_2_ ghost 
+Inst: shift_reg_1_reg_0[1]   shift_reg_1_reg_0_1_ ghost 
+Inst: shift_reg_1_reg_0[0]   shift_reg_1_reg_0_0_ ghost 
+Inst: shift_reg_1_reg_1[7]   shift_reg_1_reg_1_7_ ghost 
+Inst: shift_reg_1_reg_1[6]   shift_reg_1_reg_1_6_ ghost 
+Inst: shift_reg_1_reg_1[5]   shift_reg_1_reg_1_5_ ghost 
+Inst: shift_reg_1_reg_1[4]   shift_reg_1_reg_1_4_ ghost 
+Inst: shift_reg_1_reg_1[3]   shift_reg_1_reg_1_3_ ghost 
+Inst: shift_reg_1_reg_1[2]   shift_reg_1_reg_1_2_ ghost 
+Inst: shift_reg_1_reg_1[1]   shift_reg_1_reg_1_1_ ghost 
+Inst: shift_reg_1_reg_1[0]   shift_reg_1_reg_1_0_ ghost 
+Inst: shift_reg_1_reg[7]   shift_reg_1_reg_7_ ghost 
+Inst: shift_reg_1_reg[6]   shift_reg_1_reg_6_ ghost 
+Inst: shift_reg_1_reg[5]   shift_reg_1_reg_5_ ghost 
+Inst: shift_reg_1_reg[4]   shift_reg_1_reg_4_ ghost 
+Inst: shift_reg_1_reg[3]   shift_reg_1_reg_3_ ghost 
+Inst: shift_reg_1_reg[2]   shift_reg_1_reg_2_ ghost 
+Inst: shift_reg_1_reg[1]   shift_reg_1_reg_1_ ghost 
+Inst: shift_reg_1_reg[0]   shift_reg_1_reg_0_ ghost 
+Inst: shift_reg_reg_1[7]   shift_reg_reg_1_7_ ghost 
+Inst: shift_reg_reg_1[6]   shift_reg_reg_1_6_ ghost 
+Inst: shift_reg_reg_1[5]   shift_reg_reg_1_5_ ghost 
+Inst: shift_reg_reg_1[4]   shift_reg_reg_1_4_ ghost 
+Inst: shift_reg_reg_1[3]   shift_reg_reg_1_3_ ghost 
+Inst: shift_reg_reg_1[2]   shift_reg_reg_1_2_ ghost 
+Inst: shift_reg_reg_1[1]   shift_reg_reg_1_1_ ghost 
+Inst: shift_reg_reg_1[0]   shift_reg_reg_1_0_ ghost 
+Inst: shift_reg_reg[7]   shift_reg_reg_7_ ghost 
+Inst: shift_reg_reg[6]   shift_reg_reg_6_ ghost 
+Inst: shift_reg_reg[5]   shift_reg_reg_5_ ghost 
+Inst: shift_reg_reg[4]   shift_reg_reg_4_ ghost 
+Inst: shift_reg_reg[3]   shift_reg_reg_3_ ghost 
+Inst: shift_reg_reg[2]   shift_reg_reg_2_ ghost 
+Inst: shift_reg_reg[1]   shift_reg_reg_1_ ghost 
+Inst: shift_reg_reg[0]   shift_reg_reg_0_ ghost 
+Inst: sobel_state[3:0]   sobel_state_3_0_ ghost 
+Inst: rst_c_i   rst_c_i_cZ inv 
+Inst: horizontal_product_ff\[0\]_0_v_0_0__g1_i_i   horizontal_product_ff_0__0_v_0_0__g1_i_i_cZ inv 
+Net:  shift_reg\[1\][7]   shift_reg_1_[7] 
+Net:  shift_reg\[0\][7]   shift_reg_0_[7] 
+Net:  shift_reg\[1\][6]   shift_reg_1_[6] 
+Net:  shift_reg\[0\][6]   shift_reg_0_[6] 
+Net:  shift_reg\[1\][5]   shift_reg_1_[5] 
+Net:  shift_reg\[0\][5]   shift_reg_0_[5] 
+Net:  shift_reg\[1\][4]   shift_reg_1_[4] 
+Net:  shift_reg\[0\][4]   shift_reg_0_[4] 
+Net:  shift_reg\[1\][3]   shift_reg_1_[3] 
+Net:  shift_reg\[0\][3]   shift_reg_0_[3] 
+Net:  shift_reg\[1\][2]   shift_reg_1_[2] 
+Net:  shift_reg\[0\][2]   shift_reg_0_[2] 
+Net:  shift_reg\[1\][1]   shift_reg_1_[1] 
+Net:  shift_reg\[0\][1]   shift_reg_0_[1] 
+Net:  shift_reg\[1\][0]   shift_reg_1_[0] 
+Net:  shift_reg\[0\][0]   shift_reg_0_[0] 
+Net:  shift_reg\[2\][7]   shift_reg_2_[7] 
+Net:  shift_reg\[2\][6]   shift_reg_2_[6] 
+Net:  shift_reg\[2\][5]   shift_reg_2_[5] 
+Net:  shift_reg\[2\][4]   shift_reg_2_[4] 
+Net:  shift_reg\[2\][3]   shift_reg_2_[3] 
+Net:  shift_reg\[2\][2]   shift_reg_2_[2] 
+Net:  shift_reg\[2\][1]   shift_reg_2_[1] 
+Net:  shift_reg\[2\][0]   shift_reg_2_[0] 
+Net:  shift_reg\[1440\][7]   shift_reg_1440_[7] 
+Net:  shift_reg\[1440\][6]   shift_reg_1440_[6] 
+Net:  shift_reg\[1440\][5]   shift_reg_1440_[5] 
+Net:  shift_reg\[1440\][4]   shift_reg_1440_[4] 
+Net:  shift_reg\[1440\][3]   shift_reg_1440_[3] 
+Net:  shift_reg\[1440\][2]   shift_reg_1440_[2] 
+Net:  shift_reg\[1440\][1]   shift_reg_1440_[1] 
+Net:  shift_reg\[1440\][0]   shift_reg_1440_[0] 
+Net:  shift_reg\[720\][7]   shift_reg_720_[7] 
+Net:  shift_reg\[720\][6]   shift_reg_720_[6] 
+Net:  shift_reg\[720\][5]   shift_reg_720_[5] 
+Net:  shift_reg\[720\][4]   shift_reg_720_[4] 
+Net:  shift_reg\[720\][3]   shift_reg_720_[3] 
+Net:  shift_reg\[720\][2]   shift_reg_720_[2] 
+Net:  shift_reg\[720\][1]   shift_reg_720_[1] 
+Net:  shift_reg\[720\][0]   shift_reg_720_[0] 
+Net:  shift_reg\[1441\][7]   shift_reg_1441_[7] 
+Net:  shift_reg\[1441\][6]   shift_reg_1441_[6] 
+Net:  shift_reg\[1441\][5]   shift_reg_1441_[5] 
+Net:  shift_reg\[1441\][4]   shift_reg_1441_[4] 
+Net:  shift_reg\[1441\][3]   shift_reg_1441_[3] 
+Net:  shift_reg\[1441\][2]   shift_reg_1441_[2] 
+Net:  shift_reg\[1441\][1]   shift_reg_1441_[1] 
+Net:  shift_reg\[1441\][0]   shift_reg_1441_[0] 
+Net:  shift_reg\[1442\][7]   shift_reg_1442_[7] 
+Net:  shift_reg\[1442\][6]   shift_reg_1442_[6] 
+Net:  shift_reg\[1442\][5]   shift_reg_1442_[5] 
+Net:  shift_reg\[1442\][4]   shift_reg_1442_[4] 
+Net:  shift_reg\[1442\][3]   shift_reg_1442_[3] 
+Net:  shift_reg\[1442\][2]   shift_reg_1442_[2] 
+Net:  shift_reg\[1442\][1]   shift_reg_1442_[1] 
+Net:  shift_reg\[1442\][0]   shift_reg_1442_[0] 
+Net:  shift_reg\[721\][7]   shift_reg_721_[7] 
+Net:  shift_reg\[721\][6]   shift_reg_721_[6] 
+Net:  shift_reg\[721\][5]   shift_reg_721_[5] 
+Net:  shift_reg\[721\][4]   shift_reg_721_[4] 
+Net:  shift_reg\[721\][3]   shift_reg_721_[3] 
+Net:  shift_reg\[721\][2]   shift_reg_721_[2] 
+Net:  shift_reg\[721\][1]   shift_reg_721_[1] 
+Net:  shift_reg\[721\][0]   shift_reg_721_[0] 
+Net:  shift_reg\[722\][7]   shift_reg_722_[7] 
+Net:  shift_reg\[722\][6]   shift_reg_722_[6] 
+Net:  shift_reg\[722\][5]   shift_reg_722_[5] 
+Net:  shift_reg\[722\][4]   shift_reg_722_[4] 
+Net:  shift_reg\[722\][3]   shift_reg_722_[3] 
+Net:  shift_reg\[722\][2]   shift_reg_722_[2] 
+Net:  shift_reg\[722\][1]   shift_reg_722_[1] 
+Net:  shift_reg\[722\][0]   shift_reg_722_[0] 
+Net:  horizontal_product_ff\[2\]_0[8]   horizontal_product_ff_2__0[8] 
+Net:  horizontal_product_ff\[0\]_0_v_0_0__g1_i   horizontal_product_ff_0__0_v_0_0__g1_i 
+Net:  horizontal_product_ff\[2\]_0[7]   horizontal_product_ff_2__0[7] 
+Net:  horizontal_product_ff\[2\]_0[6]   horizontal_product_ff_2__0[6] 
+Net:  horizontal_product_ff\[2\]_0[5]   horizontal_product_ff_2__0[5] 
+Net:  horizontal_product_ff\[2\]_0[4]   horizontal_product_ff_2__0[4] 
+Net:  horizontal_product_ff\[2\]_0[3]   horizontal_product_ff_2__0[3] 
+Net:  horizontal_product_ff\[2\]_0[2]   horizontal_product_ff_2__0[2] 
+Net:  horizontal_product_ff\[2\]_0[1]   horizontal_product_ff_2__0[1] 
+Net:  horizontal_product_ff\[2\]_0[0]   horizontal_product_ff_2__0[0] 
+Net:  horizontal_product_ff\[0\]_0[8]   horizontal_product_ff_0__0[8] 
+Net:  horizontal_product_ff\[0\]_0[7]   horizontal_product_ff_0__0[7] 
+Net:  horizontal_product_ff\[0\]_0[6]   horizontal_product_ff_0__0[6] 
+Net:  horizontal_product_ff\[0\]_0[5]   horizontal_product_ff_0__0[5] 
+Net:  horizontal_product_ff\[0\]_0[4]   horizontal_product_ff_0__0[4] 
+Net:  horizontal_product_ff\[0\]_0[3]   horizontal_product_ff_0__0[3] 
+Net:  horizontal_product_ff\[0\]_0[2]   horizontal_product_ff_0__0[2] 
+Net:  horizontal_product_ff\[0\]_0[1]   horizontal_product_ff_0__0[1] 
+Net:  horizontal_product_ff\[1\]_0[9]   horizontal_product_ff_1__0[9] 
+Net:  horizontal_product_ff\[1\]_0[8]   horizontal_product_ff_1__0[8] 
+Net:  horizontal_product_ff\[1\]_0[7]   horizontal_product_ff_1__0[7] 
+Net:  horizontal_product_ff\[1\]_0[6]   horizontal_product_ff_1__0[6] 
+Net:  horizontal_product_ff\[1\]_0[5]   horizontal_product_ff_1__0[5] 
+Net:  horizontal_product_ff\[1\]_0[4]   horizontal_product_ff_1__0[4] 
+Net:  horizontal_product_ff\[1\]_0[3]   horizontal_product_ff_1__0[3] 
+Net:  horizontal_product_ff\[1\]_0[2]   horizontal_product_ff_1__0[2] 
+Net:  horizontal_product_ff\[1\]_0[1]   horizontal_product_ff_1__0[1] 
+Net:  horizontal_product_ff\[1\]_0[0]   horizontal_product_ff_1__0[0] 
+Net:  vertical_product_ff\[2\]_0[8]   vertical_product_ff_2__0[8] 
+Net:  vertical_product_ff\[2\]_0[7]   vertical_product_ff_2__0[7] 
+Net:  vertical_product_ff\[2\]_0[6]   vertical_product_ff_2__0[6] 
+Net:  vertical_product_ff\[2\]_0[5]   vertical_product_ff_2__0[5] 
+Net:  vertical_product_ff\[2\]_0[4]   vertical_product_ff_2__0[4] 
+Net:  vertical_product_ff\[2\]_0[3]   vertical_product_ff_2__0[3] 
+Net:  vertical_product_ff\[2\]_0[2]   vertical_product_ff_2__0[2] 
+Net:  vertical_product_ff\[2\]_0[1]   vertical_product_ff_2__0[1] 
+Net:  vertical_product_ff\[2\]_0[0]   vertical_product_ff_2__0[0] 
+Net:  vertical_product_ff\[1\]_0[9]   vertical_product_ff_1__0[9] 
+Net:  vertical_product_ff\[1\]_0[8]   vertical_product_ff_1__0[8] 
+Net:  vertical_product_ff\[1\]_0[7]   vertical_product_ff_1__0[7] 
+Net:  vertical_product_ff\[1\]_0[6]   vertical_product_ff_1__0[6] 
+Net:  vertical_product_ff\[1\]_0[5]   vertical_product_ff_1__0[5] 
+Net:  vertical_product_ff\[1\]_0[4]   vertical_product_ff_1__0[4] 
+Net:  vertical_product_ff\[1\]_0[3]   vertical_product_ff_1__0[3] 
+Net:  vertical_product_ff\[1\]_0[2]   vertical_product_ff_1__0[2] 
+Net:  vertical_product_ff\[1\]_0[1]   vertical_product_ff_1__0[1] 
+Net:  vertical_product_ff\[1\]_0[0]   vertical_product_ff_1__0[0] 
+Net:  vertical_product_ff\[1\][7]   vertical_product_ff_1_[7] 
+Net:  vertical_product_ff\[1\][6]   vertical_product_ff_1_[6] 
+Net:  vertical_product_ff\[1\][5]   vertical_product_ff_1_[5] 
+Net:  vertical_product_ff\[1\][4]   vertical_product_ff_1_[4] 
+Net:  vertical_product_ff\[1\][3]   vertical_product_ff_1_[3] 
+Net:  vertical_product_ff\[1\][2]   vertical_product_ff_1_[2] 
+Net:  vertical_product_ff\[1\][1]   vertical_product_ff_1_[1] 
+Net:  vertical_product_ff\[0\]_0[8]   vertical_product_ff_0__0[8] 
+Net:  horizontal_product_ff\[0\]_0_v_0_0__g1_i_i   horizontal_product_ff_0__0_v_0_0__g1_i_i 
+EndView sobel_8s_720s_540s_3s sobel_8s_720s_540s_3s
+
+BeginView fifo_8s_4s_3s_1_0 fifo_8s_4s_3s_1_0
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3_[7]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__7_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3_[6]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__6_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3_[5]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__5_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3_[4]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__4_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3_[3]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__3_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3_[2]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__2_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3_[1]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__1_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3_[0]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__0_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram2_[7]   fifo_buf_sobel_out_fifo_fifo_buf_ram2__7_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram2_[6]   fifo_buf_sobel_out_fifo_fifo_buf_ram2__6_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram2_[5]   fifo_buf_sobel_out_fifo_fifo_buf_ram2__5_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram2_[4]   fifo_buf_sobel_out_fifo_fifo_buf_ram2__4_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram2_[3]   fifo_buf_sobel_out_fifo_fifo_buf_ram2__3_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram2_[2]   fifo_buf_sobel_out_fifo_fifo_buf_ram2__2_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram2_[1]   fifo_buf_sobel_out_fifo_fifo_buf_ram2__1_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram2_[0]   fifo_buf_sobel_out_fifo_fifo_buf_ram2__0_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram1_[7]   fifo_buf_sobel_out_fifo_fifo_buf_ram1__7_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram1_[6]   fifo_buf_sobel_out_fifo_fifo_buf_ram1__6_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram1_[5]   fifo_buf_sobel_out_fifo_fifo_buf_ram1__5_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram1_[4]   fifo_buf_sobel_out_fifo_fifo_buf_ram1__4_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram1_[3]   fifo_buf_sobel_out_fifo_fifo_buf_ram1__3_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram1_[2]   fifo_buf_sobel_out_fifo_fifo_buf_ram1__2_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram1_[1]   fifo_buf_sobel_out_fifo_fifo_buf_ram1__1_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram1_[0]   fifo_buf_sobel_out_fifo_fifo_buf_ram1__0_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0_[7]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__7_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0_[6]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__6_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0_[5]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__5_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0_[4]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__4_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0_[3]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__3_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0_[2]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__2_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0_[1]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__1_ dffeas 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0_[0]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__0_ dffeas 
+Inst: dout_0_0[0]   dout_0_0_0_ dffeas 
+Inst: dout_0[7]   dout_0_7_ dffeas 
+Inst: dout_0[6]   dout_0_6_ dffeas 
+Inst: dout_0[5]   dout_0_5_ dffeas 
+Inst: dout_0[4]   dout_0_4_ dffeas 
+Inst: dout_0[3]   dout_0_3_ dffeas 
+Inst: dout_0[2]   dout_0_2_ dffeas 
+Inst: dout_0[1]   dout_0_1_ dffeas 
+Inst: rd_addr[2]   rd_addr_2_ dffeas 
+Inst: rd_addr[1]   rd_addr_1_ dffeas 
+Inst: rd_addr[0]   rd_addr_0_ dffeas 
+Inst: wr_addr[2]   wr_addr_2_ dffeas 
+Inst: wr_addr[1]   wr_addr_1_ dffeas 
+Inst: wr_addr[0]   wr_addr_0_ dffeas 
+Inst: empty   empty_Z dffeas 
+Inst: wr_addr_RNO[2]   wr_addr_RNO_2_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3__RNIOMOL[1]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__RNIOMOL_1_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3__RNIQOOL[2]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__RNIQOOL_2_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0__RNIJH3E1[2]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__RNIJH3E1_2_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0__RNILJ3E1[3]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__RNILJ3E1_3_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3__RNISQOL[3]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__RNISQOL_3_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3__RNIUSOL[4]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__RNIUSOL_4_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0__RNINL3E1[4]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__RNINL3E1_4_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0__RNIPN3E1[5]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__RNIPN3E1_5_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3__RNI0VOL[5]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__RNI0VOL_5_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3__RNI21PL[6]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__RNI21PL_6_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0__RNIRP3E1[6]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__RNIRP3E1_6_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0__RNITR3E1[7]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__RNITR3E1_7_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3__RNI43PL[7]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__RNI43PL_7_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram3__RNIMKOL[0]   fifo_buf_sobel_out_fifo_fifo_buf_ram3__RNIMKOL_0_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0__RNIFD3E1[0]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__RNIFD3E1_0_ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[0]   wr_addr_RNO_0_ cycloneive_lcell_comb 
+Inst: fifo_buf.muxe1__0_0__g0_i_o4   fifo_buf_muxe1__0_0__g0_i_o4 cycloneive_lcell_comb 
+Inst: fifo_buf.muxe3__0_0__g0_i_o4   fifo_buf_muxe3__0_0__g0_i_o4 cycloneive_lcell_comb 
+Inst: fifo_buf.muxe0__0_0__g0_i_o4   fifo_buf_muxe0__0_0__g0_i_o4 cycloneive_lcell_comb 
+Inst: fifo_buf.muxe2__0_0__g0_i_o4   fifo_buf_muxe2__0_0__g0_i_o4 cycloneive_lcell_comb 
+Inst: un4_empty_t_NE_0   un4_empty_t_NE_0_cZ cycloneive_lcell_comb 
+Inst: full_0   full_0_cZ cycloneive_lcell_comb 
+Inst: wr_addr_RNO[1]   wr_addr_RNO_1_ cycloneive_lcell_comb 
+Inst: fifo_buf.sobel_out_fifo.fifo_buf_ram0__RNIS8311[1]   fifo_buf_sobel_out_fifo_fifo_buf_ram0__RNIS8311_1_ cycloneive_lcell_comb 
+Inst: fifo_buf.ramout_3_0_0__g1_i_x4   fifo_buf_ramout_3_0_0__g1_i_x4 cycloneive_lcell_comb 
+Inst: dout[7]   dout_7_ ghost 
+Inst: dout[6]   dout_6_ ghost 
+Inst: dout[5]   dout_5_ ghost 
+Inst: dout[4]   dout_4_ ghost 
+Inst: dout[3]   dout_3_ ghost 
+Inst: dout[2]   dout_2_ ghost 
+Inst: dout[1]   dout_1_ ghost 
+Inst: dout[0]   dout_0_ ghost 
+Inst: rst_c_i   rst_c_i_cZ inv 
+Inst: SUM_0_i[0]   SUM_0_i_0_ inv 
+EndView fifo_8s_4s_3s_1_0 fifo_8s_4s_3s_1_0

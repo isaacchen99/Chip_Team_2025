@@ -1,0 +1,6 @@
+edge_detect_top.sobel_out_fifo work fifo 0 1
+edge_detect_top.sobel_unit work sobel 0 1
+edge_detect_top.gray_in_fifo work fifo 0 1
+edge_detect_top.gray_scale_in.manage_gray work manage_fifo 0 1
+edge_detect_top.gray_scale_in work gray_scale 0 1
+edge_detect_top.in_to_gray_fifo work fifo 0 1

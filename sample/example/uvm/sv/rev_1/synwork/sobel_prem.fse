@@ -1,0 +1,20 @@
+
+fsm_encoding {13632632} sequential
+
+fsm_state_encoding {13632632} OUT_FULL {0}
+
+fsm_state_encoding {13632632} OUT_EMPTY {1}
+
+fsm_registers {13632632} {out_ff_state[0]} 
+
+fsm_encoding {1413821381} sequential
+
+fsm_state_encoding {1413821381} FILL_SHIFT {00}
+
+fsm_state_encoding {1413821381} PAD_WIDTH {01}
+
+fsm_state_encoding {1413821381} PAD_LENGTH {10}
+
+fsm_state_encoding {1413821381} PERFORM_SOBEL {11}
+
+fsm_registers {1413821381} {sobel_state[1]}  {sobel_state[0]} 
